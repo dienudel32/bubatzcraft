@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "bubatzcraftforge:filter"
+    },
+    "1": {
+      "item": "bubatzcraftforge:weedbuds"
+    },
+    "2": {
+      "item": "bubatzcraftforge:weedbuds"
+    },
+    "3": {
+      "item": "minecraft:paper"
+    },
+    "4": {
+      "item": "minecraft:paper"
+    },
+    "5": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "bubatzcraftforge:joint",
+    "count": 1
+  }
+}

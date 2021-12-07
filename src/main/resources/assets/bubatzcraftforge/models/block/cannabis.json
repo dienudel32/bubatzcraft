@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "bubatzcraftforge:blocks/cannabis_plant",
+    "particle": "bubatzcraftforge:blocks/weed"
+  }
+}

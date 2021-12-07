@@ -1,0 +1,166 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Weedtrip",
+      "type": "potioneffect",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "weedtrip"
+    },
+    {
+      "name": "Bubatz",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "joint"
+    },
+    {
+      "name": "BubatzFoodEaten",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bubatz_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WeedTripOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "weed_trip_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WeedTripOverlay",
+      "type": "overlay",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "weed_trip_overlay"
+    },
+    {
+      "name": "Joint",
+      "type": "achievement",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "joint"
+    },
+    {
+      "name": "Jointrecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jointrecipe"
+    },
+    {
+      "name": "Drugs",
+      "type": "tab",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drugs"
+    },
+    {
+      "name": "Filter",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "filter"
+    },
+    {
+      "name": "Weedbuds",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "weedbuds"
+    },
+    {
+      "name": "Cannabis",
+      "type": "plant",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cannabis"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "itemGroup.tabdrugs": "Drugs",
+      "advancements.joint.title": "Joint",
+      "block.bubatzcraftforge.cannabis": "Cannabis",
+      "effect.bubatzcraftforge.weedtrip": "Weed Trip",
+      "advancements.joint.descr": "Smoke your first Joint",
+      "item.bubatzcraftforge.filter": "Filter",
+      "item.bubatzcraftforge.weedbuds": "Weedbuds",
+      "item.bubatzcraftforge.joint": "Joint"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "DrugStore",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "bubatzcraftforge",
+    "modName": "Bubatzcraft",
+    "version": "1.0.0",
+    "author": "David, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.17.1",
+    "modElementsPackage": "net.mcreator.bubatzcraftforge",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100349312
+}

@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "joint_anim",
+    "customModelName": "Normal",
+    "name": "Joint",
+    "rarity": "UNCOMMON",
+    "specialInfo": [
+      "420"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Drugs"
+    },
+    "stackSize": 16,
+    "nutritionalValue": -6,
+    "saturation": 0.0,
+    "eatingSpeed": 60,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "BubatzFoodEaten"
+    }
+  }
+}

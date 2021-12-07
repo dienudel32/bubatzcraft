@@ -1,0 +1,31 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "bubatzcraftforge:joint"
+    },
+    "title": {
+      "translate": "advancements.joint.title"
+    },
+    "description": {
+      "translate": "advancements.joint.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "joint": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "bubatzcraftforge:joint"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 30
+  }
+}
