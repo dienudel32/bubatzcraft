@@ -1,15 +1,19 @@
 {
-  "parent": "bubatzcraftforge:custom/chemical_mixer",
+  "parent": "bubatzcraftforge:custom/chemical_mixer(1)",
   "textures": {
-    "all": "bubatzcraftforge:blocks/iron_block_-_kopie_5",
-    "particle": "bubatzcraftforge:blocks/iron_block_-_kopie_5",
-    "1": "bubatzcraftforge:blocks/iron_block_-_kopie",
-    "2": "bubatzcraftforge:blocks/iron_block_-_kopie_2",
-    "4": "bubatzcraftforge:blocks/iron_block_-_kopie_3",
-    "5": "bubatzcraftforge:blocks/iron_block_-_kopie_4",
-    "6": "bubatzcraftforge:blocks/iron_block_-_kopie_5",
-    "7": "bubatzcraftforge:blocks/terminal",
-    "missing": "bubatzcraftforge:blocks/iron_block",
-    "8": "bubatzcraftforge:blocks/tastatur"
+    "all": "bubatzcraftforge:blocks/iron_block_-_kopie_3",
+    "particle": "bubatzcraftforge:blocks/iron_block_-_kopie_3",
+    "0": "bubatzcraftforge:blocks/iron_block_-_kopie_5",
+    "1": "bubatzcraftforge:blocks/white_stained_glass",
+    "2": "bubatzcraftforge:blocks/reagenzglass",
+    "3": "bubatzcraftforge:blocks/iron_block_-_kopie_4",
+    "4": "bubatzcraftforge:blocks/iron_block_-_kopie_2",
+    "5": "bubatzcraftforge:blocks/iron_block",
+    "6": "bubatzcraftforge:blocks/iron_block_-_kopie_3",
+    "7": "bubatzcraftforge:blocks/mixer_top",
+    "missing": "bubatzcraftforge:blocks/terminal",
+    "8": "bubatzcraftforge:blocks/terminal",
+    "9": "bubatzcraftforge:blocks/tastatur",
+    "10": "bubatzcraftforge:blocks/tastaturand"
   }
 }

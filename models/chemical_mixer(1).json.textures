@@ -1,0 +1,21 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "iron_block_-_kopie_5",
+        "1": "white_stained_glass",
+        "2": "reagenzglass",
+        "3": "iron_block_-_kopie_4",
+        "4": "iron_block_-_kopie_2",
+        "5": "iron_block",
+        "6": "iron_block_-_kopie_3",
+        "7": "mixer_top",
+        "missing": "terminal",
+        "8": "terminal",
+        "9": "tastatur",
+        "10": "tastaturand"
+      },
+      "name": "default"
+    }
+  }
+}

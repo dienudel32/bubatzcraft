@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "bubatzcraftforge:joint"
+    },
+    "title": {
+      "translate": "advancements.addict.title"
+    },
+    "description": {
+      "translate": "advancements.addict.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "addict": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "bubatzcraftforge:joint"
+}

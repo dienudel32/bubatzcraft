@@ -138,9 +138,25 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "chemicalmixer"
+    },
+    {
+      "name": "Addict",
+      "type": "achievement",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "addict"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "joint_count",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -149,9 +165,11 @@
       "advancements.joint.title": "Joint",
       "block.bubatzcraftforge.cannabis": "Cannabis",
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
-      "advancements.joint.descr": "Smoke your first Joint",
+      "advancements.joint.descr": "Smoke jour first Joint",
+      "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
       "item.bubatzcraftforge.filter": "Filter",
       "item.bubatzcraftforge.weedbuds": "Weedbuds",
+      "advancements.addict.title": "Addict",
       "item.bubatzcraftforge.joint": "Joint"
     }
   },

@@ -4,8 +4,10 @@
   "advancements.joint.title": "Joint",
   "block.bubatzcraftforge.cannabis": "Cannabis",
   "effect.bubatzcraftforge.weedtrip": "Weed Trip",
-  "advancements.joint.descr": "Smoke your first Joint",
+  "advancements.joint.descr": "Smoke jour first Joint",
+  "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
   "item.bubatzcraftforge.filter": "Filter",
   "item.bubatzcraftforge.weedbuds": "Weedbuds",
+  "advancements.addict.title": "Addict",
   "item.bubatzcraftforge.joint": "Joint"
 }
