@@ -27,6 +27,7 @@ public class BubatzcraftforgeModItems {
 	public static final Item CANNABIS = register(BubatzcraftforgeModBlocks.CANNABIS, BubatzcraftforgeModTabs.TAB_DRUGS);
 	public static final Item FILTER = register(new FilterItem());
 	public static final Item WEEDBUDS = register(new WeedbudsItem());
+	public static final Item CHEMICALMIXER = register(BubatzcraftforgeModBlocks.CHEMICALMIXER, BubatzcraftforgeModTabs.TAB_DRUGS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

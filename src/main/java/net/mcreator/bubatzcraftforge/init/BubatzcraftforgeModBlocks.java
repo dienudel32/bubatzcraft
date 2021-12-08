@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.bubatzcraftforge.block.ChemicalmixerBlock;
 import net.mcreator.bubatzcraftforge.block.CannabisBlock;
 
 import java.util.List;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 public class BubatzcraftforgeModBlocks {
 	private static final List<Block> REGISTRY = new ArrayList<>();
 	public static final Block CANNABIS = register(new CannabisBlock());
+	public static final Block CHEMICALMIXER = register(new ChemicalmixerBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -37,6 +39,7 @@ public class BubatzcraftforgeModBlocks {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
 			CannabisBlock.registerRenderLayer();
+			ChemicalmixerBlock.registerRenderLayer();
 		}
 	}
 }

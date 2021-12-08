@@ -1,0 +1,15 @@
+{
+  "parent": "bubatzcraftforge:custom/chemical_mixer",
+  "textures": {
+    "all": "bubatzcraftforge:blocks/iron_block_-_kopie_5",
+    "particle": "bubatzcraftforge:blocks/iron_block_-_kopie_5",
+    "1": "bubatzcraftforge:blocks/iron_block_-_kopie",
+    "2": "bubatzcraftforge:blocks/iron_block_-_kopie_2",
+    "4": "bubatzcraftforge:blocks/iron_block_-_kopie_3",
+    "5": "bubatzcraftforge:blocks/iron_block_-_kopie_4",
+    "6": "bubatzcraftforge:blocks/iron_block_-_kopie_5",
+    "7": "bubatzcraftforge:blocks/terminal",
+    "missing": "bubatzcraftforge:blocks/iron_block",
+    "8": "bubatzcraftforge:blocks/tastatur"
+  }
+}

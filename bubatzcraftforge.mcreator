@@ -120,12 +120,31 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "cannabis"
+    },
+    {
+      "name": "ChemicalmixerGUI",
+      "type": "gui",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chemicalmixer_gui"
+    },
+    {
+      "name": "Chemicalmixer",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chemicalmixer"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
       "itemGroup.tabdrugs": "Drugs",
       "advancements.joint.title": "Joint",
       "block.bubatzcraftforge.cannabis": "Cannabis",
@@ -142,6 +161,15 @@
       {
         "name": "DrugStore",
         "children": []
+      },
+      {
+        "name": "Heroin",
+        "children": [
+          {
+            "name": "Morphine",
+            "children": []
+          }
+        ]
       }
     ]
   },
