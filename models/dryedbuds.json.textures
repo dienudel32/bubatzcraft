@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "dryedweedstange",
+        "2": "dryedweed"
+      },
+      "name": "default"
+    }
+  }
+}

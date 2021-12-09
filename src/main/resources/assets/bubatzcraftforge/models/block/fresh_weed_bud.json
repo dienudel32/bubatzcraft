@@ -1,0 +1,9 @@
+{
+  "parent": "bubatzcraftforge:custom/freshbuds",
+  "textures": {
+    "all": "bubatzcraftforge:blocks/freshweedbuds",
+    "particle": "bubatzcraftforge:blocks/freshweedbuds",
+    "3": "bubatzcraftforge:blocks/freshweedbuds",
+    "4": "bubatzcraftforge:blocks/weedstange"
+  }
+}

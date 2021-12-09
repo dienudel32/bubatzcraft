@@ -1,0 +1,9 @@
+{
+  "parent": "bubatzcraftforge:custom/dryedbuds",
+  "textures": {
+    "all": "bubatzcraftforge:blocks/dryedweed",
+    "particle": "bubatzcraftforge:blocks/dryedweed",
+    "1": "bubatzcraftforge:blocks/dryedweedstange",
+    "2": "bubatzcraftforge:blocks/dryedweed"
+  }
+}

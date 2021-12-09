@@ -1,13 +1,15 @@
 {
   "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
-  "itemGroup.tabdrugs": "Drugs",
   "advancements.joint.title": "Joint",
-  "block.bubatzcraftforge.cannabis": "Cannabis",
   "effect.bubatzcraftforge.weedtrip": "Weed Trip",
+  "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
+  "itemGroup.tabdrugs": "Drugs",
+  "block.bubatzcraftforge.cannabis": "Cannabis",
+  "block.bubatzcraftforge.dryed_weed_bud": "Dryed Weed Bud",
   "advancements.joint.descr": "Smoke jour first Joint",
   "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
-  "item.bubatzcraftforge.filter": "Filter",
   "item.bubatzcraftforge.weedbuds": "Weedbuds",
+  "item.bubatzcraftforge.filter": "Filter",
   "advancements.addict.title": "Addict",
   "item.bubatzcraftforge.joint": "Joint"
 }
