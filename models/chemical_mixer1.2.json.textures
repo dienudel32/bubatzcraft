@@ -10,10 +10,10 @@
         "5": "iron_block",
         "6": "iron_block_-_kopie_3",
         "7": "mixer_top",
-        "missing": "terminal",
         "8": "terminal",
+        "missing": "tastatur",
         "9": "tastatur",
-        "10": "tastaturand"
+        "10": "tastaturrand"
       },
       "name": "default"
     }

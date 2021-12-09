@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "bubatzcraftforge:block/chemicalmixer"
+    },
+    "facing=east": {
+      "model": "bubatzcraftforge:block/chemicalmixer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bubatzcraftforge:block/chemicalmixer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bubatzcraftforge:block/chemicalmixer",
+      "y": 270
     }
   }
 }

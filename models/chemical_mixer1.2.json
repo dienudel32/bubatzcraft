@@ -11,8 +11,8 @@
 		"7": "Mixer_Top",
 		"8": "terminal",
 		"9": "tastatur",
-		"10": "Tastaturand",
-		"particle": "iron_block - Kopie (5)"
+		"10": "BubatzModels/Chemical Mixer/Tastaturrand",
+		"particle": "BubatzModels/Chemical Mixer/Tastaturrand"
 	},
 	"elements": [
 		{
@@ -25,6 +25,30 @@
 				"west": {"uv": [0, 0, 15, 16], "texture": "#4"},
 				"up": {"uv": [0, 0, 16, 15], "texture": "#7"},
 				"down": {"uv": [0, 0, 16, 15], "texture": "#6"}
+			}
+		},
+		{
+			"from": [2, 16, 6],
+			"to": [14, 17, 14],
+			"faces": {
+				"north": {"uv": [0, 0, 10, 1], "texture": "#8"},
+				"east": {"uv": [0, 0, 6, 1], "texture": "#8"},
+				"south": {"uv": [0, 0, 10, 1], "texture": "#8"},
+				"west": {"uv": [0, 0, 6, 1], "texture": "#8"},
+				"up": {"uv": [0, 0, 12, 8], "texture": "#8"},
+				"down": {"uv": [0, 0, 10, 6], "texture": "#8"}
+			}
+		},
+		{
+			"from": [3.7, 16, 2],
+			"to": [12.2, 17, 5],
+			"faces": {
+				"north": {"uv": [0, 0, 8.5, 1], "texture": "#9"},
+				"east": {"uv": [0, 0, 3, 1], "texture": "#9"},
+				"south": {"uv": [0, 0, 8.5, 1], "texture": "#9"},
+				"west": {"uv": [0, 0, 3, 1], "texture": "#9"},
+				"up": {"uv": [0, 0, 8.5, 3], "texture": "#9"},
+				"down": {"uv": [0, 0, 8.5, 3], "texture": "#9"}
 			}
 		},
 		{
@@ -221,30 +245,6 @@
 			}
 		},
 		{
-			"from": [2, 16, 6],
-			"to": [14, 17, 14],
-			"faces": {
-				"north": {"uv": [0, 0, 10, 1], "texture": "#8"},
-				"east": {"uv": [0, 0, 6, 1], "texture": "#8"},
-				"south": {"uv": [0, 0, 10, 1], "texture": "#8"},
-				"west": {"uv": [0, 0, 6, 1], "texture": "#8"},
-				"up": {"uv": [0, 0, 12, 8], "texture": "#8"},
-				"down": {"uv": [0, 0, 10, 6], "texture": "#8"}
-			}
-		},
-		{
-			"from": [3.7, 16, 2],
-			"to": [12.2, 17, 5],
-			"faces": {
-				"north": {"uv": [0, 0, 8.5, 1], "texture": "#9"},
-				"east": {"uv": [0, 0, 3, 1], "texture": "#9"},
-				"south": {"uv": [0, 0, 8.5, 1], "texture": "#9"},
-				"west": {"uv": [0, 0, 3, 1], "texture": "#9"},
-				"up": {"uv": [0, 0, 8.5, 3], "texture": "#9"},
-				"down": {"uv": [0, 0, 8.5, 3], "texture": "#9"}
-			}
-		},
-		{
 			"from": [3.7, 16, 1.6],
 			"to": [12.2, 17, 2],
 			"faces": {
@@ -322,14 +322,14 @@
 	},
 	"groups": [
 		0,
+		1,
+		2,
 		{
 			"name": "Reagenzglass",
 			"origin": [0, 0, 0],
 			"color": 0,
-			"children": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+			"children": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
 		},
-		17,
-		18,
 		19,
 		20,
 		21,
