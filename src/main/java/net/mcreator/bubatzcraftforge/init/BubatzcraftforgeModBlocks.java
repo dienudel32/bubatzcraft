@@ -26,7 +26,7 @@ public class BubatzcraftforgeModBlocks {
 	public static final Block CANNABIS = register(new CannabisBlock());
 	public static final Block CHEMICALMIXER = register(new ChemicalmixerBlock());
 	public static final Block FRESH_WEED_BUD = register(new FreshWeedBudBlock());
-	public static final Block DRYED_WEED_BUD = register(new DryedWeedBudBlock());
+	public static final Block DRIED_WEED_BUD = register(new DryedWeedBudBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Dryed Weed Bud",
+    "name": "Dried Weed Bud",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -97,13 +97,16 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:Weed"
     },
-    "particleSpawningShape": "Spread",
+    "particleSpawningShape": "Top",
     "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "particleAmount": 2,
+    "placingCondition": {
+      "name": "DryedWeedBudBlockValidPlacementCondition"
+    },
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
@@ -121,6 +124,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "DryedWeedBudBlockValidPlacementCondition"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

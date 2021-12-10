@@ -1,5 +1,5 @@
 {
-  "parent": "bubatzcraftforge:block/dryed_weed_bud",
+  "parent": "bubatzcraftforge:block/dried_weed_bud",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -164,7 +164,75 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dryed_weed_bud"
+      "registry_name": "dried_weed_bud"
+    },
+    {
+      "name": "DryedWeedBudBlockValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dryed_weed_bud_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FreshWeedBudUpdateTick",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fresh_weed_bud_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Weed",
+      "type": "particle",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "weed"
     }
   ],
   "variable_elements": [
@@ -181,10 +249,10 @@
       "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
       "advancements.joint.title": "Joint",
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
+      "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "itemGroup.tabdrugs": "Drugs",
       "block.bubatzcraftforge.cannabis": "Cannabis",
-      "block.bubatzcraftforge.dryed_weed_bud": "Dryed Weed Bud",
       "advancements.joint.descr": "Smoke jour first Joint",
       "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
       "item.bubatzcraftforge.weedbuds": "Weedbuds",
@@ -225,6 +293,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.17.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.bubatzcraftforge",
     "lockBaseModFiles": false
   },

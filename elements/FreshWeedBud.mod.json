@@ -55,7 +55,7 @@
       "value": "TALL_PLANTS"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -104,6 +104,9 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.19999999999999998,
     "particleAmount": 1,
+    "placingCondition": {
+      "name": "DryedWeedBudBlockValidPlacementCondition"
+    },
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
@@ -121,6 +124,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "DryedWeedBudBlockValidPlacementCondition"
+    },
+    "onTickUpdate": {
+      "name": "FreshWeedBudUpdateTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
