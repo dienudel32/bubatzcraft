@@ -275,6 +275,36 @@
           }
         ]
       }
+    },
+    {
+      "name": "Opiumrecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "opiumrecipe",
+      "path": "~/Heroin/Opium"
+    },
+    {
+      "name": "Acetanhydride",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acetanhydride",
+      "path": "~/Heroin/Opium"
+    },
+    {
+      "name": "Opium",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "opium",
+      "path": "~/Heroin/Opium"
     }
   ],
   "variable_elements": [
@@ -316,6 +346,10 @@
         "children": [
           {
             "name": "Opium",
+            "children": []
+          },
+          {
+            "name": "acetanhydride",
             "children": []
           }
         ]
