@@ -356,6 +356,34 @@
       "ids": {},
       "registry_name": "heroineinjection",
       "path": "~/Heroin"
+    },
+    {
+      "name": "Heroin",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heroin",
+      "path": "~/Heroin"
+    },
+    {
+      "name": "Syringe",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "syringe"
+    },
+    {
+      "name": "Syringerecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "syringerecipe"
     }
   ],
   "variable_elements": [
@@ -376,6 +404,7 @@
       "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "block.bubatzcraftforge.acetanhydrideore": "Acetanhydrideore",
+      "item.bubatzcraftforge.syringe": "Syringe",
       "item.bubatzcraftforge.acetanhydride": "Acetanhydride",
       "itemGroup.tabdrugs": "Drugs",
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
@@ -384,6 +413,7 @@
       "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
       "item.bubatzcraftforge.weedbuds": "Weedbuds",
       "item.bubatzcraftforge.filter": "Filter",
+      "item.bubatzcraftforge.heroin": "Heroin",
       "advancements.addict.title": "Addict",
       "item.bubatzcraftforge.opium": "Opium",
       "item.bubatzcraftforge.heroineinjection": "Heroineinjection",
