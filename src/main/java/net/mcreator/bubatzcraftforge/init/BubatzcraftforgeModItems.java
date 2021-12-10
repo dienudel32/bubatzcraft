@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.bubatzcraftforge.item.WeedbudsItem;
 import net.mcreator.bubatzcraftforge.item.OpiumItem;
+import net.mcreator.bubatzcraftforge.item.HeroineinjectionItem;
 import net.mcreator.bubatzcraftforge.item.FilterItem;
 import net.mcreator.bubatzcraftforge.item.BubatzItem;
 import net.mcreator.bubatzcraftforge.item.AcetanhydridepowderItem;
@@ -38,6 +39,7 @@ public class BubatzcraftforgeModItems {
 	public static final Item ACETANHYDRIDE = register(new AcetanhydrideItem());
 	public static final Item ACETANHYDRIDEPOWDER = register(new AcetanhydridepowderItem());
 	public static final Item ACETANHYDRIDEORE = register(BubatzcraftforgeModBlocks.ACETANHYDRIDEORE, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final Item HEROINEINJECTION = register(new HeroineinjectionItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

@@ -346,6 +346,16 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "Heroineinjection",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heroineinjection",
+      "path": "~/Heroin"
     }
   ],
   "variable_elements": [
@@ -362,8 +372,8 @@
       "item.bubatzcraftforge.acetanhydridepowder": "Acetanhydride powder",
       "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
       "advancements.joint.title": "Joint",
-      "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
+      "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "block.bubatzcraftforge.acetanhydrideore": "Acetanhydrideore",
       "item.bubatzcraftforge.acetanhydride": "Acetanhydride",
@@ -376,6 +386,7 @@
       "item.bubatzcraftforge.filter": "Filter",
       "advancements.addict.title": "Addict",
       "item.bubatzcraftforge.opium": "Opium",
+      "item.bubatzcraftforge.heroineinjection": "Heroineinjection",
       "item.bubatzcraftforge.joint": "Joint"
     }
   },
