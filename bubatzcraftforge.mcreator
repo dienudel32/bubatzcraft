@@ -233,6 +233,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "weed"
+    },
+    {
+      "name": "FluidExtractor",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fluid_extractor"
     }
   ],
   "variable_elements": [
@@ -252,6 +261,7 @@
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "itemGroup.tabdrugs": "Drugs",
+      "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
       "block.bubatzcraftforge.cannabis": "Cannabis",
       "advancements.joint.descr": "Smoke jour first Joint",
       "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
