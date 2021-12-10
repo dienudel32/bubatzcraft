@@ -379,6 +379,44 @@
           }
         ]
       }
+    },
+    {
+      "name": "Heroineinjection",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heroineinjection",
+      "path": "~/Heroin"
+    },
+    {
+      "name": "Syringe",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "syringe"
+    },
+    {
+      "name": "Syringerecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "syringerecipe"
+    },
+    {
+      "name": "Heroin",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heroin",
+      "path": "~/Heroin"
     }
   ],
   "variable_elements": [

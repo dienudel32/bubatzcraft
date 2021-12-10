@@ -23,6 +23,11 @@ public class DryedWeedBudBlockDestroyedByPlayerProcedure {
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}
+			if (world instanceof Level _level && !_level.isClientSide()) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(BubatzcraftforgeModItems.WEEDBUDS));
+				entityToSpawn.setPickUpDelay(10);
+				_level.addFreshEntity(entityToSpawn);
+			}
 		} else {
 			world.setBlock(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.defaultBlockState(), 3);
 		}
