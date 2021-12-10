@@ -6,16 +6,15 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
-
-import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModTabs;
 
 import java.util.List;
 
 public class AcetanhydridepowderItem extends Item {
 	public AcetanhydridepowderItem() {
-		super(new Item.Properties().tab(BubatzcraftforgeModTabs.TAB_DRUGS).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).rarity(Rarity.COMMON));
 		setRegistryName("acetanhydridepowder");
 	}
 

@@ -1,11 +1,13 @@
 
 package net.mcreator.bubatzcraftforge.client.gui;
 
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.Minecraft;
 
@@ -73,7 +75,22 @@ public class FluidExtractorGUIScreen extends AbstractContainerScreen<FluidExtrac
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		drawString(poseStack, this.font, "Fluid Extractor", 51, 7, -12829636);
-		drawString(poseStack, this.font, "IDLE", 51, 43, -12829636);
+		drawString(poseStack, this.font, "" + (new Object() {
+			public double getValue(BlockPos pos, String tag) {
+				BlockEntity BlockEntity = world.getBlockEntity(pos);
+				if (BlockEntity != null)
+					return BlockEntity.getTileData().getDouble(tag);
+				return 0;
+			}
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "timer")) + "", 51, 43, -12829636);
+		drawString(poseStack, this.font, "Water: " + (new Object() {
+			public double getValue(BlockPos pos, String tag) {
+				BlockEntity BlockEntity = world.getBlockEntity(pos);
+				if (BlockEntity != null)
+					return BlockEntity.getTileData().getDouble(tag);
+				return 0;
+			}
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "fuel")) + "", 96, 43, -12829636);
 	}
 
 	@Override

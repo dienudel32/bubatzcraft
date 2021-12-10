@@ -346,6 +346,39 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "FluidExtractorOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fluid_extractor_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -362,8 +395,8 @@
       "item.bubatzcraftforge.acetanhydridepowder": "Acetanhydride powder",
       "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
       "advancements.joint.title": "Joint",
-      "effect.bubatzcraftforge.weedtrip": "Weed Trip",
       "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
+      "effect.bubatzcraftforge.weedtrip": "Weed Trip",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "block.bubatzcraftforge.acetanhydrideore": "Acetanhydrideore",
       "item.bubatzcraftforge.acetanhydride": "Acetanhydride",

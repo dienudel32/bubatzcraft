@@ -105,9 +105,9 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "FluidExtractorGUI",
     "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "inventorySize": 4,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -121,6 +121,12 @@
     "isFluidTank": true,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "FluidExtractorOnBlockRightClicked"
+    },
+    "onTickUpdate": {
+      "name": "FluidExtractorGUISlotChange"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

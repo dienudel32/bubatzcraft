@@ -61,13 +61,26 @@
       {
         "type": "label",
         "data": {
-          "text": "IDLE",
+          "text": "<BNBT:number:timer>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "IDLE",
+          "name": "<BNBT:number:timer>",
           "x": 177,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Water: <BNBT:number:fuel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Water: <BNBT:number:fuel>",
+          "x": 222,
           "y": 80
         }
       }

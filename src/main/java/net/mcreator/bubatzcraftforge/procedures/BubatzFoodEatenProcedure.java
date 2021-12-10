@@ -25,7 +25,9 @@ public class BubatzFoodEatenProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(BubatzcraftforgeModMobEffects.WEEDTRIP, 5200, 1, (false), (false)));
+			_entity.addEffect(new MobEffectInstance(BubatzcraftforgeModMobEffects.WEEDTRIP, 5200, 0, (false), (false)));
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1200, 0, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 2400, 1, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
