@@ -238,7 +238,7 @@
       "name": "FluidExtractor",
       "type": "block",
       "sortid": 15,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "fluid_extractor"
@@ -344,7 +344,24 @@
       "ids": {},
       "registry_name": "fluid_extractor_gui_slot_change",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -475,6 +492,24 @@
         ]
       },
       "path": "~/Heroin"
+    },
+    {
+      "name": "MagicmushroomfoodFoodEaten",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magicmushroomfood_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mushroom"
     }
   ],
   "variable_elements": [
@@ -508,7 +543,7 @@
       "item.bubatzcraftforge.heroin": "Heroin",
       "advancements.addict.title": "Addict",
       "item.bubatzcraftforge.opium": "Opium",
-      "item.bubatzcraftforge.heroineinjection": "Heroineinjection",
+      "item.bubatzcraftforge.heroineinjection": "Heroin injection",
       "item.bubatzcraftforge.joint": "Joint"
     }
   },
