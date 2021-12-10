@@ -334,6 +334,18 @@
       "ids": {},
       "registry_name": "acetanhydride",
       "path": "~/Heroin/acetanhydride"
+    },
+    {
+      "name": "FluidExtractorGUISlotChange",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fluid_extractor_gui_slot_change",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
@@ -347,11 +359,11 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.bubatzcraftforge.acetanhydridepowder": "Acetanhydridepowder",
+      "item.bubatzcraftforge.acetanhydridepowder": "Acetanhydride powder",
       "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
       "advancements.joint.title": "Joint",
-      "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
+      "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "block.bubatzcraftforge.acetanhydrideore": "Acetanhydrideore",
       "item.bubatzcraftforge.acetanhydride": "Acetanhydride",

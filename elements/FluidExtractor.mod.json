@@ -94,7 +94,7 @@
     "fallSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 5,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "spawnParticles": false,
@@ -104,7 +104,7 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
@@ -118,7 +118,7 @@
     "energyCapacity": 400000,
     "energyMaxReceive": 200,
     "energyMaxExtract": 200,
-    "isFluidTank": false,
+    "isFluidTank": true,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
