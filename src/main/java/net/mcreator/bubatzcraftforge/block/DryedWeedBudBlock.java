@@ -9,6 +9,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -27,6 +28,7 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.bubatzcraftforge.procedures.DryedWeedBudBlockValidPlacementConditionProcedure;
+import net.mcreator.bubatzcraftforge.procedures.DryedWeedBudBlockDestroyedByPlayerProcedure;
 import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModParticles;
 import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModBlocks;
 
@@ -104,6 +106,13 @@ public class DryedWeedBudBlock extends Block {
 			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 0.4D;
 			world.addParticle(BubatzcraftforgeModParticles.WEED, x0, y0, z0, 0, 0, 0);
 		}
+	}
+
+	@Override
+	public boolean removedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.removedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		DryedWeedBudBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+		return retval;
 	}
 
 	@OnlyIn(Dist.CLIENT)

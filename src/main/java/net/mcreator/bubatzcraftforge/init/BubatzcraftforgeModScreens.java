@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.bubatzcraftforge.client.gui.FluidExtractorGUIScreen;
 import net.mcreator.bubatzcraftforge.client.gui.ChemicalmixerGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -19,6 +20,7 @@ public class BubatzcraftforgeModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(BubatzcraftforgeModMenus.CHEMICALMIXER_GUI, ChemicalmixerGUIScreen::new);
+			MenuScreens.register(BubatzcraftforgeModMenus.FLUID_EXTRACTOR_GUI, FluidExtractorGUIScreen::new);
 		});
 	}
 }
