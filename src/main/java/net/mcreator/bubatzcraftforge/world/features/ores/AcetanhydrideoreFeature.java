@@ -28,8 +28,8 @@ public class AcetanhydrideoreFeature extends OreFeature {
 			.setRegistryName("bubatzcraftforge:acetanhydrideore");
 	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE
 			.configured(
-					new OreConfiguration(AcetanhydrideoreFeatureRuleTest.INSTANCE, BubatzcraftforgeModBlocks.ACETANHYDRIDEORE.defaultBlockState(), 5))
-			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(0), VerticalAnchor.absolute(20)))).squared().count(3);
+					new OreConfiguration(AcetanhydrideoreFeatureRuleTest.INSTANCE, BubatzcraftforgeModBlocks.ACETANHYDRIDEORE.defaultBlockState(), 6))
+			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(0), VerticalAnchor.absolute(20)))).squared().count(4);
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 
 	public AcetanhydrideoreFeature() {
