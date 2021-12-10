@@ -1,11 +1,13 @@
 
 package net.mcreator.bubatzcraftforge.client.gui;
 
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.Minecraft;
 
@@ -76,7 +78,22 @@ public class ChemicalmixerGUIScreen extends AbstractContainerScreen<Chemicalmixe
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		drawString(poseStack, this.font, "Chemical Mixer", 56, 4, -12829636);
-		drawString(poseStack, this.font, "IDLE", 155, 67, -12829636);
+		drawString(poseStack, this.font, "" + (new Object() {
+			public double getValue(BlockPos pos, String tag) {
+				BlockEntity BlockEntity = world.getBlockEntity(pos);
+				if (BlockEntity != null)
+					return BlockEntity.getTileData().getDouble(tag);
+				return 0;
+			}
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "timer")) + "", 132, 67, -12829636);
+		drawString(poseStack, this.font, "Fuel Left: " + (new Object() {
+			public double getValue(BlockPos pos, String tag) {
+				BlockEntity BlockEntity = world.getBlockEntity(pos);
+				if (BlockEntity != null)
+					return BlockEntity.getTileData().getDouble(tag);
+				return 0;
+			}
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "FuelRem")) + " %", 100, 89, -12829636);
 	}
 
 	@Override

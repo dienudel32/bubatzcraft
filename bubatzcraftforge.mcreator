@@ -386,16 +386,6 @@
       "registry_name": "syringerecipe"
     },
     {
-      "name": "Magicmushroomparticle",
-      "type": "particle",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "magicmushroomparticle",
-      "path": "~/mushroom"
-    },
-    {
       "name": "MagicmushroomClientDisplayRandomTick",
       "type": "procedure",
       "sortid": 26,
@@ -417,6 +407,74 @@
       "ids": {},
       "registry_name": "magicmushroom",
       "path": "~/mushroom"
+    },
+    {
+      "name": "Magicmushroomparticle",
+      "type": "particle",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magicmushroomparticle",
+      "path": "~/mushroom"
+    },
+    {
+      "name": "Heroinsyringerecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heroinsyringerecipe",
+      "path": "~/Heroin"
+    },
+    {
+      "name": "HeroineinjectionRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heroineinjection_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Heroin"
+    },
+    {
+      "name": "ChemicalmixerUpdateTick",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chemicalmixer_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Heroin"
     }
   ],
   "variable_elements": [
@@ -458,6 +516,10 @@
     "name": "~",
     "children": [
       {
+        "name": "mushroom",
+        "children": []
+      },
+      {
         "name": "DrugStore",
         "children": []
       },
@@ -473,10 +535,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "mushroom",
-        "children": []
       }
     ]
   },

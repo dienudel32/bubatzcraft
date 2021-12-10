@@ -8,7 +8,7 @@
     "name": "Acetanhydride powder",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:Drugs"
+      "value": "MISC"
     },
     "stackSize": 64,
     "enchantability": 0,

@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "heroin_injection",
     "customModelName": "Normal",
-    "name": "Heroineinjection",
+    "name": "Heroin injection",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Drugs"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -31,6 +31,12 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedOnBlock": {
+      "name": "HeroineinjectionRightClickedOnBlock"
+    },
+    "onEntityHitWith": {
+      "name": "HeroineinjectionRightClickedOnBlock"
+    },
     "hasDispenseBehavior": false
   }
 }

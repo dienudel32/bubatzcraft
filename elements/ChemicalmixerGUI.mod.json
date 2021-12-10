@@ -99,14 +99,27 @@
       {
         "type": "label",
         "data": {
-          "text": "IDLE",
+          "text": "<BNBT:number:timer>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "IDLE",
-          "x": 274,
+          "name": "<BNBT:number:timer>",
+          "x": 251,
           "y": 81
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Fuel Left: <BNBT:number:FuelRem> %",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Fuel Left: <BNBT:number:FuelRem> %",
+          "x": 219,
+          "y": 103
         }
       }
     ],

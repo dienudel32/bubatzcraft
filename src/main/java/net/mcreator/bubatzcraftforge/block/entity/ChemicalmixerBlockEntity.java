@@ -3,8 +3,6 @@ package net.mcreator.bubatzcraftforge.block.entity;
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.fluids.capability.templates.FluidTank;
-import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.Capability;
 
@@ -25,7 +23,7 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.bubatzcraftforge.world.inventory.FluidExtractorGUIMenu;
+import net.mcreator.bubatzcraftforge.world.inventory.ChemicalmixerGUIMenu;
 import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -34,12 +32,12 @@ import java.util.stream.IntStream;
 
 import io.netty.buffer.Unpooled;
 
-public class FluidExtractorBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+public class ChemicalmixerBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(4, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	public FluidExtractorBlockEntity(BlockPos position, BlockState state) {
-		super(BubatzcraftforgeModBlockEntities.FLUID_EXTRACTOR, position, state);
+	public ChemicalmixerBlockEntity(BlockPos position, BlockState state) {
+		super(BubatzcraftforgeModBlockEntities.CHEMICALMIXER, position, state);
 	}
 
 	@Override
@@ -48,8 +46,6 @@ public class FluidExtractorBlockEntity extends RandomizableContainerBlockEntity 
 		if (!this.tryLoadLootTable(compound))
 			this.stacks = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
 		ContainerHelper.loadAllItems(compound, this.stacks);
-		if (compound.get("fluidTank")instanceof CompoundTag compoundTag)
-			fluidTank.readFromNBT(compoundTag);
 	}
 
 	@Override
@@ -58,7 +54,6 @@ public class FluidExtractorBlockEntity extends RandomizableContainerBlockEntity 
 		if (!this.trySaveLootTable(compound)) {
 			ContainerHelper.saveAllItems(compound, this.stacks);
 		}
-		compound.put("fluidTank", fluidTank.writeToNBT(new CompoundTag()));
 		return compound;
 	}
 
@@ -92,7 +87,7 @@ public class FluidExtractorBlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public Component getDefaultName() {
-		return new TextComponent("fluid_extractor");
+		return new TextComponent("chemicalmixer");
 	}
 
 	@Override
@@ -102,12 +97,12 @@ public class FluidExtractorBlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new FluidExtractorGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new ChemicalmixerGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override
 	public Component getDisplayName() {
-		return new TextComponent("Fluid Extractor");
+		return new TextComponent("Chemical Mixer");
 	}
 
 	@Override
@@ -122,6 +117,8 @@ public class FluidExtractorBlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public boolean canPlaceItem(int index, ItemStack stack) {
+		if (index == 3)
+			return false;
 		return true;
 	}
 
@@ -137,24 +134,19 @@ public class FluidExtractorBlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack stack, Direction direction) {
+		if (index == 0)
+			return false;
+		if (index == 1)
+			return false;
+		if (index == 2)
+			return false;
 		return true;
 	}
-
-	private final FluidTank fluidTank = new FluidTank(8000) {
-		@Override
-		protected void onContentsChanged() {
-			super.onContentsChanged();
-			setChanged();
-			level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
-		}
-	};
 
 	@Override
 	public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
 		if (!this.remove && facing != null && capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY)
 			return handlers[facing.ordinal()].cast();
-		if (!this.remove && capability == CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY)
-			return LazyOptional.of(() -> fluidTank).cast();
 		return super.getCapability(capability, facing);
 	}
 
