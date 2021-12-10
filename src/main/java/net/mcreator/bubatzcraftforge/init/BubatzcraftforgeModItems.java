@@ -30,7 +30,6 @@ public class BubatzcraftforgeModItems {
 	public static final Item CHEMICALMIXER = register(BubatzcraftforgeModBlocks.CHEMICALMIXER, BubatzcraftforgeModTabs.TAB_DRUGS);
 	public static final Item FRESH_WEED_BUD = register(BubatzcraftforgeModBlocks.FRESH_WEED_BUD, BubatzcraftforgeModTabs.TAB_DRUGS);
 	public static final Item DRIED_WEED_BUD = register(BubatzcraftforgeModBlocks.DRIED_WEED_BUD, BubatzcraftforgeModTabs.TAB_DRUGS);
-	public static final Item FLUID_EXTRACTOR = register(BubatzcraftforgeModBlocks.FLUID_EXTRACTOR, BubatzcraftforgeModTabs.TAB_DRUGS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

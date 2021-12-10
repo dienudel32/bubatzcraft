@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "bubatzcraftforge:chemicalmixer",
-    "bubatzcraftforge:fluid_extractor"
+    "bubatzcraftforge:chemicalmixer"
   ]
 }
