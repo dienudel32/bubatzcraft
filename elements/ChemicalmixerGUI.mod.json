@@ -54,7 +54,7 @@
         "data": {
           "text": "Chemical Mixer",
           "color": {
-            "value": -1,
+            "value": -12829636,
             "falpha": 0.0
           },
           "name": "Chemical Mixer",
@@ -94,6 +94,19 @@
           "name": "Slot #0",
           "x": 276,
           "y": 117
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "IDLE",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "IDLE",
+          "x": 274,
+          "y": 81
         }
       }
     ],

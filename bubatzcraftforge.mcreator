@@ -305,6 +305,15 @@
       "ids": {},
       "registry_name": "opium",
       "path": "~/Heroin/Opium"
+    },
+    {
+      "name": "FluidExtractorGUI",
+      "type": "gui",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fluid_extractor_gui"
     }
   ],
   "variable_elements": [
@@ -323,6 +332,7 @@
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
       "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
+      "item.bubatzcraftforge.acetanhydride": "Acetanhydride",
       "itemGroup.tabdrugs": "Drugs",
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
       "block.bubatzcraftforge.cannabis": "Cannabis",
@@ -331,6 +341,7 @@
       "item.bubatzcraftforge.weedbuds": "Weedbuds",
       "item.bubatzcraftforge.filter": "Filter",
       "advancements.addict.title": "Addict",
+      "item.bubatzcraftforge.opium": "Opium",
       "item.bubatzcraftforge.joint": "Joint"
     }
   },
