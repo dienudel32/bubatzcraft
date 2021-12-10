@@ -429,6 +429,36 @@
       "ids": {},
       "registry_name": "heroinsyringerecipe",
       "path": "~/Heroin"
+    },
+    {
+      "name": "ChemicalmixerUpdateTick",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chemicalmixer_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Heroin"
     }
   ],
   "variable_elements": [
