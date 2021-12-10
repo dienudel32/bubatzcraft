@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "bubatzcraftforge:blocks/magic_mushroom",
+    "particle": "bubatzcraftforge:blocks/magic_mushroom"
+  }
+}

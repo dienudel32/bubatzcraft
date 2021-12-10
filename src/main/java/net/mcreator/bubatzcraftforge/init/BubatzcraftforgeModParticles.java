@@ -17,6 +17,7 @@ import net.minecraft.client.particle.ParticleProvider;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.bubatzcraftforge.client.particle.WeedParticle;
+import net.mcreator.bubatzcraftforge.client.particle.MagicmushroomparticleParticle;
 
 import java.util.function.Function;
 import java.util.Map;
@@ -26,6 +27,8 @@ import java.util.HashMap;
 public class BubatzcraftforgeModParticles {
 	private static final Map<ParticleType<?>, Function<SpriteSet, ParticleProvider<SimpleParticleType>>> REGISTRY = new HashMap<>();
 	public static final SimpleParticleType WEED = register(new SimpleParticleType(false).setRegistryName("weed"), WeedParticle::provider);
+	public static final SimpleParticleType MAGICMUSHROOMPARTICLE = register(new SimpleParticleType(true).setRegistryName("magicmushroomparticle"),
+			MagicmushroomparticleParticle::provider);
 
 	private static SimpleParticleType register(ParticleType<?> particle, Function<SpriteSet, ParticleProvider<SimpleParticleType>> provider) {
 		REGISTRY.put(particle, provider);

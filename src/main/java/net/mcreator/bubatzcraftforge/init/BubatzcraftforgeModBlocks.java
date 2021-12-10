@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.bubatzcraftforge.block.MagicmushroomBlock;
 import net.mcreator.bubatzcraftforge.block.FreshWeedBudBlock;
 import net.mcreator.bubatzcraftforge.block.FluidExtractorBlock;
 import net.mcreator.bubatzcraftforge.block.DryedWeedBudBlock;
@@ -31,6 +32,7 @@ public class BubatzcraftforgeModBlocks {
 	public static final Block DRIED_WEED_BUD = register(new DryedWeedBudBlock());
 	public static final Block FLUID_EXTRACTOR = register(new FluidExtractorBlock());
 	public static final Block ACETANHYDRIDEORE = register(new AcetanhydrideoreBlock());
+	public static final Block MAGICMUSHROOM = register(new MagicmushroomBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -51,6 +53,7 @@ public class BubatzcraftforgeModBlocks {
 			FreshWeedBudBlock.registerRenderLayer();
 			DryedWeedBudBlock.registerRenderLayer();
 			FluidExtractorBlock.registerRenderLayer();
+			MagicmushroomBlock.registerRenderLayer();
 		}
 	}
 }

@@ -1,0 +1,135 @@
+{
+  "_fv": 24,
+  "_type": "plant",
+  "definition": {
+    "renderType": 12,
+    "texture": "magic_mushroom",
+    "textureBottom": "",
+    "customModelName": "Cross model",
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "normal",
+    "staticPlantGenerationType": "Flower",
+    "suspiciousStewEffect": "NAUSEA",
+    "suspiciousStewDuration": 100,
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "doublePlantGenerationType": "Flower",
+    "customBoundingBox": false,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Magic mushroom",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Drugs"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 2,
+    "unbreakable": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "PLANT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "forceTicking": false,
+    "emissiveRendering": true,
+    "hasTileEntity": false,
+    "isReplaceable": true,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "XZ",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [],
+    "frequencyOnChunks": 1,
+    "spawnWorldTypes": [
+      "Surface",
+      "End"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "roofed_forest"
+      },
+      {
+        "value": "mutated_roofed_forest"
+      },
+      {
+        "value": "mutated_redwood_taiga"
+      },
+      {
+        "value": "mutated_redwood_taiga_hills"
+      },
+      {
+        "value": "swamp"
+      },
+      {
+        "value": "mutated_swampland"
+      },
+      {
+        "value": "jungle"
+      },
+      {
+        "value": "mushroom_field_shore"
+      },
+      {
+        "value": "mushroom_fields"
+      },
+      {
+        "value": "taiga_hills"
+      },
+      {
+        "value": "taiga"
+      },
+      {
+        "value": "the_end"
+      },
+      {
+        "value": "void"
+      },
+      {
+        "value": "taiga"
+      }
+    ],
+    "patchSize": 16,
+    "onRandomUpdateEvent": {
+      "name": "MagicmushroomClientDisplayRandomTick"
+    }
+  }
+}

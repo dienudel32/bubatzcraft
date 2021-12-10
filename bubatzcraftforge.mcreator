@@ -384,6 +384,39 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "syringerecipe"
+    },
+    {
+      "name": "Magicmushroomparticle",
+      "type": "particle",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magicmushroomparticle",
+      "path": "~/mushroom"
+    },
+    {
+      "name": "MagicmushroomClientDisplayRandomTick",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magicmushroom_client_display_random_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/mushroom"
+    },
+    {
+      "name": "Magicmushroom",
+      "type": "plant",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magicmushroom",
+      "path": "~/mushroom"
     }
   ],
   "variable_elements": [
@@ -411,6 +444,7 @@
       "block.bubatzcraftforge.cannabis": "Cannabis",
       "advancements.joint.descr": "Smoke jour first Joint",
       "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
+      "block.bubatzcraftforge.magicmushroom": "Magic mushroom",
       "item.bubatzcraftforge.weedbuds": "Weedbuds",
       "item.bubatzcraftforge.filter": "Filter",
       "item.bubatzcraftforge.heroin": "Heroin",
@@ -439,6 +473,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "mushroom",
+        "children": []
       }
     ]
   },

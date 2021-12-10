@@ -44,6 +44,7 @@ public class BubatzcraftforgeModItems {
 	public static final Item HEROINEINJECTION = register(new HeroineinjectionItem());
 	public static final Item HEROIN = register(new HeroinItem());
 	public static final Item SYRINGE = register(new SyringeItem());
+	public static final Item MAGICMUSHROOM = register(BubatzcraftforgeModBlocks.MAGICMUSHROOM, BubatzcraftforgeModTabs.TAB_DRUGS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
