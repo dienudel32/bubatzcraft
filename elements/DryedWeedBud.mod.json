@@ -127,6 +127,9 @@
     "onBlockAdded": {
       "name": "DryedWeedBudBlockValidPlacementCondition"
     },
+    "onDestroyedByPlayer": {
+      "name": "DryedWeedBudBlockDestroyedByPlayer"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
