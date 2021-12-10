@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bubatzcraftforge:block/fluid_extractor"
+    },
+    "facing=east": {
+      "model": "bubatzcraftforge:block/fluid_extractor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bubatzcraftforge:block/fluid_extractor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bubatzcraftforge:block/fluid_extractor",
+      "y": 270
+    }
+  }
+}
