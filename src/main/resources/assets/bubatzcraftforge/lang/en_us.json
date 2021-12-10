@@ -1,9 +1,11 @@
 {
+  "item.bubatzcraftforge.acetanhydridepowder": "Acetanhydridepowder",
   "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
   "advancements.joint.title": "Joint",
   "effect.bubatzcraftforge.weedtrip": "Weed Trip",
   "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
   "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
+  "block.bubatzcraftforge.acetanhydrideore": "Acetanhydrideore",
   "item.bubatzcraftforge.acetanhydride": "Acetanhydride",
   "itemGroup.tabdrugs": "Drugs",
   "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",

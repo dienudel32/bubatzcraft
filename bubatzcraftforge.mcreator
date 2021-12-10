@@ -254,16 +254,6 @@
       "path": "~/Heroin/Opium"
     },
     {
-      "name": "Acetanhydride",
-      "type": "item",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "acetanhydride",
-      "path": "~/Heroin/Opium"
-    },
-    {
       "name": "Opiumrecipe",
       "type": "recipe",
       "sortid": 17,
@@ -272,6 +262,36 @@
       "ids": {},
       "registry_name": "opiumrecipe",
       "path": "~/Heroin/Opium"
+    },
+    {
+      "name": "Acetanhydride",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acetanhydride",
+      "path": "~/Heroin/acetanhydride"
+    },
+    {
+      "name": "Acetanhydridepowder",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acetanhydridepowder",
+      "path": "~/Heroin/acetanhydride"
+    },
+    {
+      "name": "Acetanhydrideore",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acetanhydrideore",
+      "path": "~/Heroin/acetanhydride"
     }
   ],
   "variable_elements": [
@@ -285,11 +305,13 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.bubatzcraftforge.acetanhydridepowder": "Acetanhydridepowder",
       "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
       "advancements.joint.title": "Joint",
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
       "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
+      "block.bubatzcraftforge.acetanhydrideore": "Acetanhydrideore",
       "item.bubatzcraftforge.acetanhydride": "Acetanhydride",
       "itemGroup.tabdrugs": "Drugs",
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",

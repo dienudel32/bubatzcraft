@@ -17,6 +17,7 @@ import net.mcreator.bubatzcraftforge.block.FluidExtractorBlock;
 import net.mcreator.bubatzcraftforge.block.DryedWeedBudBlock;
 import net.mcreator.bubatzcraftforge.block.ChemicalmixerBlock;
 import net.mcreator.bubatzcraftforge.block.CannabisBlock;
+import net.mcreator.bubatzcraftforge.block.AcetanhydrideoreBlock;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -29,6 +30,7 @@ public class BubatzcraftforgeModBlocks {
 	public static final Block FRESH_WEED_BUD = register(new FreshWeedBudBlock());
 	public static final Block DRIED_WEED_BUD = register(new DryedWeedBudBlock());
 	public static final Block FLUID_EXTRACTOR = register(new FluidExtractorBlock());
+	public static final Block ACETANHYDRIDEORE = register(new AcetanhydrideoreBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

@@ -17,6 +17,7 @@ import net.mcreator.bubatzcraftforge.item.WeedbudsItem;
 import net.mcreator.bubatzcraftforge.item.OpiumItem;
 import net.mcreator.bubatzcraftforge.item.FilterItem;
 import net.mcreator.bubatzcraftforge.item.BubatzItem;
+import net.mcreator.bubatzcraftforge.item.AcetanhydridepowderItem;
 import net.mcreator.bubatzcraftforge.item.AcetanhydrideItem;
 
 import java.util.List;
@@ -35,6 +36,8 @@ public class BubatzcraftforgeModItems {
 	public static final Item FLUID_EXTRACTOR = register(BubatzcraftforgeModBlocks.FLUID_EXTRACTOR, BubatzcraftforgeModTabs.TAB_DRUGS);
 	public static final Item OPIUM = register(new OpiumItem());
 	public static final Item ACETANHYDRIDE = register(new AcetanhydrideItem());
+	public static final Item ACETANHYDRIDEPOWDER = register(new AcetanhydridepowderItem());
+	public static final Item ACETANHYDRIDEORE = register(BubatzcraftforgeModBlocks.ACETANHYDRIDEORE, BubatzcraftforgeModTabs.TAB_DRUGS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

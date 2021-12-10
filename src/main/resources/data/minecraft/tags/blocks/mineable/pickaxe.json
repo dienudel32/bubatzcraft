@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "bubatzcraftforge:chemicalmixer",
-    "bubatzcraftforge:fluid_extractor"
+    "bubatzcraftforge:fluid_extractor",
+    "bubatzcraftforge:acetanhydrideore"
   ]
 }

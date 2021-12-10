@@ -17,6 +17,7 @@ import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.Registry;
 
 import net.mcreator.bubatzcraftforge.world.features.plants.CannabisFeature;
+import net.mcreator.bubatzcraftforge.world.features.ores.AcetanhydrideoreFeature;
 
 import java.util.Set;
 import java.util.Map;
@@ -28,6 +29,8 @@ public class BubatzcraftforgeModFeatures {
 	static {
 		REGISTRY.put(CannabisFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, CannabisFeature.GENERATE_BIOMES,
 				CannabisFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(AcetanhydrideoreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				AcetanhydrideoreFeature.GENERATE_BIOMES, AcetanhydrideoreFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent
