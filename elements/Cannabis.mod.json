@@ -60,7 +60,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": "CUSTOM:Weedbuds"
+      "value": "CUSTOM:FreshWeedBud"
     },
     "dropAmount": 2,
     "forceTicking": false,
