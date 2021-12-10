@@ -13,6 +13,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.bubatzcraftforge.block.FreshWeedBudBlock;
+import net.mcreator.bubatzcraftforge.block.FluidExtractorBlock;
 import net.mcreator.bubatzcraftforge.block.DryedWeedBudBlock;
 import net.mcreator.bubatzcraftforge.block.ChemicalmixerBlock;
 import net.mcreator.bubatzcraftforge.block.CannabisBlock;
@@ -27,6 +28,7 @@ public class BubatzcraftforgeModBlocks {
 	public static final Block CHEMICALMIXER = register(new ChemicalmixerBlock());
 	public static final Block FRESH_WEED_BUD = register(new FreshWeedBudBlock());
 	public static final Block DRIED_WEED_BUD = register(new DryedWeedBudBlock());
+	public static final Block FLUID_EXTRACTOR = register(new FluidExtractorBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -46,6 +48,7 @@ public class BubatzcraftforgeModBlocks {
 			ChemicalmixerBlock.registerRenderLayer();
 			FreshWeedBudBlock.registerRenderLayer();
 			DryedWeedBudBlock.registerRenderLayer();
+			FluidExtractorBlock.registerRenderLayer();
 		}
 	}
 }

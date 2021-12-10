@@ -242,6 +242,36 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "fluid_extractor"
+    },
+    {
+      "name": "Opium",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "opium",
+      "path": "~/Heroin/Opium"
+    },
+    {
+      "name": "Acetanhydride",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acetanhydride",
+      "path": "~/Heroin/Opium"
+    },
+    {
+      "name": "Opiumrecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "opiumrecipe",
+      "path": "~/Heroin/Opium"
     }
   ],
   "variable_elements": [
@@ -257,9 +287,10 @@
     "en_us": {
       "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
       "advancements.joint.title": "Joint",
-      "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
+      "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
+      "item.bubatzcraftforge.acetanhydride": "Acetanhydride",
       "itemGroup.tabdrugs": "Drugs",
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
       "block.bubatzcraftforge.cannabis": "Cannabis",
@@ -268,6 +299,7 @@
       "item.bubatzcraftforge.weedbuds": "Weedbuds",
       "item.bubatzcraftforge.filter": "Filter",
       "advancements.addict.title": "Addict",
+      "item.bubatzcraftforge.opium": "Opium",
       "item.bubatzcraftforge.joint": "Joint"
     }
   },
@@ -283,6 +315,10 @@
         "children": [
           {
             "name": "Opium",
+            "children": []
+          },
+          {
+            "name": "acetanhydride",
             "children": []
           }
         ]

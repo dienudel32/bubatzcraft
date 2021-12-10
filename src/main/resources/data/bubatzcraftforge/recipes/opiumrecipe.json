@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "experience": 1,
+  "cookingtime": 300,
+  "ingredient": {
+    "item": "minecraft:poppy"
+  },
+  "result": {
+    "item": "bubatzcraftforge:opium"
+  }
+}

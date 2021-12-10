@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "xpReward": 1.0,
+    "cookingTime": 300,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "Blocks.RED_FLOWER#0"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:Opium"
+    },
+    "name": "opiumrecipe",
+    "namespace": "mod"
+  }
+}
