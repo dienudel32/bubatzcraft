@@ -98,10 +98,10 @@ public class DryedWeedBudBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		for (int l = 0; l < 2; ++l) {
-			double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 0.5D;
-			double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 0.5D;
-			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 0.5D;
+		for (int l = 0; l < 1; ++l) {
+			double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 0.4D;
+			double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 0.4D;
+			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 0.4D;
 			world.addParticle(BubatzcraftforgeModParticles.WEED, x0, y0, z0, 0, 0, 0);
 		}
 	}

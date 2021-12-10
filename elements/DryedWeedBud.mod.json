@@ -102,8 +102,8 @@
       "value": "CUSTOM:Weed"
     },
     "particleSpawningShape": "Top",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 2,
+    "particleSpawningRadious": 0.4,
+    "particleAmount": 1,
     "placingCondition": {
       "name": "DryedWeedBudBlockValidPlacementCondition"
     },

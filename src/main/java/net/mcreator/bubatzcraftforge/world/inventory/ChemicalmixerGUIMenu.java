@@ -75,27 +75,27 @@ public class ChemicalmixerGUIMenu extends AbstractContainerMenu implements Suppl
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 59) {
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return (Items.REDSTONE == stack.getItem());
-			}
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 13, 10) {
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 37) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 13, 104) {
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 55) {
-		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 115, 37) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 158, 48) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 158, 104) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (Items.REDSTONE == stack.getItem());
+			}
+		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 6 + 8 + sj * 18, 46 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+			this.addSlot(new Slot(inv, si, 6 + 8 + si * 18, 46 + 142));
 	}
 
 	@Override

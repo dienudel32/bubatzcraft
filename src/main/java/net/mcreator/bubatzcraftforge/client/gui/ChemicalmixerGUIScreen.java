@@ -29,8 +29,8 @@ public class ChemicalmixerGUIScreen extends AbstractContainerScreen<Chemicalmixe
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 189;
+		this.imageHeight = 212;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("bubatzcraftforge:textures/chemicalmixer_gui.png");
@@ -50,11 +50,11 @@ public class ChemicalmixerGUIScreen extends AbstractContainerScreen<Chemicalmixe
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("bubatzcraftforge:textures/redstone_gui.png"));
-		this.blit(ms, this.leftPos + 7, this.topPos + 59, 0, 0, 16, 16, 16, 16);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("bubatzcraftforge:textures/chemical_mixer_gui.png"));
+		this.blit(ms, this.leftPos + 29, this.topPos + 1, 0, 0, 128, 128, 128, 128);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("bubatzcraftforge:textures/furnace.png"));
-		this.blit(ms, this.leftPos + 74, this.topPos + 37, 0, 0, 25, 16, 25, 16);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("bubatzcraftforge:textures/redstone_gui.png"));
+		this.blit(ms, this.leftPos + 158, this.topPos + 103, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -75,7 +75,7 @@ public class ChemicalmixerGUIScreen extends AbstractContainerScreen<Chemicalmixe
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		drawString(poseStack, this.font, "Chemical Mixer", 48, 9, -7631989);
+		drawString(poseStack, this.font, "Chemical Mixer", 56, 4, -1);
 	}
 
 	@Override

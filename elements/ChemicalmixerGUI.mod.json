@@ -3,27 +3,13 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 176,
-    "height": 166,
+    "width": 189,
+    "height": 212,
     "inventoryOffsetX": 0,
-    "inventoryOffsetY": 0,
+    "inventoryOffsetY": 23,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": "Items.REDSTONE"
-          },
-          "id": 0,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
-          "x": 132,
-          "y": 95
-        }
-      },
       {
         "type": "inputslot",
         "data": {
@@ -34,8 +20,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #1",
-          "x": 168,
-          "y": 73
+          "x": 131,
+          "y": 23
         }
       },
       {
@@ -48,28 +34,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #2",
-          "x": 168,
-          "y": 91
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "redstone_gui.png",
-          "use1Xscale": false,
-          "name": "redstone_gui.png",
-          "x": 133,
-          "y": 96
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "furnace.png",
-          "use1Xscale": false,
-          "name": "furnace.png",
-          "x": 200,
-          "y": 74
+          "x": 131,
+          "y": 117
         }
       },
       {
@@ -79,8 +45,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #3",
-          "x": 240,
-          "y": 73
+          "x": 276,
+          "y": 61
         }
       },
       {
@@ -88,12 +54,46 @@
         "data": {
           "text": "Chemical Mixer",
           "color": {
-            "value": -7631989,
+            "value": -1,
             "falpha": 0.0
           },
           "name": "Chemical Mixer",
-          "x": 174,
-          "y": 46
+          "x": 175,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "chemical_mixer_gui.png",
+          "use1Xscale": false,
+          "name": "chemical_mixer_gui.png",
+          "x": 148,
+          "y": 15
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "redstone_gui.png",
+          "use1Xscale": false,
+          "name": "redstone_gui.png",
+          "x": 277,
+          "y": 117
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.REDSTONE"
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 276,
+          "y": 117
         }
       }
     ],
