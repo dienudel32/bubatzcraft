@@ -55,6 +55,9 @@ public class FluidExtractorGUIScreen extends AbstractContainerScreen<FluidExtrac
 		RenderSystem.setShaderTexture(0, new ResourceLocation("bubatzcraftforge:textures/fluidextractor_gui.png"));
 		this.blit(ms, this.leftPos + 78, this.topPos + 43, 0, 0, 16, 16, 16, 16);
 
+		RenderSystem.setShaderTexture(0, new ResourceLocation("bubatzcraftforge:textures/water_bucket.png"));
+		this.blit(ms, this.leftPos + 7, this.topPos + 62, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -83,14 +86,14 @@ public class FluidExtractorGUIScreen extends AbstractContainerScreen<FluidExtrac
 				return 0;
 			}
 		}.getValue(new BlockPos((int) x, (int) y, (int) z), "timer")) + "", 51, 43, -12829636);
-		drawString(poseStack, this.font, "Water: " + (new Object() {
+		drawString(poseStack, this.font, "Fuel: " + (new Object() {
 			public double getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
 				if (BlockEntity != null)
 					return BlockEntity.getTileData().getDouble(tag);
 				return 0;
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "fuel")) + "", 96, 43, -12829636);
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "FuelRem")) + " %", 6, 52, -12829636);
 	}
 
 	@Override

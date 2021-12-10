@@ -1,12 +1,25 @@
 
 package net.mcreator.bubatzcraftforge.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.bubatzcraftforge.procedures.HeroineinjectionRightClickedOnBlockProcedure;
+import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModTabs;
+
+import java.util.List;
 
 public class HeroineinjectionItem extends Item {
-
 	public HeroineinjectionItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(BubatzcraftforgeModTabs.TAB_DRUGS).stacksTo(64).rarity(Rarity.COMMON));
 		setRegistryName("heroineinjection");
 	}
 
@@ -21,4 +34,17 @@ public class HeroineinjectionItem extends Item {
 		list.add(new TextComponent("dont take too much!"));
 	}
 
+	@Override
+	public InteractionResult useOn(UseOnContext context) {
+		InteractionResult retval = super.useOn(context);
+		HeroineinjectionRightClickedOnBlockProcedure.execute(context.getPlayer());
+		return retval;
+	}
+
+	@Override
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+		HeroineinjectionRightClickedOnBlockProcedure.execute(entity);
+		return retval;
+	}
 }

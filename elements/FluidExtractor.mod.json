@@ -106,7 +106,7 @@
     "particleAmount": 4,
     "hasInventory": true,
     "guiBoundTo": "FluidExtractorGUI",
-    "openGUIOnRightClick": false,
+    "openGUIOnRightClick": true,
     "inventorySize": 4,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
@@ -121,9 +121,6 @@
     "isFluidTank": true,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "FluidExtractorOnBlockRightClicked"
-    },
     "onTickUpdate": {
       "name": "FluidExtractorGUISlotChange"
     },

@@ -6,6 +6,7 @@
   "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
   "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
   "block.bubatzcraftforge.acetanhydrideore": "Acetanhydrideore",
+  "item.bubatzcraftforge.syringe": "Syringe",
   "item.bubatzcraftforge.acetanhydride": "Acetanhydride",
   "itemGroup.tabdrugs": "Drugs",
   "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
@@ -14,7 +15,9 @@
   "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
   "item.bubatzcraftforge.weedbuds": "Weedbuds",
   "item.bubatzcraftforge.filter": "Filter",
+  "item.bubatzcraftforge.heroin": "Heroin",
   "advancements.addict.title": "Addict",
   "item.bubatzcraftforge.opium": "Opium",
+  "item.bubatzcraftforge.heroineinjection": "Heroin injection",
   "item.bubatzcraftforge.joint": "Joint"
 }

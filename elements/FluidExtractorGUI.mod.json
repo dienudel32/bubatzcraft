@@ -74,14 +74,38 @@
       {
         "type": "label",
         "data": {
-          "text": "Water: <BNBT:number:fuel>",
+          "text": "Fuel: <BNBT:number:FuelRem> %",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Water: <BNBT:number:fuel>",
-          "x": 222,
-          "y": 80
+          "name": "Fuel: <BNBT:number:FuelRem> %",
+          "x": 132,
+          "y": 89
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.WATER_BUCKET"
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 132,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "water_bucket.png",
+          "use1Xscale": false,
+          "name": "water_bucket.png",
+          "x": 133,
+          "y": 99
         }
       }
     ],

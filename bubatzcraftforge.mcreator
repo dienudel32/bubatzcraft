@@ -344,23 +344,7 @@
       "ids": {},
       "registry_name": "fluid_extractor_gui_slot_change",
       "metadata": {
-        "dependencies": []
-      }
-    },
-    {
-      "name": "FluidExtractorOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 22,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "fluid_extractor_on_block_right_clicked",
-      "metadata": {
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -417,6 +401,34 @@
       "ids": {},
       "registry_name": "heroin",
       "path": "~/Heroin"
+    },
+    {
+      "name": "HeroineinjectionRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heroineinjection_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Heroin"
+    },
+    {
+      "name": "Heroinsyringerecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heroinsyringerecipe",
+      "path": "~/Heroin"
     }
   ],
   "variable_elements": [
@@ -433,10 +445,11 @@
       "item.bubatzcraftforge.acetanhydridepowder": "Acetanhydride powder",
       "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
       "advancements.joint.title": "Joint",
-      "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
+      "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "block.bubatzcraftforge.acetanhydrideore": "Acetanhydrideore",
+      "item.bubatzcraftforge.syringe": "Syringe",
       "item.bubatzcraftforge.acetanhydride": "Acetanhydride",
       "itemGroup.tabdrugs": "Drugs",
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
@@ -445,8 +458,10 @@
       "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
       "item.bubatzcraftforge.weedbuds": "Weedbuds",
       "item.bubatzcraftforge.filter": "Filter",
+      "item.bubatzcraftforge.heroin": "Heroin",
       "advancements.addict.title": "Addict",
       "item.bubatzcraftforge.opium": "Opium",
+      "item.bubatzcraftforge.heroineinjection": "Heroin injection",
       "item.bubatzcraftforge.joint": "Joint"
     }
   },
