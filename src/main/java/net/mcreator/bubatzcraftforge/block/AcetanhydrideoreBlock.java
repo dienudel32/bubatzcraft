@@ -20,7 +20,7 @@ import java.util.Collections;
 
 public class AcetanhydrideoreBlock extends Block {
 	public AcetanhydrideoreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2.5f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3.25f, 10f).requiresCorrectToolForDrops());
 		setRegistryName("acetanhydrideore");
 	}
 
