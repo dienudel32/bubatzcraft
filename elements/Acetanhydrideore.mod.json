@@ -34,7 +34,7 @@
     ],
     "name": "Acetanhydrideore",
     "specialInfo": [],
-    "hardness": 2.5,
+    "hardness": 3.25,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
