@@ -122,7 +122,7 @@ public class FluidExtractorBlock extends Block
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		FluidExtractorGUISlotChangeProcedure.execute();
+		FluidExtractorGUISlotChangeProcedure.execute(world, x, y, z);
 		world.getBlockTicks().scheduleTick(pos, this, 10);
 	}
 

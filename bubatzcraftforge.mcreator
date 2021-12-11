@@ -238,7 +238,7 @@
       "name": "FluidExtractor",
       "type": "block",
       "sortid": 15,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "fluid_extractor"
