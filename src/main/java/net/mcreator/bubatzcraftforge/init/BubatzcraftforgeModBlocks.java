@@ -16,6 +16,7 @@ import net.mcreator.bubatzcraftforge.block.MagicmushroomBlock;
 import net.mcreator.bubatzcraftforge.block.FreshWeedBudBlock;
 import net.mcreator.bubatzcraftforge.block.FluidExtractorBlock;
 import net.mcreator.bubatzcraftforge.block.DryedWeedBudBlock;
+import net.mcreator.bubatzcraftforge.block.CocaBlock;
 import net.mcreator.bubatzcraftforge.block.ChemicalmixerBlock;
 import net.mcreator.bubatzcraftforge.block.CannabisBlock;
 import net.mcreator.bubatzcraftforge.block.AcetanhydrideoreBlock;
@@ -33,6 +34,7 @@ public class BubatzcraftforgeModBlocks {
 	public static final Block FLUID_EXTRACTOR = register(new FluidExtractorBlock());
 	public static final Block ACETANHYDRIDEORE = register(new AcetanhydrideoreBlock());
 	public static final Block MAGICMUSHROOM = register(new MagicmushroomBlock());
+	public static final Block COCA = register(new CocaBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -54,6 +56,7 @@ public class BubatzcraftforgeModBlocks {
 			DryedWeedBudBlock.registerRenderLayer();
 			FluidExtractorBlock.registerRenderLayer();
 			MagicmushroomBlock.registerRenderLayer();
+			CocaBlock.registerRenderLayer();
 		}
 	}
 }

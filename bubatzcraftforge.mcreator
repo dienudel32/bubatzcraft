@@ -537,6 +537,53 @@
       "ids": {},
       "registry_name": "magic_mushroomfood",
       "path": "~/mushroom"
+    },
+    {
+      "name": "Coca",
+      "type": "plant",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coca",
+      "path": "~/Cocaine"
+    },
+    {
+      "name": "Heroinadv",
+      "type": "achievement",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heroinadv"
+    },
+    {
+      "name": "Magicmushrooomadv",
+      "type": "achievement",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magicmushrooomadv"
+    },
+    {
+      "name": "Heroindeath",
+      "type": "achievement",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heroindeath"
+    },
+    {
+      "name": "Magicmushroomdeath",
+      "type": "achievement",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magicmushroomdeath",
+      "path": "~/mushroom"
     }
   ],
   "variable_elements": [
@@ -552,26 +599,35 @@
     "en_us": {
       "item.bubatzcraftforge.acetanhydridepowder": "Acetanhydride powder",
       "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
-      "advancements.joint.title": "Joint",
+      "block.bubatzcraftforge.coca": "Coca",
+      "advancements.magicmushrooomadv.descr": "HUH???",
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
-      "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
-      "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "block.bubatzcraftforge.acetanhydrideore": "Acetanhydrideore",
+      "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "item.bubatzcraftforge.magic_mushroomfood": "Magic Mushroom",
+      "advancements.magicmushroomdeath.title": "Don\u0027t eat mushrooms you don\u0027t know!",
+      "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
+      "block.bubatzcraftforge.magicmushroom": "Magic mushroom",
+      "advancements.joint.descr": "Smoke jour first Joint",
+      "item.bubatzcraftforge.weedbuds": "Weedbuds",
+      "item.bubatzcraftforge.heroin": "Heroin",
+      "advancements.magicmushroomdeath.descr": "RIP",
+      "item.bubatzcraftforge.heroineinjection": "Heroin injection",
+      "advancements.heroindeath.descr": "Imagine dying of Heroin",
+      "advancements.joint.title": "Joint",
+      "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "item.bubatzcraftforge.syringe": "Syringe",
       "item.bubatzcraftforge.acetanhydride": "Acetanhydride",
       "itemGroup.tabdrugs": "Drugs",
-      "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
+      "advancements.magicmushrooomadv.title": "Funy Mushroom what does it do?",
+      "advancements.heroindeath.title": "RIP Bozo",
       "block.bubatzcraftforge.cannabis": "Cannabis",
-      "advancements.joint.descr": "Smoke jour first Joint",
       "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
-      "block.bubatzcraftforge.magicmushroom": "Magic mushroom",
-      "item.bubatzcraftforge.weedbuds": "Weedbuds",
       "item.bubatzcraftforge.filter": "Filter",
-      "item.bubatzcraftforge.heroin": "Heroin",
+      "advancements.heroinadv.descr": "It makes the pain go away",
+      "advancements.heroinadv.title": "Heroin",
       "advancements.addict.title": "Addict",
       "item.bubatzcraftforge.opium": "Opium",
-      "item.bubatzcraftforge.heroineinjection": "Heroin injection",
       "item.bubatzcraftforge.joint": "Joint"
     }
   },
@@ -598,6 +654,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Cocaine",
+        "children": []
       }
     ]
   },

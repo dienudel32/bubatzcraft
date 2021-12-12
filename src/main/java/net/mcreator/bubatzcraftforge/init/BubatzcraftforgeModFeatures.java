@@ -17,6 +17,7 @@ import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.Registry;
 
 import net.mcreator.bubatzcraftforge.world.features.plants.MagicmushroomFeature;
+import net.mcreator.bubatzcraftforge.world.features.plants.CocaFeature;
 import net.mcreator.bubatzcraftforge.world.features.plants.CannabisFeature;
 import net.mcreator.bubatzcraftforge.world.features.ores.AcetanhydrideoreFeature;
 
@@ -34,6 +35,8 @@ public class BubatzcraftforgeModFeatures {
 				AcetanhydrideoreFeature.GENERATE_BIOMES, AcetanhydrideoreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(MagicmushroomFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
 				MagicmushroomFeature.GENERATE_BIOMES, MagicmushroomFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(CocaFeature.FEATURE,
+				new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, CocaFeature.GENERATE_BIOMES, CocaFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent
