@@ -677,6 +677,16 @@
       "ids": {},
       "registry_name": "razorrecipe",
       "path": "~/Cocaine"
+    },
+    {
+      "name": "Cocaleafs",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cocaleafs",
+      "path": "~/Cocaine"
     }
   ],
   "variable_elements": [
@@ -707,6 +717,7 @@
       "item.bubatzcraftforge.heroin": "Heroin",
       "advancements.magicmushroomdeath.descr": "RIP",
       "item.bubatzcraftforge.heroineinjection": "Heroin injection",
+      "item.bubatzcraftforge.cocaleafs": "Cocaleafs",
       "advancements.heroindeath.descr": "Imagine dying of Heroin",
       "advancements.joint.title": "Joint",
       "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
