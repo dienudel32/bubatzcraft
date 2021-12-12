@@ -577,16 +577,6 @@
       "path": "~/Cocaine"
     },
     {
-      "name": "Cocaineline",
-      "type": "block",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cocaineline",
-      "path": "~/Cocaine"
-    },
-    {
       "name": "Heroindeath",
       "type": "achievement",
       "sortid": 33,
@@ -609,13 +599,14 @@
     "en_us": {
       "item.bubatzcraftforge.acetanhydridepowder": "Acetanhydride powder",
       "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
+      "block.bubatzcraftforge.coca": "Coca",
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
-      "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "block.bubatzcraftforge.acetanhydrideore": "Acetanhydrideore",
+      "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "item.bubatzcraftforge.magic_mushroomfood": "Magic Mushroom",
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
-      "advancements.joint.descr": "Smoke jour first Joint",
       "block.bubatzcraftforge.magicmushroom": "Magic mushroom",
+      "advancements.joint.descr": "Smoke jour first Joint",
       "item.bubatzcraftforge.weedbuds": "Weedbuds",
       "item.bubatzcraftforge.heroin": "Heroin",
       "item.bubatzcraftforge.heroineinjection": "Heroin injection",
