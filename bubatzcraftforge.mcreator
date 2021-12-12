@@ -411,7 +411,24 @@
       "ids": {},
       "registry_name": "magicmushroom_client_display_random_tick",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/mushroom"
     },
@@ -510,6 +527,16 @@
         ]
       },
       "path": "~/mushroom"
+    },
+    {
+      "name": "MagicMushroomfood",
+      "type": "food",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_mushroomfood",
+      "path": "~/mushroom"
     }
   ],
   "variable_elements": [
@@ -530,6 +557,7 @@
       "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "block.bubatzcraftforge.acetanhydrideore": "Acetanhydrideore",
+      "item.bubatzcraftforge.magic_mushroomfood": "Magic Mushroom",
       "item.bubatzcraftforge.syringe": "Syringe",
       "item.bubatzcraftforge.acetanhydride": "Acetanhydride",
       "itemGroup.tabdrugs": "Drugs",

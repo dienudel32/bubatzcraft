@@ -21,6 +21,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.bubatzcraftforge.procedures.MagicmushroomClientDisplayRandomTickProcedure;
+import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModItems;
 import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModBlocks;
 
 import java.util.Random;
@@ -59,15 +60,13 @@ public class MagicmushroomBlock extends FlowerBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+		return Collections.singletonList(new ItemStack(BubatzcraftforgeModItems.MAGIC_MUSHROOMFOOD));
 	}
 
 	@Override
 	public void animateTick(BlockState blockstate, Level world, BlockPos pos, Random random) {
 		super.animateTick(blockstate, world, pos, random);
-		MagicmushroomClientDisplayRandomTickProcedure.execute(
-
-		);
+		MagicmushroomClientDisplayRandomTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@OnlyIn(Dist.CLIENT)

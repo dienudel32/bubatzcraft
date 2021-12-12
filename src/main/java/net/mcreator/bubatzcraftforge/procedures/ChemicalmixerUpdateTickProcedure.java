@@ -148,7 +148,21 @@ public class ChemicalmixerUpdateTickProcedure {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
 						if (_ent != null) {
-							final int _sltid = 0;
+							final int _sltid = 1;
+							final int _amount = 1;
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable) {
+									ItemStack _stk = capability.getStackInSlot(_sltid).copy();
+									_stk.shrink(_amount);
+									((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
+								}
+							});
+						}
+					}
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _sltid = 2;
 							final int _amount = 1;
 							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable) {
@@ -240,7 +254,7 @@ public class ChemicalmixerUpdateTickProcedure {
 						{
 							BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
 							if (_ent != null) {
-								final int _sltid = 1;
+								final int _sltid = 0;
 								final int _amount = 1;
 								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable) {
@@ -256,7 +270,7 @@ public class ChemicalmixerUpdateTickProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("fuel", 200);
+								_blockEntity.getTileData().putDouble("fuel", 20);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -265,7 +279,7 @@ public class ChemicalmixerUpdateTickProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("maxFuel", 200);
+								_blockEntity.getTileData().putDouble("maxFuel", 20);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -338,7 +352,7 @@ public class ChemicalmixerUpdateTickProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putDouble("fuelRemaining", Math.ceil(((new Object() {
+				_blockEntity.getTileData().putDouble("FuelRem", Math.round(((new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
@@ -353,6 +367,22 @@ public class ChemicalmixerUpdateTickProcedure {
 						return -1;
 					}
 				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "maxFuel"))) * 100));
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
+		if (!world.isClientSide()) {
+			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null)
+				_blockEntity.getTileData().putDouble("Progress", Math.round((new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "timer")) * 5));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

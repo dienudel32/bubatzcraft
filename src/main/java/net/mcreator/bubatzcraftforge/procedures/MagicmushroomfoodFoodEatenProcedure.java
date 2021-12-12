@@ -15,5 +15,7 @@ public class MagicmushroomfoodFoodEatenProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 254, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1200, 254, (false), (false)));
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 1200, 69, (false), (false)));
 	}
 }

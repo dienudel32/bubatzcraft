@@ -16,6 +16,7 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.bubatzcraftforge.item.WeedbudsItem;
 import net.mcreator.bubatzcraftforge.item.SyringeItem;
 import net.mcreator.bubatzcraftforge.item.OpiumItem;
+import net.mcreator.bubatzcraftforge.item.MagicMushroomfoodItem;
 import net.mcreator.bubatzcraftforge.item.HeroineinjectionItem;
 import net.mcreator.bubatzcraftforge.item.HeroinItem;
 import net.mcreator.bubatzcraftforge.item.FilterItem;
@@ -44,7 +45,8 @@ public class BubatzcraftforgeModItems {
 	public static final Item HEROINEINJECTION = register(new HeroineinjectionItem());
 	public static final Item HEROIN = register(new HeroinItem());
 	public static final Item SYRINGE = register(new SyringeItem());
-	public static final Item MAGICMUSHROOM = register(BubatzcraftforgeModBlocks.MAGICMUSHROOM, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final Item MAGICMUSHROOM = register(BubatzcraftforgeModBlocks.MAGICMUSHROOM, null);
+	public static final Item MAGIC_MUSHROOMFOOD = register(new MagicMushroomfoodItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

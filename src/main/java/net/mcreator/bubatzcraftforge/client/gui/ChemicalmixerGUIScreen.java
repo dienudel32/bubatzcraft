@@ -56,7 +56,7 @@ public class ChemicalmixerGUIScreen extends AbstractContainerScreen<Chemicalmixe
 		this.blit(ms, this.leftPos + 29, this.topPos + 1, 0, 0, 128, 128, 128, 128);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("bubatzcraftforge:textures/redstone_gui.png"));
-		this.blit(ms, this.leftPos + 158, this.topPos + 103, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 158, this.topPos + 104, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -85,7 +85,7 @@ public class ChemicalmixerGUIScreen extends AbstractContainerScreen<Chemicalmixe
 					return BlockEntity.getTileData().getDouble(tag);
 				return 0;
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "timer")) + "", 132, 67, -12829636);
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Progress")) + " %", 156, 68, -12829636);
 		drawString(poseStack, this.font, "Fuel Left: " + (new Object() {
 			public double getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);

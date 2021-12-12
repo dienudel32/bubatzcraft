@@ -37,7 +37,7 @@ public class MagicmushroomparticleParticle extends TextureSheetParticle {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
-		this.quadSize *= 69f;
+		this.quadSize *= 0.69f;
 		this.lifetime = (int) Math.max(1, 69 + (this.random.nextInt(20) - 10));
 		this.gravity = 0f;
 		this.hasPhysics = true;

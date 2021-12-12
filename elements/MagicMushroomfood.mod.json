@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "magic_mushroom",
+    "customModelName": "Normal",
+    "name": "Magic Mushroom",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "fly high"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Drugs"
+    },
+    "stackSize": 16,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "MagicmushroomfoodFoodEaten"
+    }
+  }
+}

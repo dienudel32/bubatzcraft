@@ -79,7 +79,7 @@
           "use1Xscale": false,
           "name": "redstone_gui.png",
           "x": 277,
-          "y": 117
+          "y": 118
         }
       },
       {
@@ -99,14 +99,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<BNBT:number:timer>",
+          "text": "<BNBT:number:Progress> %",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<BNBT:number:timer>",
-          "x": 251,
-          "y": 81
+          "name": "<BNBT:number:Progress> %",
+          "x": 275,
+          "y": 82
         }
       },
       {
