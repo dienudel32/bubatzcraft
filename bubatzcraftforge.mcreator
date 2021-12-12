@@ -657,6 +657,26 @@
       "ids": {},
       "registry_name": "cocainehaufen",
       "path": "~/Cocaine"
+    },
+    {
+      "name": "Razorblade",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "razorblade",
+      "path": "~/Cocaine"
+    },
+    {
+      "name": "Razorrecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "razorrecipe",
+      "path": "~/Cocaine"
     }
   ],
   "variable_elements": [
@@ -687,7 +707,6 @@
       "item.bubatzcraftforge.heroin": "Heroin",
       "advancements.magicmushroomdeath.descr": "RIP",
       "item.bubatzcraftforge.heroineinjection": "Heroin injection",
-      "block.bubatzcraftforge.cocainehaufen": "Cocaine",
       "advancements.heroindeath.descr": "Imagine dying of Heroin",
       "advancements.joint.title": "Joint",
       "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",

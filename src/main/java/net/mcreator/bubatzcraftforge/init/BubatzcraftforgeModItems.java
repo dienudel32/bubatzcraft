@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.bubatzcraftforge.item.WeedbudsItem;
 import net.mcreator.bubatzcraftforge.item.SyringeItem;
+import net.mcreator.bubatzcraftforge.item.RazorbladeItem;
 import net.mcreator.bubatzcraftforge.item.OpiumItem;
 import net.mcreator.bubatzcraftforge.item.MagicMushroomfoodItem;
 import net.mcreator.bubatzcraftforge.item.HeroineinjectionItem;
@@ -50,6 +51,7 @@ public class BubatzcraftforgeModItems {
 	public static final Item COCA = register(BubatzcraftforgeModBlocks.COCA, BubatzcraftforgeModTabs.TAB_DRUGS);
 	public static final Item COCAINELINE = register(BubatzcraftforgeModBlocks.COCAINELINE, BubatzcraftforgeModTabs.TAB_DRUGS);
 	public static final Item COCAINEHAUFEN = register(BubatzcraftforgeModBlocks.COCAINEHAUFEN, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final Item RAZORBLADE = register(new RazorbladeItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
