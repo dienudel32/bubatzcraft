@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "acetanhydride_powder",
     "customModelName": "Normal",
-    "name": "Acetanhydride powder",
+    "name": "Acid Powder",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Drugs"
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "used to get acetanhydride"
+      "used to get Acid"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

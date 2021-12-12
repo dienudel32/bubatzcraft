@@ -1,14 +1,6 @@
 package net.mcreator.bubatzcraftforge.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraftforge.eventbus.api.Event;
 
 public class CocainelineOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {

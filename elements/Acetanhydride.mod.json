@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "ss",
+    "texture": "acid",
     "customModelName": "Normal",
-    "name": "Acetanhydride",
+    "name": "Acid",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Drugs"
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "used to get heroin"
+      "used for plenty of drugs"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

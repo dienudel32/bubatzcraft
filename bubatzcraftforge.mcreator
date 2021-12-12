@@ -696,6 +696,10 @@
         "children": []
       },
       {
+        "name": "Cocaine",
+        "children": []
+      },
+      {
         "name": "Heroin",
         "children": [
           {
@@ -707,10 +711,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Cocaine",
-        "children": []
       }
     ]
   },
