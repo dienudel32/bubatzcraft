@@ -586,13 +586,56 @@
       "path": "~/mushroom"
     },
     {
-      "name": "Cocaineline",
-      "type": "block",
-      "sortid": 35,
+      "name": "CocainelineBlockValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cocaineline",
+      "registry_name": "cocaineline_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cocaine"
+    },
+    {
+      "name": "CocainelineOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cocaineline_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
       "path": "~/Cocaine"
     }
   ],
@@ -619,7 +662,6 @@
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
       "block.bubatzcraftforge.magicmushroom": "Magic mushroom",
       "advancements.joint.descr": "Smoke jour first Joint",
-      "block.bubatzcraftforge.cocaineline": "Cocaine Line",
       "item.bubatzcraftforge.weedbuds": "Weedbuds",
       "item.bubatzcraftforge.heroin": "Heroin",
       "advancements.magicmushroomdeath.descr": "RIP",
