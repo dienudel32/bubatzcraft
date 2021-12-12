@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "bubatzcraftforge:magic_mushroomfood"
+    },
+    "title": {
+      "translate": "advancements.magicmushrooomadv.title"
+    },
+    "description": {
+      "translate": "advancements.magicmushrooomadv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "magicmushrooomadv": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "bubatzcraftforge:magic_mushroomfood"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2
+  },
+  "parent": "bubatzcraftforge:joint"
+}

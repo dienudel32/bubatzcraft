@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "bubatzcraftforge:heroineinjection"
+    },
+    "title": {
+      "translate": "advancements.heroinadv.title"
+    },
+    "description": {
+      "translate": "advancements.heroinadv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "heroinadv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 3
+  },
+  "parent": "bubatzcraftforge:joint"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "bubatzcraftforge:syringe"
+    },
+    "title": {
+      "translate": "advancements.heroindeath.title"
+    },
+    "description": {
+      "translate": "advancements.heroindeath.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "heroindeath": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "bubatzcraftforge:joint"
+}

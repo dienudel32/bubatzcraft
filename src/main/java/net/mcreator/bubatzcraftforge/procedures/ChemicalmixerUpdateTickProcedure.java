@@ -27,7 +27,7 @@ public class ChemicalmixerUpdateTickProcedure {
 				return -1;
 			}
 		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe"));
-		if ((new Object() {
+		if (((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -49,7 +49,29 @@ public class ChemicalmixerUpdateTickProcedure {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 2)).getItem() == BubatzcraftforgeModItems.ACETANHYDRIDE && ((new Object() {
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 2)).getItem() == BubatzcraftforgeModItems.ACETANHYDRIDE || (new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null) {
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_retval.set(capability.getStackInSlot(sltid).copy());
+					});
+				}
+				return _retval.get();
+			}
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 1)).getItem() == BubatzcraftforgeModItems.ACETANHYDRIDE && (new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null) {
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_retval.set(capability.getStackInSlot(sltid).copy());
+					});
+				}
+				return _retval.get();
+			}
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 2)).getItem() == BubatzcraftforgeModItems.OPIUM) && ((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);

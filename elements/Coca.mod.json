@@ -3,16 +3,16 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "magic_mushroom",
+    "texture": "coca",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "plantType": "normal",
+    "plantType": "growapable",
     "staticPlantGenerationType": "Flower",
-    "suspiciousStewEffect": "NAUSEA",
+    "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 100,
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
@@ -30,14 +30,14 @@
         "subtract": false
       }
     ],
-    "name": "Magic mushroom",
+    "name": "Coca",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:Drugs"
     },
     "hardness": 0.0,
     "resistance": 0.0,
-    "luminance": 2,
+    "luminance": 0,
     "unbreakable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
@@ -60,13 +60,13 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": "CUSTOM:MagicMushroomfood"
+      "value": ""
     },
     "dropAmount": 1,
     "forceTicking": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "hasTileEntity": false,
-    "isReplaceable": true,
+    "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -80,56 +80,19 @@
     "canBePlacedOn": [],
     "frequencyOnChunks": 1,
     "spawnWorldTypes": [
-      "Surface",
-      "End"
+      "Surface"
     ],
     "restrictionBiomes": [
-      {
-        "value": "roofed_forest"
-      },
-      {
-        "value": "mutated_roofed_forest"
-      },
-      {
-        "value": "mutated_redwood_taiga"
-      },
-      {
-        "value": "mutated_redwood_taiga_hills"
-      },
-      {
-        "value": "swamp"
-      },
-      {
-        "value": "mutated_swampland"
-      },
       {
         "value": "jungle"
       },
       {
-        "value": "mushroom_field_shore"
+        "value": "jungle_edge"
       },
       {
-        "value": "mushroom_fields"
-      },
-      {
-        "value": "taiga_hills"
-      },
-      {
-        "value": "taiga"
-      },
-      {
-        "value": "the_end"
-      },
-      {
-        "value": "void"
-      },
-      {
-        "value": "taiga"
+        "value": "jungle_hills"
       }
     ],
-    "patchSize": 16,
-    "onRandomUpdateEvent": {
-      "name": "MagicmushroomClientDisplayRandomTick"
-    }
+    "patchSize": 24
   }
 }
