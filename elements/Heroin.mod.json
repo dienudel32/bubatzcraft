@@ -8,7 +8,7 @@
     "name": "Heroin",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Drugs"
     },
     "stackSize": 64,
     "enchantability": 0,

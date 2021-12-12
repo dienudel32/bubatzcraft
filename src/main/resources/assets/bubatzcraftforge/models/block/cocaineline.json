@@ -1,0 +1,8 @@
+{
+  "parent": "bubatzcraftforge:custom/kok_lines",
+  "textures": {
+    "all": "bubatzcraftforge:blocks/snow",
+    "particle": "bubatzcraftforge:blocks/snow",
+    "0": "bubatzcraftforge:blocks/snow"
+  }
+}

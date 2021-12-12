@@ -584,6 +584,16 @@
       "ids": {},
       "registry_name": "magicmushroomdeath",
       "path": "~/mushroom"
+    },
+    {
+      "name": "Cocaineline",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cocaineline",
+      "path": "~/Cocaine"
     }
   ],
   "variable_elements": [
@@ -609,6 +619,7 @@
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
       "block.bubatzcraftforge.magicmushroom": "Magic mushroom",
       "advancements.joint.descr": "Smoke jour first Joint",
+      "block.bubatzcraftforge.cocaineline": "Cocaine Line",
       "item.bubatzcraftforge.weedbuds": "Weedbuds",
       "item.bubatzcraftforge.heroin": "Heroin",
       "advancements.magicmushroomdeath.descr": "RIP",
