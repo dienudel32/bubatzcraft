@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "texture",
+        "missing": "texture"
+      },
+      "name": "default"
+    }
+  }
+}
