@@ -1,18 +1,14 @@
 modLoader="javafml"
 loaderVersion="[37,)"
-license="GNU Lesser General Public License version 3 (LGPLv3)"
+license="Academic Free License v3.0"
 
 [[mods]]
 modId="bubatzcraftforge"
-version="0.1.0"
+version="1.0.0"
 displayName="Bubatzcraft"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://github.com/dienudel32/bubatzcraft"
-logoFile="logo.png"
-authors="Die Nudel, Villtex, kichelstein"
-description='''
-Minecraft Drug Mod
-'''
+displayURL="https://mcreator.net"
+authors="David, MCreator"
 
 [[dependencies.bubatzcraftforge]]
     modId="minecraft"
