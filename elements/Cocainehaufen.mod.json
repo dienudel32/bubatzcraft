@@ -9,11 +9,11 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "model:default",
+    "customModelName": "cocaine:default",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "cocaine",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Cocaine Line",
+    "name": "Cocaine",
     "specialInfo": [],
     "hardness": 0.0,
     "resistance": 10.0,

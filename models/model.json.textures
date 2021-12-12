@@ -3,7 +3,7 @@
     "default": {
       "map": {
         "0": "texture",
-        "missing": "texture"
+        "missing": ""
       },
       "name": "default"
     }

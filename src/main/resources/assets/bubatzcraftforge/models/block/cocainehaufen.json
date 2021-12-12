@@ -1,0 +1,8 @@
+{
+  "parent": "bubatzcraftforge:custom/cocaine",
+  "textures": {
+    "all": "bubatzcraftforge:blocks/texture",
+    "particle": "bubatzcraftforge:blocks/texture",
+    "0": "bubatzcraftforge:blocks/texture"
+  }
+}
