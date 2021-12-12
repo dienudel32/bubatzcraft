@@ -647,6 +647,26 @@
       "ids": {},
       "registry_name": "cocaineline",
       "path": "~/Cocaine"
+    },
+    {
+      "name": "Razorblade",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "razorblade",
+      "path": "~/Cocaine"
+    },
+    {
+      "name": "Razorrecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "razorrecipe",
+      "path": "~/Cocaine"
     }
   ],
   "variable_elements": [
@@ -670,6 +690,7 @@
       "item.bubatzcraftforge.magic_mushroomfood": "Magic Mushroom",
       "advancements.magicmushroomdeath.title": "Don\u0027t eat mushrooms you don\u0027t know!",
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
+      "item.bubatzcraftforge.razorblade": "Razorblade",
       "block.bubatzcraftforge.magicmushroom": "Magic mushroom",
       "advancements.joint.descr": "Smoke jour first Joint",
       "block.bubatzcraftforge.cocaineline": "Cocaine Line",
