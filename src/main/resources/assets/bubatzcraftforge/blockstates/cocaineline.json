@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "bubatzcraftforge:block/cocaineline"
+    },
+    "facing=east": {
+      "model": "bubatzcraftforge:block/cocaineline",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bubatzcraftforge:block/cocaineline",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bubatzcraftforge:block/cocaineline",
+      "y": 270
     }
   }
 }
