@@ -696,6 +696,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "filterrecipe"
+    },
+    {
+      "name": "Chemicalmixerrecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chemicalmixerrecipe"
+    },
+    {
+      "name": "Fluidextracrorresicpe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fluidextracrorresicpe"
     }
   ],
   "variable_elements": [
