@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "bubatzcraftforge:block/bundled_coca_leafs",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "bubatzcraftforge:block/bundled_coca_leafs"
+    },
+    "axis=z": {
+      "model": "bubatzcraftforge:block/bundled_coca_leafs",
+      "x": 90
+    }
+  }
+}

@@ -3,7 +3,6 @@
   "textures": {
     "all": "bubatzcraftforge:blocks/texture",
     "particle": "bubatzcraftforge:blocks/texture",
-    "0": "bubatzcraftforge:blocks/texture",
-    "missing": "bubatzcraftforge:blocks/texture"
+    "0": "bubatzcraftforge:blocks/cocaine"
   }
 }

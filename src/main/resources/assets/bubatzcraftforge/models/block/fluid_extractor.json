@@ -1,8 +1,8 @@
 {
   "parent": "bubatzcraftforge:custom/fluid_extractor",
   "textures": {
-    "all": "bubatzcraftforge:blocks/iron_block_-_kopie_3",
-    "particle": "bubatzcraftforge:blocks/iron_block_-_kopie_3",
+    "all": "bubatzcraftforge:blocks/mixer_top",
+    "particle": "bubatzcraftforge:blocks/mixer_top",
     "0": "bubatzcraftforge:blocks/glass",
     "1": "bubatzcraftforge:blocks/wasser",
     "2": "bubatzcraftforge:blocks/",

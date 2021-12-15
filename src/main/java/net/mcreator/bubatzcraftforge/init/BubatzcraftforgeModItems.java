@@ -54,6 +54,7 @@ public class BubatzcraftforgeModItems {
 	public static final Item COCAINEHAUFEN = register(BubatzcraftforgeModBlocks.COCAINEHAUFEN, BubatzcraftforgeModTabs.TAB_DRUGS);
 	public static final Item RAZORBLADE = register(new RazorbladeItem());
 	public static final Item COCALEAFS = register(new CocaleafsItem());
+	public static final Item BUNDLED_COCA_LEAFS = register(BubatzcraftforgeModBlocks.BUNDLED_COCA_LEAFS, BubatzcraftforgeModTabs.TAB_DRUGS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

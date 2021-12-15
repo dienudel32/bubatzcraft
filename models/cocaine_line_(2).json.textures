@@ -2,8 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "texture",
-        "missing": "texture"
+        "0": "cocaine"
       },
       "name": "default"
     }

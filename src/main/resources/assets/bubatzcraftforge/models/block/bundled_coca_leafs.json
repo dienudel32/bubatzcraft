@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bubatzcraftforge:blocks/bundled_coca_leafes_side",
+    "up": "bubatzcraftforge:blocks/bundled_coca_leafes_side",
+    "north": "bubatzcraftforge:blocks/bundled_coca_leafes",
+    "east": "bubatzcraftforge:blocks/bundled_coca_leafes",
+    "south": "bubatzcraftforge:blocks/bundled_coca_leafes",
+    "west": "bubatzcraftforge:blocks/bundled_coca_leafes",
+    "particle": "bubatzcraftforge:blocks/coca"
+  }
+}

@@ -748,6 +748,16 @@
         ]
       },
       "path": "~/Cocaine"
+    },
+    {
+      "name": "BundledCocaLeafs",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bundled_coca_leafs",
+      "path": "~/Cocaine"
     }
   ],
   "variable_elements": [
@@ -806,6 +816,7 @@
       "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
       "item.bubatzcraftforge.filter": "Filter",
       "advancements.heroinadv.descr": "It makes the pain go away",
+      "block.bubatzcraftforge.bundled_coca_leafs": "Bundled Coca Leafs",
       "advancements.heroinadv.title": "Heroin",
       "advancements.addict.title": "Addict",
       "item.bubatzcraftforge.opium": "Opium",
