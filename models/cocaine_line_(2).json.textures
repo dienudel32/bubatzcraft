@@ -2,7 +2,8 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "snow"
+        "0": "texture",
+        "missing": "texture"
       },
       "name": "default"
     }

@@ -1,0 +1,23 @@
+{
+  "cocaine_line_create": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "bubatzcraftforge:cocaine_line",
+        "stream": false
+      },
+      {
+        "name": "bubatzcraftforge:cocaine_line2",
+        "stream": false
+      },
+      {
+        "name": "bubatzcraftforge:cocaine_line3",
+        "stream": false
+      },
+      {
+        "name": "bubatzcraftforge:cocaine_line4",
+        "stream": false
+      }
+    ]
+  }
+}

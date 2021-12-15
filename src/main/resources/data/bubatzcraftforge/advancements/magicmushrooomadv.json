@@ -19,7 +19,9 @@
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "item": "bubatzcraftforge:magic_mushroomfood"
+          "items": [
+            "bubatzcraftforge:magic_mushroomfood"
+          ]
         }
       }
     }
