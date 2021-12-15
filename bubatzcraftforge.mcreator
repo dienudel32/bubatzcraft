@@ -34,6 +34,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -631,6 +643,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -758,6 +782,128 @@
       "ids": {},
       "registry_name": "bundled_coca_leafs",
       "path": "~/Cocaine"
+    },
+    {
+      "name": "BundledCocaLeafsRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bundled_coca_leafs_recipe",
+      "path": "~/Cocaine"
+    },
+    {
+      "name": "CocaSeedsRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coca_seeds_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cocaine"
+    },
+    {
+      "name": "CocaSeeds",
+      "type": "item",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coca_seeds",
+      "path": "~/Cocaine"
+    },
+    {
+      "name": "Cocaloot",
+      "type": "loottable",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cocaloot",
+      "path": "~/Cocaine"
+    },
+    {
+      "name": "Cocaextract",
+      "type": "item",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cocaextract",
+      "path": "~/Cocaine"
+    },
+    {
+      "name": "JointcountCommandExecuted",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jointcount_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Debug"
+    },
+    {
+      "name": "Jointcount",
+      "type": "command",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jointcount",
+      "path": "~/Debug"
     }
   ],
   "variable_elements": [
@@ -779,6 +925,14 @@
       ],
       "category": "block",
       "subtitle": ""
+    },
+    {
+      "name": "cough",
+      "files": [
+        "ptt-20211210-wa0002_online-audio-converter.com"
+      ],
+      "category": "player",
+      "subtitle": "Player coughing"
     }
   ],
   "language_map": {
@@ -805,7 +959,9 @@
       "block.bubatzcraftforge.cocainehaufen": "Cocaine",
       "advancements.heroindeath.descr": "Die from Heroin",
       "advancements.joint.title": "Joint",
+      "subtitles.cough": "Player coughing",
       "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
+      "item.bubatzcraftforge.coca_seeds": "Coca Seeds",
       "item.bubatzcraftforge.syringe": "Syringe",
       "item.bubatzcraftforge.acetanhydride": "Acid",
       "itemGroup.tabdrugs": "Drugs",
@@ -820,6 +976,7 @@
       "advancements.heroinadv.title": "Heroin",
       "advancements.addict.title": "Addict",
       "item.bubatzcraftforge.opium": "Opium",
+      "item.bubatzcraftforge.cocaextract": "Cocaextract",
       "item.bubatzcraftforge.joint": "Joint"
     }
   },
@@ -836,7 +993,12 @@
       },
       {
         "name": "Cocaine",
-        "children": []
+        "children": [
+          {
+            "name": "Cocaextract",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Heroin",
@@ -854,18 +1016,24 @@
       {
         "name": "nicotine",
         "children": []
+      },
+      {
+        "name": "Debug",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "bubatzcraftforge",
     "modName": "Bubatzcraft",
-    "version": "1.0.0",
-    "author": "David, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "version": "0.1.0",
+    "description": "Minecraft Drug Mod",
+    "author": "Die Nudel, Villtex, kichelstein",
+    "websiteURL": "https://github.com/dienudel32/bubatzcraft",
+    "license": "GNU Lesser General Public License version 3 (LGPLv3)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "bubatz",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

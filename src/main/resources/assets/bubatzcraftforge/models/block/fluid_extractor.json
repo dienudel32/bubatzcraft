@@ -1,13 +1,13 @@
 {
   "parent": "bubatzcraftforge:custom/fluid_extractor",
   "textures": {
-    "all": "bubatzcraftforge:blocks/mixer_top",
-    "particle": "bubatzcraftforge:blocks/mixer_top",
+    "all": "bubatzcraftforge:blocks/pasted1",
+    "particle": "bubatzcraftforge:blocks/pasted1",
     "0": "bubatzcraftforge:blocks/glass",
     "1": "bubatzcraftforge:blocks/wasser",
     "2": "bubatzcraftforge:blocks/iron_block_-_kopie_3",
     "3": "bubatzcraftforge:blocks/pasted",
-    "4": "bubatzcraftforge:blocks/iron_block_-_kopie_3",
+    "4": "bubatzcraftforge:blocks/mixer_top",
     "5": "bubatzcraftforge:blocks/cable",
     "6": "bubatzcraftforge:blocks/wasseraushopper"
   }

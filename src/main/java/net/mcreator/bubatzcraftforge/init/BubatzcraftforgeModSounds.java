@@ -20,6 +20,7 @@ public class BubatzcraftforgeModSounds {
 	static {
 		REGISTRY.put(new ResourceLocation("bubatzcraftforge", "cocaine_line_create"),
 				new SoundEvent(new ResourceLocation("bubatzcraftforge", "cocaine_line_create")));
+		REGISTRY.put(new ResourceLocation("bubatzcraftforge", "cough"), new SoundEvent(new ResourceLocation("bubatzcraftforge", "cough")));
 	}
 
 	@SubscribeEvent

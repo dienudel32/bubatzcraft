@@ -21,7 +21,9 @@
   "block.bubatzcraftforge.cocainehaufen": "Cocaine",
   "advancements.heroindeath.descr": "Die from Heroin",
   "advancements.joint.title": "Joint",
+  "subtitles.cough": "Player coughing",
   "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
+  "item.bubatzcraftforge.coca_seeds": "Coca Seeds",
   "item.bubatzcraftforge.syringe": "Syringe",
   "item.bubatzcraftforge.acetanhydride": "Acid",
   "itemGroup.tabdrugs": "Drugs",
@@ -36,5 +38,6 @@
   "advancements.heroinadv.title": "Heroin",
   "advancements.addict.title": "Addict",
   "item.bubatzcraftforge.opium": "Opium",
+  "item.bubatzcraftforge.cocaextract": "Cocaextract",
   "item.bubatzcraftforge.joint": "Joint"
 }

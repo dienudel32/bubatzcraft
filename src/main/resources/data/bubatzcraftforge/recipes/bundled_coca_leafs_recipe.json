@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bubatzcraftforge:cocaleafs"
+    },
+    {
+      "item": "bubatzcraftforge:cocaleafs"
+    },
+    {
+      "item": "bubatzcraftforge:cocaleafs"
+    },
+    {
+      "item": "bubatzcraftforge:cocaleafs"
+    },
+    {
+      "item": "bubatzcraftforge:cocaleafs"
+    },
+    {
+      "item": "bubatzcraftforge:cocaleafs"
+    },
+    {
+      "item": "bubatzcraftforge:cocaleafs"
+    },
+    {
+      "item": "bubatzcraftforge:cocaleafs"
+    },
+    {
+      "item": "bubatzcraftforge:cocaleafs"
+    }
+  ],
+  "result": {
+    "item": "bubatzcraftforge:bundled_coca_leafs",
+    "count": 1
+  }
+}

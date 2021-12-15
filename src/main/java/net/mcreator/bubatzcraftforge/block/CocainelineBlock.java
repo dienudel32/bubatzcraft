@@ -63,13 +63,13 @@ public class CocainelineBlock extends Block {
 		switch ((Direction) state.getValue(FACING)) {
 			case SOUTH :
 			default :
-				return box(3, 0, 2, 14, 1, 5).move(offset.x, offset.y, offset.z);
+				return box(0, 0, 0, 16, 16, 16).move(offset.x, offset.y, offset.z);
 			case NORTH :
-				return box(2, 0, 11, 13, 1, 14).move(offset.x, offset.y, offset.z);
+				return box(0, 0, 0, 16, 16, 16).move(offset.x, offset.y, offset.z);
 			case EAST :
-				return box(2, 0, 2, 5, 1, 13).move(offset.x, offset.y, offset.z);
+				return box(0, 0, 0, 16, 16, 16).move(offset.x, offset.y, offset.z);
 			case WEST :
-				return box(11, 0, 3, 14, 1, 14).move(offset.x, offset.y, offset.z);
+				return box(0, 0, 0, 16, 16, 16).move(offset.x, offset.y, offset.z);
 		}
 	}
 
@@ -111,7 +111,7 @@ public class CocainelineBlock extends Block {
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		CocainelineOnBlockRightClickedProcedure.execute(world, entity);
+		CocainelineOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 

@@ -1,15 +1,15 @@
 {
   "parent": "bubatzcraftforge:custom/chemical_mixer1.2",
   "textures": {
-    "all": "bubatzcraftforge:blocks/mixer_top",
-    "particle": "bubatzcraftforge:blocks/mixer_top",
+    "all": "bubatzcraftforge:blocks/pasted1",
+    "particle": "bubatzcraftforge:blocks/pasted1",
     "0": "bubatzcraftforge:blocks/iron_block_-_kopie_5",
     "1": "bubatzcraftforge:blocks/white_stained_glass",
     "2": "bubatzcraftforge:blocks/reagenzglass",
     "3": "bubatzcraftforge:blocks/iron_block_-_kopie_4",
     "4": "bubatzcraftforge:blocks/iron_block_-_kopie_2",
     "5": "bubatzcraftforge:blocks/iron_block",
-    "6": "bubatzcraftforge:blocks/iron_block_-_kopie_3",
+    "6": "bubatzcraftforge:blocks/mixer_top",
     "7": "bubatzcraftforge:blocks/mixer_top",
     "8": "bubatzcraftforge:blocks/terminal",
     "missing": "bubatzcraftforge:blocks/tastatur",

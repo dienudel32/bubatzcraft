@@ -22,6 +22,8 @@ import net.mcreator.bubatzcraftforge.item.HeroineinjectionItem;
 import net.mcreator.bubatzcraftforge.item.HeroinItem;
 import net.mcreator.bubatzcraftforge.item.FilterItem;
 import net.mcreator.bubatzcraftforge.item.CocaleafsItem;
+import net.mcreator.bubatzcraftforge.item.CocaextractItem;
+import net.mcreator.bubatzcraftforge.item.CocaSeedsItem;
 import net.mcreator.bubatzcraftforge.item.BubatzItem;
 import net.mcreator.bubatzcraftforge.item.AcetanhydridepowderItem;
 import net.mcreator.bubatzcraftforge.item.AcetanhydrideItem;
@@ -55,6 +57,8 @@ public class BubatzcraftforgeModItems {
 	public static final Item RAZORBLADE = register(new RazorbladeItem());
 	public static final Item COCALEAFS = register(new CocaleafsItem());
 	public static final Item BUNDLED_COCA_LEAFS = register(BubatzcraftforgeModBlocks.BUNDLED_COCA_LEAFS, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final Item COCA_SEEDS = register(new CocaSeedsItem());
+	public static final Item COCAEXTRACT = register(new CocaextractItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
