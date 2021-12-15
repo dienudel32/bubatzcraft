@@ -4,6 +4,9 @@ package net.mcreator.bubatzcraftforge.block;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -52,6 +55,22 @@ public class CocainelineBlock extends Block {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		Vec3 offset = state.getOffset(world, pos);
+		switch ((Direction) state.getValue(FACING)) {
+			case SOUTH :
+			default :
+				return box(3, 0, 2, 14, 1, 5).move(offset.x, offset.y, offset.z);
+			case NORTH :
+				return box(2, 0, 11, 13, 1, 14).move(offset.x, offset.y, offset.z);
+			case EAST :
+				return box(2, 0, 2, 5, 1, 13).move(offset.x, offset.y, offset.z);
+			case WEST :
+				return box(11, 0, 3, 14, 1, 14).move(offset.x, offset.y, offset.z);
+		}
 	}
 
 	@Override
