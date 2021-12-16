@@ -838,16 +838,6 @@
       "path": "~/Cocaine"
     },
     {
-      "name": "Cocaloot",
-      "type": "loottable",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cocaloot",
-      "path": "~/Cocaine"
-    },
-    {
       "name": "Cocaextract",
       "type": "item",
       "sortid": 49,
@@ -914,6 +904,45 @@
       "ids": {},
       "registry_name": "cocaseedsrecipe",
       "path": "~/Cocaine"
+    },
+    {
+      "name": "Magicmushroomoverlay",
+      "type": "overlay",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magicmushroomoverlay",
+      "path": "~/mushroom"
+    },
+    {
+      "name": "MagicmushroomoverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magicmushroomoverlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mushroom"
+    },
+    {
+      "name": "Magicmushroomtrio",
+      "type": "potioneffect",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magicmushroomtrip",
+      "path": "~/mushroom"
     }
   ],
   "variable_elements": [
@@ -951,6 +980,7 @@
       "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
       "block.bubatzcraftforge.coca": "Coca",
       "advancements.magicmushrooomadv.descr": "HUH???",
+      "death.attack.mushroom": "%s ate the funny mushroom and died",
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
       "block.bubatzcraftforge.acetanhydrideore": "Acid Ore",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
@@ -958,6 +988,7 @@
       "advancements.magicmushroomdeath.title": "Don\u0027t eat mushrooms you don\u0027t know!",
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
       "item.bubatzcraftforge.razorblade": "Razorblade",
+      "death.attack.heroin": "%s died from Heroin",
       "block.bubatzcraftforge.magicmushroom": "Magic mushroom",
       "advancements.joint.descr": "Smoke jour first Joint",
       "block.bubatzcraftforge.cocaineline": "Cocaine Line",
@@ -976,6 +1007,7 @@
       "item.bubatzcraftforge.acetanhydride": "Acid",
       "itemGroup.tabdrugs": "Drugs",
       "subtitles.cocaine_line_create": "",
+      "effect.bubatzcraftforge.magicmushroomtrip": "Mushroom Trip",
       "advancements.magicmushrooomadv.title": "Funy Mushroom what does it do?",
       "advancements.heroindeath.title": "Oh well",
       "block.bubatzcraftforge.cannabis": "Cannabis",
@@ -1003,12 +1035,7 @@
       },
       {
         "name": "Cocaine",
-        "children": [
-          {
-            "name": "Cocaextract",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
         "name": "Heroin",

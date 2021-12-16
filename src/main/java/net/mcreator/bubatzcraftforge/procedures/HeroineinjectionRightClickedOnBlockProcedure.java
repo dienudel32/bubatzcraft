@@ -23,7 +23,8 @@ public class HeroineinjectionRightClickedOnBlockProcedure {
 		if (entity == null)
 			return;
 		if (Math.random() < 0.1) {
-			entity.hurt(DamageSource.GENERIC, 10000);
+			if (entity instanceof LivingEntity _entity)
+				_entity.hurt(new DamageSource("heroin").bypassArmor(), 10000);
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("bubatzcraftforge:heroindeath"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
