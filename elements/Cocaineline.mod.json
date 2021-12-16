@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "cocaine_line_2:default",
+    "customModelName": "cocaine_line_2.1:default",
     "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -23,12 +23,12 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 16.0,
-        "my": 16.0,
-        "mz": 16.0,
-        "Mx": 0.0,
-        "My": 0.0,
-        "Mz": 0.0,
+        "mx": 2.0,
+        "my": 0.0,
+        "mz": 11.0,
+        "Mx": 13.0,
+        "My": 1.0,
+        "Mz": 14.0,
         "subtract": false
       }
     ],
