@@ -5,8 +5,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModBlocks;
@@ -15,15 +13,14 @@ public class CocaSeedsRightClickedOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.GRASS_BLOCK) {
+		if ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.GRASS_BLOCK
+				|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.PODZOL
+				|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.ROOTED_DIRT
+				|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.COARSE_DIRT
+				|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.DIRT) {
 			world.setBlock(new BlockPos((int) x, (int) y, (int) z), BubatzcraftforgeModBlocks.COCA.defaultBlockState(), 3);
-			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(Blocks.AIR);
-				_setstack.setCount(1);
-				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-				if (_entity instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.getInventory().setChanged();
-			}
 		}
+		((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY))
+				.setCount((int) (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)).getCount() - 1));
 	}
 }

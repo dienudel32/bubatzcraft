@@ -904,6 +904,16 @@
       "ids": {},
       "registry_name": "jointcount",
       "path": "~/Debug"
+    },
+    {
+      "name": "Cocaseedsrecipe",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cocaseedsrecipe",
+      "path": "~/Cocaine"
     }
   ],
   "variable_elements": [
