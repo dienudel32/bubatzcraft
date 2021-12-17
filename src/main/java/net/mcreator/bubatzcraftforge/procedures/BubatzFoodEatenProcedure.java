@@ -27,6 +27,7 @@ public class BubatzFoodEatenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		entity.getPersistentData().putDouble("drugamount", (entity.getPersistentData().getDouble("drugamount") + 1));
 		if (entity.getPersistentData().getDouble("jointcount") > 37) {
 			if (Math.random() < 0.35) {
 				new Object() {
@@ -135,6 +136,7 @@ public class BubatzFoodEatenProcedure {
 						private void run() {
 							if (entity instanceof LivingEntity _entity)
 								_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 200, 0, (false), (false)));
+							entity.getPersistentData().putDouble("drugamount", (entity.getPersistentData().getDouble("drugamount") - 1));
 							MinecraftForge.EVENT_BUS.unregister(this);
 						}
 					}.start(world, 2400);
@@ -186,6 +188,7 @@ public class BubatzFoodEatenProcedure {
 				private void run() {
 					if (entity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 200, 0, (false), (false)));
+					entity.getPersistentData().putDouble("drugamount", (entity.getPersistentData().getDouble("drugamount") - 1));
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, 2400);

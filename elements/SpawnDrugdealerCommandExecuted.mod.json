@@ -1,0 +1,7 @@
+{
+  "_fv": 24,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"117\" y=\"72\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"entity_execute_command\"><value name=\"command\"><block type=\"text\"><field name=\"TEXT\">/summon villager ~ ~1 ~ {VillagerData:{profession:armorer,level:2,type:plains},NoAI:1,CustomName:\"\\\"Drug Dealer\\\"\",Offers:{Recipes:[{buy:{id:gold_ingot,Count:3},sell:{id:\"bubatzcraftforge:joint\",Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:gold_ingot,Count:5},sell:{id:\"bubatzcraftforge:heroin\",Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:gold_ingot,Count:32},sell:{id:\"bubatzcraftforge:cocainehaufen\",Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:gold_ingot,Count:21},sell:{id:\"bubatzcraftforge:cannabis_seeds\",Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:gold_block,Count:25},sell:{id:\"bubatzcraftforge:coca_seeds\",Count:1},rewardExp:0b,maxUses:9999999}]}}</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></next></block></xml>"
+  }
+}

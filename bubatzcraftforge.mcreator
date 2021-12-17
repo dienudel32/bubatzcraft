@@ -509,6 +509,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -557,6 +561,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1005,6 +1013,60 @@
         ]
       },
       "path": "~/Weed"
+    },
+    {
+      "name": "SpawnDrugdealerCommandExecuted",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_drugdealer_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Debug"
+    },
+    {
+      "name": "SpawnDrugdealer",
+      "type": "command",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_drugdealer",
+      "path": "~/Debug"
+    },
+    {
+      "name": "Seriousdrugaddiction",
+      "type": "achievement",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seriousdrugaddiction"
+    },
+    {
+      "name": "Seriousaddictioncheck",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seriousaddictioncheck",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1057,9 +1119,11 @@
       "advancements.heroindeath.descr": "Die from Heroin",
       "advancements.joint.title": "Joint",
       "subtitles.cough": "Player coughing",
+      "advancements.seriousdrugaddiction.descr": "Be on all drugs at the same time",
       "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "item.bubatzcraftforge.coca_seeds": "Coca Seeds",
       "item.bubatzcraftforge.syringe": "Syringe",
+      "advancements.seriousdrugaddiction.title": "Serious Drug Addiction",
       "item.bubatzcraftforge.acetanhydride": "Acid",
       "itemGroup.tabdrugs": "Drugs",
       "subtitles.cocaine_line_create": "",
@@ -1104,9 +1168,11 @@
       "advancements.heroindeath.descr": "Sterb an Heroin",
       "advancements.joint.title": "Joint",
       "subtitles.cough": "Spieler hustet",
+      "advancements.seriousdrugaddiction.descr": "Be on all drugs at the same time",
       "block.bubatzcraftforge.dried_weed_bud": "Getrockneter Weed Bud",
       "item.bubatzcraftforge.coca_seeds": "Cocasamen",
       "item.bubatzcraftforge.syringe": "Spritze",
+      "advancements.seriousdrugaddiction.title": "Serious Drug Addiction",
       "item.bubatzcraftforge.acetanhydride": "Säure",
       "itemGroup.tabdrugs": "Drogen",
       "subtitles.cocaine_line_create": "",

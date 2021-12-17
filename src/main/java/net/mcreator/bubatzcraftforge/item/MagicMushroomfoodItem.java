@@ -38,7 +38,7 @@ public class MagicMushroomfoodItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		MagicmushroomfoodFoodEatenProcedure.execute(entity);
+		MagicmushroomfoodFoodEatenProcedure.execute(world, entity);
 		return retval;
 	}
 }

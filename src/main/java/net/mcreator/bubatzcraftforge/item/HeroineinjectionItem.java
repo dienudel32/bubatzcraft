@@ -45,21 +45,21 @@ public class HeroineinjectionItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		HeroineinjectionRightClickedOnBlockProcedure.execute(entity);
+		HeroineinjectionRightClickedOnBlockProcedure.execute(world, entity);
 		return ar;
 	}
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		InteractionResult retval = super.useOn(context);
-		HeroineinjectionRightClickedOnBlockProcedure.execute(context.getPlayer());
+		HeroineinjectionRightClickedOnBlockProcedure.execute(context.getLevel(), context.getPlayer());
 		return retval;
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		HeroineinjectionRightClickedOnBlockProcedure.execute(entity);
+		HeroineinjectionRightClickedOnBlockProcedure.execute(entity.level, entity);
 		return retval;
 	}
 }
