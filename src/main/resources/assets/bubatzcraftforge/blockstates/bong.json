@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bubatzcraftforge:block/bong"
+    },
+    "facing=east": {
+      "model": "bubatzcraftforge:block/bong",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bubatzcraftforge:block/bong",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bubatzcraftforge:block/bong",
+      "y": 270
+    }
+  }
+}

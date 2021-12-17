@@ -22,6 +22,7 @@ import net.mcreator.bubatzcraftforge.block.CocaBlock;
 import net.mcreator.bubatzcraftforge.block.ChemicalmixerBlock;
 import net.mcreator.bubatzcraftforge.block.CannabisBlock;
 import net.mcreator.bubatzcraftforge.block.BundledCocaLeafsBlock;
+import net.mcreator.bubatzcraftforge.block.BongBlock;
 import net.mcreator.bubatzcraftforge.block.AcetanhydrideoreBlock;
 
 import java.util.List;
@@ -41,6 +42,7 @@ public class BubatzcraftforgeModBlocks {
 	public static final Block COCAINELINE = register(new CocainelineBlock());
 	public static final Block COCAINEHAUFEN = register(new CocainehaufenBlock());
 	public static final Block BUNDLED_COCA_LEAFS = register(new BundledCocaLeafsBlock());
+	public static final Block BONG = register(new BongBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -65,6 +67,7 @@ public class BubatzcraftforgeModBlocks {
 			CocaBlock.registerRenderLayer();
 			CocainelineBlock.registerRenderLayer();
 			CocainehaufenBlock.registerRenderLayer();
+			BongBlock.registerRenderLayer();
 		}
 	}
 }

@@ -1005,6 +1005,16 @@
         ]
       },
       "path": "~/Weed"
+    },
+    {
+      "name": "Bong",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bong",
+      "path": "~/Weed"
     }
   ],
   "variable_elements": [],
@@ -1041,6 +1051,7 @@
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "item.bubatzcraftforge.cannabis_seeds": "Cannabis Seeds",
       "item.bubatzcraftforge.magic_mushroomfood": "Magic Mushroom",
+      "block.bubatzcraftforge.bong": "Bong",
       "advancements.magicmushroomdeath.title": "Don\u0027t eat mushrooms you don\u0027t know!",
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
       "item.bubatzcraftforge.razorblade": "Razorblade",
@@ -1088,6 +1099,7 @@
       "block.bubatzcraftforge.fresh_weed_bud": "Frischer Weed Bud",
       "item.bubatzcraftforge.cannabis_seeds": "Cannabis Seeds",
       "item.bubatzcraftforge.magic_mushroomfood": "Magic Mushroom",
+      "block.bubatzcraftforge.bong": "Bong",
       "advancements.magicmushroomdeath.title": "Ess keine PIlze die du nicht kennst!",
       "block.bubatzcraftforge.fluid_extractor": "Flüssigkeits Extraktor",
       "item.bubatzcraftforge.razorblade": "Rasierklinge",

@@ -1,0 +1,11 @@
+{
+  "parent": "bubatzcraftforge:custom/bong",
+  "textures": {
+    "all": "bubatzcraftforge:blocks/green_stained_glass",
+    "particle": "bubatzcraftforge:blocks/green_stained_glass",
+    "0": "bubatzcraftforge:blocks/weedbong",
+    "1": "bubatzcraftforge:blocks/ringe",
+    "2": "bubatzcraftforge:blocks/green_stained_glass",
+    "missing": "bubatzcraftforge:blocks/"
+  }
+}
