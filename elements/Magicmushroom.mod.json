@@ -30,10 +30,10 @@
         "subtract": false
       }
     ],
-    "name": "Magic mushroom",
+    "name": "Magic mushroom (placable)",
     "specialInfo": [],
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "DECORATIONS"
     },
     "hardness": 0.0,
     "resistance": 0.0,

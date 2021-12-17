@@ -1,16 +1,45 @@
 
 package net.mcreator.bubatzcraftforge.block;
 
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.bubatzcraftforge.procedures.DryedWeedBudBlockValidPlacementConditionProcedure;
+import net.mcreator.bubatzcraftforge.procedures.DryedWeedBudBlockDestroyedByPlayerProcedure;
+import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModParticles;
+import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModBlocks;
+
+import java.util.Random;
+import java.util.List;
+import java.util.Collections;
 
 public class DryedWeedBudBlock extends Block {
-
 	public DryedWeedBudBlock() {
 		super(BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).sound(SoundType.LILY_PAD).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-
 		setRegistryName("dried_weed_bud");
 	}
 
@@ -27,9 +56,7 @@ public class DryedWeedBudBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(7, 4, 8, 9, 13, 10)
-
-				.move(offset.x, offset.y, offset.z);
+		return box(7, 4, 8, 9, 13, 10).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override
@@ -38,9 +65,7 @@ public class DryedWeedBudBlock extends Block {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			return
-
-			DryedWeedBudBlockValidPlacementConditionProcedure.execute(world, x, y, z);
+			return DryedWeedBudBlockValidPlacementConditionProcedure.execute(world, x, y, z);
 		}
 		return super.canSurvive(blockstate, worldIn, pos);
 	}
@@ -55,7 +80,6 @@ public class DryedWeedBudBlock extends Block {
 
 	@Override
 	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
