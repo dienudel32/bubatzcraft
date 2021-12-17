@@ -10,8 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
-import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModMobEffects;
-
 import java.util.Iterator;
 
 public class MagicmushroomfoodFoodEatenProcedure {
@@ -19,8 +17,7 @@ public class MagicmushroomfoodFoodEatenProcedure {
 		if (entity == null)
 			return;
 		if (Math.random() < 0.5) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.hurt(new DamageSource("mushroom").bypassArmor(), 5000);
+			entity.hurt(DamageSource.GENERIC, 5000);
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("bubatzcraftforge:magicmushroomdeath"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -32,10 +29,6 @@ public class MagicmushroomfoodFoodEatenProcedure {
 			}
 		} else {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(BubatzcraftforgeModMobEffects.MAGICMUSHROOMTRIP, 1200, 0, (false), (false)));
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 40, 0, (false), (false)));
-			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 1200, 3, (false), (false)));
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 254, (false), (false)));
@@ -43,8 +36,6 @@ public class MagicmushroomfoodFoodEatenProcedure {
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1200, 254, (false), (false)));
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 1200, 69, (false), (false)));
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1500, 254, (false), (false)));
 		}
 	}
 }

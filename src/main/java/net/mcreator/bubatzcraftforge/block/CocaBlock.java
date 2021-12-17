@@ -20,7 +20,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
-import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModItems;
 import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModBlocks;
 
 import java.util.Random;
@@ -48,7 +47,7 @@ public class CocaBlock extends SugarCaneBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(BubatzcraftforgeModItems.COCALEAFS));
+		return Collections.singletonList(new ItemStack(this, 1));
 	}
 
 	@Override

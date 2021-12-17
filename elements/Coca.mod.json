@@ -60,7 +60,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": "CUSTOM:Cocaleafs"
+      "value": ""
     },
     "dropAmount": 1,
     "forceTicking": false,

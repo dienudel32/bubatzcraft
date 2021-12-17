@@ -1,14 +1,12 @@
 package net.mcreator.bubatzcraftforge.procedures;
 
-import net.minecraftforge.items.ItemHandlerHelper;
-
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.advancements.AdvancementProgress;
@@ -23,8 +21,7 @@ public class HeroineinjectionRightClickedOnBlockProcedure {
 		if (entity == null)
 			return;
 		if (Math.random() < 0.1) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.hurt(new DamageSource("heroin").bypassArmor(), 10000);
+			entity.hurt(DamageSource.GENERIC, 10000);
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("bubatzcraftforge:heroindeath"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -36,7 +33,7 @@ public class HeroineinjectionRightClickedOnBlockProcedure {
 			}
 		}
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 10000, 15, (false), (false)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 50000, 15, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 10000, 2, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
@@ -54,11 +51,12 @@ public class HeroineinjectionRightClickedOnBlockProcedure {
 					_player.getAdvancements().award(_adv, (String) _iterator.next());
 			}
 		}
-		((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)).shrink(1);
-		if (entity instanceof Player _player) {
+		if (entity instanceof LivingEntity _entity) {
 			ItemStack _setstack = new ItemStack(BubatzcraftforgeModItems.SYRINGE);
 			_setstack.setCount(1);
-			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+			if (_entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.getInventory().setChanged();
 		}
 	}
 }
