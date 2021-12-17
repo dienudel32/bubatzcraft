@@ -20,14 +20,14 @@ public class FluidExtractorGUISlotChangeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double previousRecipe = 0;
 		double fireHeight = 0;
-		previousRecipe = (double) (new Object() {
+		previousRecipe = new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
 					return blockEntity.getTileData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe"));
+		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe");
 		if ((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);

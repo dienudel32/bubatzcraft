@@ -32,8 +32,7 @@ public class BubatzFoodEatenProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 2400, 1, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2400, 1, (false), (false)));
-		BubatzcraftforgeModVariables.WorldVariables
-				.get(world).joint_count = (double) (BubatzcraftforgeModVariables.WorldVariables.get(world).joint_count + 1);
+		BubatzcraftforgeModVariables.WorldVariables.get(world).joint_count = BubatzcraftforgeModVariables.WorldVariables.get(world).joint_count + 1;
 		BubatzcraftforgeModVariables.WorldVariables.get(world).syncData(world);
 		new Object() {
 			private int ticks = 0;
