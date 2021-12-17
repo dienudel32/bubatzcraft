@@ -34,7 +34,8 @@
     ],
     "name": "Fresh Weed Bud",
     "specialInfo": [
-      "hang it up to get dryed weed buds"
+      "hang it up to get dryed weed buds",
+      "break for seeds"
     ],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -45,9 +46,9 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:CannabisSeeds"
     },
-    "dropAmount": 1,
+    "dropAmount": 2,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
