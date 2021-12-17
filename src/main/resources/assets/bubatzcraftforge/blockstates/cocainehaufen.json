@@ -1,19 +1,7 @@
 {
   "variants": {
-    "facing=north": {
+    "": {
       "model": "bubatzcraftforge:block/cocainehaufen"
-    },
-    "facing=east": {
-      "model": "bubatzcraftforge:block/cocainehaufen",
-      "y": 90
-    },
-    "facing=south": {
-      "model": "bubatzcraftforge:block/cocainehaufen",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "bubatzcraftforge:block/cocainehaufen",
-      "y": 270
     }
   }
 }

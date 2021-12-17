@@ -12,8 +12,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SugarCaneBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.server.level.ServerLevel;
@@ -50,15 +48,6 @@ public class CannabisBlock extends SugarCaneBlock {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(BubatzcraftforgeModBlocks.FRESH_WEED_BUD, (int) (2)));
-	}
-
-	@Override
-	public boolean canSurvive(BlockState blockstate, LevelReader worldIn, BlockPos pos) {
-		BlockPos blockpos = pos.below();
-		BlockState groundState = worldIn.getBlockState(blockpos);
-		return groundState.is(this) || groundState.is(Blocks.COARSE_DIRT)
-
-		;
 	}
 
 	@Override

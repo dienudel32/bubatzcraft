@@ -61,13 +61,13 @@
       {
         "type": "label",
         "data": {
-          "text": "<BNBT:number:Progress> %",
+          "text": "<BNBT:number:timer>",
           "color": {
             "value": -13369549,
             "falpha": 0.0
           },
-          "name": "<BNBT:number:Progress> %",
-          "x": 168,
+          "name": "<BNBT:number:timer>",
+          "x": 177,
           "y": 80
         }
       },

@@ -82,7 +82,7 @@ public class FluidExtractorGUIScreen extends AbstractContainerScreen<FluidExtrac
 					return BlockEntity.getTileData().getDouble(tag);
 				return 0;
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Progress")) + " %", 42, 43, -13369549);
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "timer")) + "", 51, 43, -13369549);
 		drawString(poseStack, this.font, "Fuel: " + (new Object() {
 			public double getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);

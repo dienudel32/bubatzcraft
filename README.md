@@ -1,4 +1,15 @@
 # bubatzcraft
 Minecraft Drug Mod 
 
-this is the best ever
+**_This mod is still in aplha! Expect bugs and problems!_**
+## Features
+Current drugs in the mod are:
+* Weed
+* Cocaine
+* Heroine
+* Mushrooms
+
+More drugs (LSD, alcohol, nicotin, etc.) are going to be added with future updates.
+
+For help and recipes visit [the wiki](https://github.com/dienudel32/bubatzcraft/wiki/Recipes-and-important-information).
+If you've found a bug or have a feature suggetion please create an [issue here](https://github.com/dienudel32/bubatzcraft/issues)

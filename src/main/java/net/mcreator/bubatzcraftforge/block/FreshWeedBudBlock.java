@@ -30,7 +30,6 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.bubatzcraftforge.procedures.FreshWeedBudUpdateTickProcedure;
 import net.mcreator.bubatzcraftforge.procedures.DryedWeedBudBlockValidPlacementConditionProcedure;
-import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModItems;
 import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModBlocks;
 
 import java.util.Random;
@@ -48,7 +47,6 @@ public class FreshWeedBudBlock extends Block {
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(new TextComponent("hang it up to get dryed weed buds"));
-		list.add(new TextComponent("break for seeds"));
 	}
 
 	@Override
@@ -91,7 +89,7 @@ public class FreshWeedBudBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(BubatzcraftforgeModItems.CANNABIS_SEEDS, (int) (2)));
+		return Collections.singletonList(new ItemStack(this, 1));
 	}
 
 	@Override

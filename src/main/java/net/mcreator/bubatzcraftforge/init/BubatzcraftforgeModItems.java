@@ -24,7 +24,6 @@ import net.mcreator.bubatzcraftforge.item.FilterItem;
 import net.mcreator.bubatzcraftforge.item.CocaleafsItem;
 import net.mcreator.bubatzcraftforge.item.CocaextractItem;
 import net.mcreator.bubatzcraftforge.item.CocaSeedsItem;
-import net.mcreator.bubatzcraftforge.item.CannabisSeedsItem;
 import net.mcreator.bubatzcraftforge.item.BubatzItem;
 import net.mcreator.bubatzcraftforge.item.AcetanhydridepowderItem;
 import net.mcreator.bubatzcraftforge.item.AcetanhydrideItem;
@@ -53,7 +52,7 @@ public class BubatzcraftforgeModItems {
 	public static final Item MAGICMUSHROOM = register(BubatzcraftforgeModBlocks.MAGICMUSHROOM, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item MAGIC_MUSHROOMFOOD = register(new MagicMushroomfoodItem());
 	public static final Item COCA = register(BubatzcraftforgeModBlocks.COCA, BubatzcraftforgeModTabs.TAB_DRUGS);
-	public static final Item COCAINELINE = register(BubatzcraftforgeModBlocks.COCAINELINE, null);
+	public static final Item COCAINELINE = register(BubatzcraftforgeModBlocks.COCAINELINE, BubatzcraftforgeModTabs.TAB_DRUGS);
 	public static final Item COCAINEHAUFEN = register(BubatzcraftforgeModBlocks.COCAINEHAUFEN, BubatzcraftforgeModTabs.TAB_DRUGS);
 	public static final Item RAZORBLADE = register(new RazorbladeItem());
 	public static final Item COCALEAFS = register(new CocaleafsItem());

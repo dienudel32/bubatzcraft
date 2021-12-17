@@ -77,11 +77,7 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [
-      {
-        "value": "Blocks.DIRT#1"
-      }
-    ],
+    "canBePlacedOn": [],
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "Surface"
