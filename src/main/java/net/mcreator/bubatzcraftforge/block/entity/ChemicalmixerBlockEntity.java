@@ -1,39 +1,9 @@
 package net.mcreator.bubatzcraftforge.block.entity;
 
-import net.minecraftforge.items.wrapper.SidedInvWrapper;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.common.capabilities.Capability;
-
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.WorldlyContainer;
-import net.minecraft.world.ContainerHelper;
-import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.network.Connection;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.NonNullList;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.bubatzcraftforge.world.inventory.ChemicalmixerGUIMenu;
-import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModBlockEntities;
-
-import javax.annotation.Nullable;
-
-import java.util.stream.IntStream;
-
-import io.netty.buffer.Unpooled;
-
 public class ChemicalmixerBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(4, ItemStack.EMPTY);
+
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public ChemicalmixerBlockEntity(BlockPos position, BlockState state) {
@@ -43,17 +13,22 @@ public class ChemicalmixerBlockEntity extends RandomizableContainerBlockEntity i
 	@Override
 	public void load(CompoundTag compound) {
 		super.load(compound);
+
 		if (!this.tryLoadLootTable(compound))
 			this.stacks = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
+
 		ContainerHelper.loadAllItems(compound, this.stacks);
+
 	}
 
 	@Override
 	public CompoundTag save(CompoundTag compound) {
 		super.save(compound);
+
 		if (!this.trySaveLootTable(compound)) {
 			ContainerHelper.saveAllItems(compound, this.stacks);
 		}
+
 		return compound;
 	}
 
@@ -147,6 +122,7 @@ public class ChemicalmixerBlockEntity extends RandomizableContainerBlockEntity i
 	public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
 		if (!this.remove && facing != null && capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY)
 			return handlers[facing.ordinal()].cast();
+
 		return super.getCapability(capability, facing);
 	}
 
@@ -156,4 +132,5 @@ public class ChemicalmixerBlockEntity extends RandomizableContainerBlockEntity i
 		for (LazyOptional<? extends IItemHandler> handler : handlers)
 			handler.invalidate();
 	}
+
 }
