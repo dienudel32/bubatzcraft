@@ -49,7 +49,7 @@ public class BubatzItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		BubatzFoodEatenProcedure.execute(world, x, y, z, entity);
+		BubatzFoodEatenProcedure.execute(world, entity);
 		return retval;
 	}
 }
