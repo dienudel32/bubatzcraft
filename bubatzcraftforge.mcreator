@@ -509,6 +509,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -557,6 +561,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1101,16 +1109,18 @@
       "block.bubatzcraftforge.acetanhydrideore": "Acid Ore",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
       "item.bubatzcraftforge.magic_mushroomfood": "Magic Mushroom",
+      "block.bubatzcraftforge.bong": "Bong",
       "item.bubatzcraftforge.razorblade": "Razorblade",
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
-      "advancements.joint.descr": "Smoke jour first Joint",
       "block.bubatzcraftforge.cocaineline": "Cocaine Line",
+      "advancements.joint.descr": "Smoke jour first Joint",
       "item.bubatzcraftforge.heroin": "Heroin",
       "item.bubatzcraftforge.heroineinjection": "Heroin injection",
       "advancements.joint.title": "Joint",
       "subtitles.cough": "Player coughing",
       "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "item.bubatzcraftforge.coca_seeds": "Coca Seeds",
+      "advancements.seriousdrugaddiction.title": "Serious Drug Addiction",
       "itemGroup.tabdrugs": "Drugs",
       "subtitles.cocaine_line_create": "",
       "effect.bubatzcraftforge.magicmushroomtrip": "Mushroom Trip",
@@ -1131,6 +1141,7 @@
       "item.bubatzcraftforge.cocaleafs": "Cocaleafs",
       "block.bubatzcraftforge.cocainehaufen": "Cocaine",
       "advancements.heroindeath.descr": "Die from Heroin",
+      "advancements.seriousdrugaddiction.descr": "Be on all drugs at the same time",
       "item.bubatzcraftforge.syringe": "Syringe",
       "item.bubatzcraftforge.acetanhydride": "Acid",
       "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
@@ -1159,7 +1170,7 @@
       "subtitles.cough": "Spieler hustet",
       "block.bubatzcraftforge.dried_weed_bud": "Getrockneter Weed Bud",
       "item.bubatzcraftforge.coca_seeds": "Cocasamen",
-      "advancements.seriousdrugaddiction.title": "Serious Drug Addiction",
+      "advancements.seriousdrugaddiction.title": "Mischdroge",
       "itemGroup.tabdrugs": "Drogen",
       "subtitles.cocaine_line_create": "",
       "effect.bubatzcraftforge.magicmushroomtrip": "Mushroom Trip",
@@ -1180,7 +1191,7 @@
       "item.bubatzcraftforge.cocaleafs": "Cocablätter",
       "block.bubatzcraftforge.cocainehaufen": "Kokain",
       "advancements.heroindeath.descr": "Sterb an Heroin",
-      "advancements.seriousdrugaddiction.descr": "Be on all drugs at the same time",
+      "advancements.seriousdrugaddiction.descr": "Mische alle Drogen gleichzeitig.",
       "item.bubatzcraftforge.syringe": "Spritze",
       "item.bubatzcraftforge.acetanhydride": "Säure",
       "advancements.addict.descr": "Rauche 100 Joints.",
