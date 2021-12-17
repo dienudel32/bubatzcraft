@@ -12,13 +12,12 @@ import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.bubatzcraftforge.procedures.MagicmushroomfoodFoodEatenProcedure;
-import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModTabs;
 
 import java.util.List;
 
 public class MagicMushroomfoodItem extends Item {
 	public MagicMushroomfoodItem() {
-		super(new Item.Properties().tab(BubatzcraftforgeModTabs.TAB_DRUGS).stacksTo(16).rarity(Rarity.COMMON)
+		super(new Item.Properties().tab(null).stacksTo(16).rarity(Rarity.COMMON)
 				.food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat()
 
 						.build()));

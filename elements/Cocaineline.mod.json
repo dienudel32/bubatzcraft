@@ -9,11 +9,11 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "model:default",
+    "customModelName": "cocaine_line_2.1:default",
     "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "cocaine",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -23,12 +23,12 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 1.0,
+        "mx": 2.0,
         "my": 0.0,
-        "mz": 2.0,
-        "Mx": 4.0,
+        "mz": 11.0,
+        "Mx": 13.0,
         "My": 1.0,
-        "Mz": 13.0,
+        "Mz": 14.0,
         "subtract": false
       }
     ],
@@ -39,11 +39,11 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Drugs"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:Cocainehaufen"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -121,6 +121,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "CocainelineOnBlockRightClicked"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
