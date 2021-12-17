@@ -467,7 +467,7 @@
           }
         ]
       },
-      "path": "~/mushroom"
+      "path": "~/Mushroom"
     },
     {
       "name": "Magicmushroom",
@@ -477,7 +477,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magicmushroom",
-      "path": "~/mushroom"
+      "path": "~/Mushroom"
     },
     {
       "name": "Magicmushroomparticle",
@@ -487,7 +487,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magicmushroomparticle",
-      "path": "~/mushroom"
+      "path": "~/Mushroom"
     },
     {
       "name": "Heroinsyringerecipe",
@@ -563,7 +563,7 @@
           }
         ]
       },
-      "path": "~/mushroom"
+      "path": "~/Mushroom"
     },
     {
       "name": "MagicMushroomfood",
@@ -573,7 +573,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_mushroomfood",
-      "path": "~/mushroom"
+      "path": "~/Mushroom"
     },
     {
       "name": "Coca",
@@ -603,7 +603,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magicmushrooomadv",
-      "path": "~/mushroom"
+      "path": "~/Mushroom"
     },
     {
       "name": "Heroindeath",
@@ -623,7 +623,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magicmushroomdeath",
-      "path": "~/mushroom"
+      "path": "~/Mushroom"
     },
     {
       "name": "CocainelineBlockValidPlacementCondition",
@@ -944,7 +944,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magicmushroomoverlay",
-      "path": "~/mushroom"
+      "path": "~/Mushroom"
     },
     {
       "name": "MagicmushroomoverlayDisplayOverlayIngame",
@@ -963,7 +963,7 @@
           }
         ]
       },
-      "path": "~/mushroom"
+      "path": "~/Mushroom"
     },
     {
       "name": "Magicmushroomtrio",
@@ -973,18 +973,63 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magicmushroomtrip",
-      "path": "~/mushroom"
-    }
-  ],
-  "variable_elements": [
+      "path": "~/Mushroom"
+    },
     {
-      "name": "joint_count",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
+      "name": "CannabisSeedsRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cannabis_seeds_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weed"
+    },
+    {
+      "name": "CannabisSeeds",
+      "type": "item",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cannabis_seeds",
+      "path": "~/Weed"
     }
   ],
+  "variable_elements": [],
   "sound_elements": [
+    {
+      "name": "cough",
+      "files": [
+        "ptt-20211210-wa0002_online-audio-converter.com"
+      ],
+      "category": "player",
+      "subtitle": "Player coughing"
+    },
     {
       "name": "cocaine_line_create",
       "files": [
@@ -995,14 +1040,6 @@
       ],
       "category": "block",
       "subtitle": ""
-    },
-    {
-      "name": "cough",
-      "files": [
-        "ptt-20211210-wa0002_online-audio-converter.com"
-      ],
-      "category": "player",
-      "subtitle": "Player coughing"
     }
   ],
   "language_map": {
@@ -1015,6 +1052,7 @@
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
       "block.bubatzcraftforge.acetanhydrideore": "Acid Ore",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
+      "item.bubatzcraftforge.cannabis_seeds": "Cannabis Seeds",
       "item.bubatzcraftforge.magic_mushroomfood": "Magic Mushroom",
       "advancements.magicmushroomdeath.title": "Don\u0027t eat mushrooms you don\u0027t know!",
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
@@ -1051,13 +1089,60 @@
       "item.bubatzcraftforge.opium": "Opium",
       "item.bubatzcraftforge.cocaextract": "Cocaextract",
       "item.bubatzcraftforge.joint": "Joint"
+    },
+    "de_de": {
+      "item.bubatzcraftforge.acetanhydridepowder": "Säure Puder",
+      "block.bubatzcraftforge.chemicalmixer": "Chemikalien Mixer",
+      "block.bubatzcraftforge.coca": "Coca",
+      "advancements.magicmushrooomadv.descr": "HÄÄ?",
+      "death.attack.mushroom": "%s hat den lustigen Pilz gegessen und ist gestorben",
+      "effect.bubatzcraftforge.weedtrip": "Weed Trip",
+      "block.bubatzcraftforge.acetanhydrideore": "Säure Erz",
+      "block.bubatzcraftforge.fresh_weed_bud": "Frischer Weed Bud",
+      "item.bubatzcraftforge.cannabis_seeds": "Cannabis Seeds",
+      "item.bubatzcraftforge.magic_mushroomfood": "Magic Mushroom",
+      "advancements.magicmushroomdeath.title": "Ess keine PIlze die du nicht kennst!",
+      "block.bubatzcraftforge.fluid_extractor": "Flüssigkeits Extraktor",
+      "item.bubatzcraftforge.razorblade": "Rasierklinge",
+      "death.attack.heroin": "%s ist an Heroin gestorben",
+      "block.bubatzcraftforge.magicmushroom": "Magic mushroom",
+      "advancements.joint.descr": "Rauch deinen ersten Joint",
+      "block.bubatzcraftforge.cocaineline": "Cocaine Line",
+      "item.bubatzcraftforge.weedbuds": "Weed Buds",
+      "item.bubatzcraftforge.heroin": "Heroin",
+      "advancements.magicmushroomdeath.descr": "RIP",
+      "item.bubatzcraftforge.heroineinjection": "Heroinspritze",
+      "item.bubatzcraftforge.cocaleafs": "Cocablätter",
+      "block.bubatzcraftforge.cocainehaufen": "Kokain",
+      "advancements.heroindeath.descr": "Sterb an Heroin",
+      "advancements.joint.title": "Joint",
+      "subtitles.cough": "Spieler hustet",
+      "block.bubatzcraftforge.dried_weed_bud": "Getrockneter Weed Bud",
+      "item.bubatzcraftforge.coca_seeds": "Cocasamen",
+      "item.bubatzcraftforge.syringe": "Spritze",
+      "item.bubatzcraftforge.acetanhydride": "Säure",
+      "itemGroup.tabdrugs": "Drogen",
+      "subtitles.cocaine_line_create": "",
+      "effect.bubatzcraftforge.magicmushroomtrip": "Mushroom Trip",
+      "advancements.magicmushrooomadv.title": "Was passiert wenn ich den lustigen Pilz da esse?",
+      "advancements.heroindeath.title": "Schade",
+      "block.bubatzcraftforge.cannabis": "Cannabis",
+      "advancements.addict.descr": "Rauche 100 Joints.",
+      "item.bubatzcraftforge.filter": "Filter",
+      "advancements.heroinadv.descr": "Es lindert die Schmerzen.",
+      "block.bubatzcraftforge.bundled_coca_leafs": "Gepackte Cocablätter",
+      "advancements.heroinadv.title": "Heroin",
+      "advancements.addict.title": "Drogenabhängig",
+      "item.bubatzcraftforge.opium": "Opium",
+      "item.bubatzcraftforge.cocaextract": "Cocaextrakt",
+      "item.bubatzcraftforge.joint": "Joint"
     }
   },
   "foldersRoot": {
     "name": "~",
     "children": [
       {
-        "name": "mushroom",
+        "name": "Mushroom",
         "children": []
       },
       {
@@ -1082,7 +1167,7 @@
         ]
       },
       {
-        "name": "nicotine",
+        "name": "Nicotine",
         "children": []
       },
       {

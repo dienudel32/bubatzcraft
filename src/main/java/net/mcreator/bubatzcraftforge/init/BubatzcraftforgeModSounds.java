@@ -18,9 +18,9 @@ import java.util.HashMap;
 public class BubatzcraftforgeModSounds {
 	public static Map<ResourceLocation, SoundEvent> REGISTRY = new HashMap<>();
 	static {
+		REGISTRY.put(new ResourceLocation("bubatzcraftforge", "cough"), new SoundEvent(new ResourceLocation("bubatzcraftforge", "cough")));
 		REGISTRY.put(new ResourceLocation("bubatzcraftforge", "cocaine_line_create"),
 				new SoundEvent(new ResourceLocation("bubatzcraftforge", "cocaine_line_create")));
-		REGISTRY.put(new ResourceLocation("bubatzcraftforge", "cough"), new SoundEvent(new ResourceLocation("bubatzcraftforge", "cough")));
 	}
 
 	@SubscribeEvent

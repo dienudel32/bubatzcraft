@@ -1,4 +1,14 @@
 {
+  "cough": {
+    "category": "player",
+    "subtitle": "subtitles.cough",
+    "sounds": [
+      {
+        "name": "bubatzcraftforge:ptt-20211210-wa0002_online-audio-converter.com",
+        "stream": false
+      }
+    ]
+  },
   "cocaine_line_create": {
     "category": "block",
     "sounds": [
@@ -16,16 +26,6 @@
       },
       {
         "name": "bubatzcraftforge:cocaine_line4",
-        "stream": false
-      }
-    ]
-  },
-  "cough": {
-    "category": "player",
-    "subtitle": "subtitles.cough",
-    "sounds": [
-      {
-        "name": "bubatzcraftforge:ptt-20211210-wa0002_online-audio-converter.com",
         "stream": false
       }
     ]

@@ -24,6 +24,7 @@ import net.mcreator.bubatzcraftforge.item.FilterItem;
 import net.mcreator.bubatzcraftforge.item.CocaleafsItem;
 import net.mcreator.bubatzcraftforge.item.CocaextractItem;
 import net.mcreator.bubatzcraftforge.item.CocaSeedsItem;
+import net.mcreator.bubatzcraftforge.item.CannabisSeedsItem;
 import net.mcreator.bubatzcraftforge.item.BubatzItem;
 import net.mcreator.bubatzcraftforge.item.AcetanhydridepowderItem;
 import net.mcreator.bubatzcraftforge.item.AcetanhydrideItem;
@@ -49,7 +50,7 @@ public class BubatzcraftforgeModItems {
 	public static final Item HEROINEINJECTION = register(new HeroineinjectionItem());
 	public static final Item HEROIN = register(new HeroinItem());
 	public static final Item SYRINGE = register(new SyringeItem());
-	public static final Item MAGICMUSHROOM = register(BubatzcraftforgeModBlocks.MAGICMUSHROOM, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final Item MAGICMUSHROOM = register(BubatzcraftforgeModBlocks.MAGICMUSHROOM, null);
 	public static final Item MAGIC_MUSHROOMFOOD = register(new MagicMushroomfoodItem());
 	public static final Item COCA = register(BubatzcraftforgeModBlocks.COCA, BubatzcraftforgeModTabs.TAB_DRUGS);
 	public static final Item COCAINELINE = register(BubatzcraftforgeModBlocks.COCAINELINE, null);
@@ -59,6 +60,7 @@ public class BubatzcraftforgeModItems {
 	public static final Item BUNDLED_COCA_LEAFS = register(BubatzcraftforgeModBlocks.BUNDLED_COCA_LEAFS, BubatzcraftforgeModTabs.TAB_DRUGS);
 	public static final Item COCA_SEEDS = register(new CocaSeedsItem());
 	public static final Item COCAEXTRACT = register(new CocaextractItem());
+	public static final Item CANNABIS_SEEDS = register(new CannabisSeedsItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
