@@ -914,16 +914,6 @@
       "path": "~/Debug"
     },
     {
-      "name": "Jointcount",
-      "type": "command",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "jointcount",
-      "path": "~/Debug"
-    },
-    {
       "name": "Cocaseedsrecipe",
       "type": "recipe",
       "sortid": 51,
@@ -1055,7 +1045,7 @@
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
       "item.bubatzcraftforge.razorblade": "Razorblade",
       "death.attack.heroin": "%s died from Heroin",
-      "block.bubatzcraftforge.magicmushroom": "Magic mushroom",
+      "block.bubatzcraftforge.magicmushroom": "Magic mushroom (placable)",
       "advancements.joint.descr": "Smoke jour first Joint",
       "block.bubatzcraftforge.cocaineline": "Cocaine Line",
       "item.bubatzcraftforge.weedbuds": "Weed Buds",

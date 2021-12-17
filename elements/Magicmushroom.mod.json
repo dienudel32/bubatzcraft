@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "Magic mushroom",
+    "name": "Magic mushroom (placable)",
     "specialInfo": [],
     "creativeTab": {
       "value": "No creative tab entry"
