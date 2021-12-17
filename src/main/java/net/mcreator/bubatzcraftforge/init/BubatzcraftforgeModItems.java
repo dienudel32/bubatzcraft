@@ -61,6 +61,7 @@ public class BubatzcraftforgeModItems {
 	public static final Item COCA_SEEDS = register(new CocaSeedsItem());
 	public static final Item COCAEXTRACT = register(new CocaextractItem());
 	public static final Item CANNABIS_SEEDS = register(new CannabisSeedsItem());
+	public static final Item BONG = register(BubatzcraftforgeModBlocks.BONG, BubatzcraftforgeModTabs.TAB_DRUGS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

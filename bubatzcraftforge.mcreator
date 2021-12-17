@@ -509,10 +509,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -561,10 +557,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -1067,6 +1059,16 @@
           }
         ]
       }
+    },
+    {
+      "name": "Bong",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bong",
+      "path": "~/Weed"
     }
   ],
   "variable_elements": [],
@@ -1094,98 +1096,97 @@
   "language_map": {
     "en_us": {
       "item.bubatzcraftforge.acetanhydridepowder": "Acid Powder",
-      "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
       "block.bubatzcraftforge.coca": "Coca",
-      "advancements.magicmushrooomadv.descr": "HUH???",
-      "death.attack.mushroom": "%s ate the funny mushroom and died",
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
       "block.bubatzcraftforge.acetanhydrideore": "Acid Ore",
       "block.bubatzcraftforge.fresh_weed_bud": "Fresh Weed Bud",
-      "item.bubatzcraftforge.cannabis_seeds": "Cannabis Seeds",
       "item.bubatzcraftforge.magic_mushroomfood": "Magic Mushroom",
-      "advancements.magicmushroomdeath.title": "Don\u0027t eat mushrooms you don\u0027t know!",
-      "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
       "item.bubatzcraftforge.razorblade": "Razorblade",
-      "death.attack.heroin": "%s died from Heroin",
-      "block.bubatzcraftforge.magicmushroom": "Magic mushroom (placable)",
+      "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
       "advancements.joint.descr": "Smoke jour first Joint",
       "block.bubatzcraftforge.cocaineline": "Cocaine Line",
-      "item.bubatzcraftforge.weedbuds": "Weed Buds",
       "item.bubatzcraftforge.heroin": "Heroin",
-      "advancements.magicmushroomdeath.descr": "RIP",
       "item.bubatzcraftforge.heroineinjection": "Heroin injection",
-      "item.bubatzcraftforge.cocaleafs": "Cocaleafs",
-      "block.bubatzcraftforge.cocainehaufen": "Cocaine",
-      "advancements.heroindeath.descr": "Die from Heroin",
       "advancements.joint.title": "Joint",
       "subtitles.cough": "Player coughing",
-      "advancements.seriousdrugaddiction.descr": "Be on all drugs at the same time",
       "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "item.bubatzcraftforge.coca_seeds": "Coca Seeds",
-      "item.bubatzcraftforge.syringe": "Syringe",
-      "advancements.seriousdrugaddiction.title": "Serious Drug Addiction",
-      "item.bubatzcraftforge.acetanhydride": "Acid",
       "itemGroup.tabdrugs": "Drugs",
       "subtitles.cocaine_line_create": "",
       "effect.bubatzcraftforge.magicmushroomtrip": "Mushroom Trip",
       "advancements.magicmushrooomadv.title": "Funy Mushroom what does it do?",
       "advancements.heroindeath.title": "Oh well",
       "block.bubatzcraftforge.cannabis": "Cannabis",
+      "advancements.heroinadv.descr": "It makes the pain go away",
+      "advancements.addict.title": "Addict",
+      "block.bubatzcraftforge.chemicalmixer": "Chemical Mixer",
+      "advancements.magicmushrooomadv.descr": "HUH???",
+      "death.attack.mushroom": "%s ate the funny mushroom and died",
+      "item.bubatzcraftforge.cannabis_seeds": "Cannabis Seeds",
+      "advancements.magicmushroomdeath.title": "Don\u0027t eat mushrooms you don\u0027t know!",
+      "death.attack.heroin": "%s died from Heroin",
+      "block.bubatzcraftforge.magicmushroom": "Magic mushroom (placable)",
+      "item.bubatzcraftforge.weedbuds": "Weed Buds",
+      "advancements.magicmushroomdeath.descr": "RIP",
+      "item.bubatzcraftforge.cocaleafs": "Cocaleafs",
+      "block.bubatzcraftforge.cocainehaufen": "Cocaine",
+      "advancements.heroindeath.descr": "Die from Heroin",
+      "item.bubatzcraftforge.syringe": "Syringe",
+      "item.bubatzcraftforge.acetanhydride": "Acid",
       "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
       "item.bubatzcraftforge.filter": "Filter",
-      "advancements.heroinadv.descr": "It makes the pain go away",
       "block.bubatzcraftforge.bundled_coca_leafs": "Bundled Coca Leafs",
       "advancements.heroinadv.title": "Heroin",
-      "advancements.addict.title": "Addict",
       "item.bubatzcraftforge.opium": "Opium",
       "item.bubatzcraftforge.cocaextract": "Cocaextract",
       "item.bubatzcraftforge.joint": "Joint"
     },
     "de_de": {
       "item.bubatzcraftforge.acetanhydridepowder": "Säure Puder",
-      "block.bubatzcraftforge.chemicalmixer": "Chemikalien Mixer",
       "block.bubatzcraftforge.coca": "Coca",
-      "advancements.magicmushrooomadv.descr": "HÄÄ?",
-      "death.attack.mushroom": "%s hat den lustigen Pilz gegessen und ist gestorben",
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
       "block.bubatzcraftforge.acetanhydrideore": "Säure Erz",
       "block.bubatzcraftforge.fresh_weed_bud": "Frischer Weed Bud",
-      "item.bubatzcraftforge.cannabis_seeds": "Cannabis Seeds",
       "item.bubatzcraftforge.magic_mushroomfood": "Magic Mushroom",
-      "advancements.magicmushroomdeath.title": "Ess keine PIlze die du nicht kennst!",
-      "block.bubatzcraftforge.fluid_extractor": "Flüssigkeits Extraktor",
+      "block.bubatzcraftforge.bong": "Bong",
       "item.bubatzcraftforge.razorblade": "Rasierklinge",
-      "death.attack.heroin": "%s ist an Heroin gestorben",
-      "block.bubatzcraftforge.magicmushroom": "Magic mushroom",
+      "block.bubatzcraftforge.fluid_extractor": "Flüssigkeits Extraktor",
       "advancements.joint.descr": "Rauch deinen ersten Joint",
       "block.bubatzcraftforge.cocaineline": "Cocaine Line",
-      "item.bubatzcraftforge.weedbuds": "Weed Buds",
       "item.bubatzcraftforge.heroin": "Heroin",
-      "advancements.magicmushroomdeath.descr": "RIP",
       "item.bubatzcraftforge.heroineinjection": "Heroinspritze",
-      "item.bubatzcraftforge.cocaleafs": "Cocablätter",
-      "block.bubatzcraftforge.cocainehaufen": "Kokain",
-      "advancements.heroindeath.descr": "Sterb an Heroin",
       "advancements.joint.title": "Joint",
       "subtitles.cough": "Spieler hustet",
-      "advancements.seriousdrugaddiction.descr": "Be on all drugs at the same time",
       "block.bubatzcraftforge.dried_weed_bud": "Getrockneter Weed Bud",
       "item.bubatzcraftforge.coca_seeds": "Cocasamen",
-      "item.bubatzcraftforge.syringe": "Spritze",
       "advancements.seriousdrugaddiction.title": "Serious Drug Addiction",
-      "item.bubatzcraftforge.acetanhydride": "Säure",
       "itemGroup.tabdrugs": "Drogen",
       "subtitles.cocaine_line_create": "",
       "effect.bubatzcraftforge.magicmushroomtrip": "Mushroom Trip",
       "advancements.magicmushrooomadv.title": "Was passiert wenn ich den lustigen Pilz da esse?",
       "advancements.heroindeath.title": "Schade",
       "block.bubatzcraftforge.cannabis": "Cannabis",
+      "advancements.heroinadv.descr": "Es lindert die Schmerzen.",
+      "advancements.addict.title": "Drogenabhängig",
+      "block.bubatzcraftforge.chemicalmixer": "Chemikalien Mixer",
+      "advancements.magicmushrooomadv.descr": "HÄÄ?",
+      "death.attack.mushroom": "%s hat den lustigen Pilz gegessen und ist gestorben",
+      "item.bubatzcraftforge.cannabis_seeds": "Cannabis Seeds",
+      "advancements.magicmushroomdeath.title": "Ess keine PIlze die du nicht kennst!",
+      "death.attack.heroin": "%s ist an Heroin gestorben",
+      "block.bubatzcraftforge.magicmushroom": "Magic mushroom",
+      "item.bubatzcraftforge.weedbuds": "Weed Buds",
+      "advancements.magicmushroomdeath.descr": "RIP",
+      "item.bubatzcraftforge.cocaleafs": "Cocablätter",
+      "block.bubatzcraftforge.cocainehaufen": "Kokain",
+      "advancements.heroindeath.descr": "Sterb an Heroin",
+      "advancements.seriousdrugaddiction.descr": "Be on all drugs at the same time",
+      "item.bubatzcraftforge.syringe": "Spritze",
+      "item.bubatzcraftforge.acetanhydride": "Säure",
       "advancements.addict.descr": "Rauche 100 Joints.",
       "item.bubatzcraftforge.filter": "Filter",
-      "advancements.heroinadv.descr": "Es lindert die Schmerzen.",
       "block.bubatzcraftforge.bundled_coca_leafs": "Gepackte Cocablätter",
       "advancements.heroinadv.title": "Heroin",
-      "advancements.addict.title": "Drogenabhängig",
       "item.bubatzcraftforge.opium": "Opium",
       "item.bubatzcraftforge.cocaextract": "Cocaextrakt",
       "item.bubatzcraftforge.joint": "Joint"
@@ -1195,6 +1196,10 @@
     "name": "~",
     "children": [
       {
+        "name": "Debug",
+        "children": []
+      },
+      {
         "name": "mushroom",
         "children": []
       },
@@ -1203,7 +1208,15 @@
         "children": []
       },
       {
+        "name": "nicotine",
+        "children": []
+      },
+      {
         "name": "Cocaine",
+        "children": []
+      },
+      {
+        "name": "Maschienen",
         "children": []
       },
       {
@@ -1220,19 +1233,7 @@
         ]
       },
       {
-        "name": "nicotine",
-        "children": []
-      },
-      {
-        "name": "Debug",
-        "children": []
-      },
-      {
         "name": "Weed",
-        "children": []
-      },
-      {
-        "name": "Maschienen",
         "children": []
       }
     ]
