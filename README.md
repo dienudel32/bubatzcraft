@@ -11,4 +11,4 @@ Current drugs in the mod are:
 
 More drugs (LSD, alcohol, nicotin, etc.) are going to be added with future updates.
 
-For help and recipes visit [the wiki](https://github.com/dienudel32/bubatzcraft/wiki).
+For help and recipes visit [the wiki](https://github.com/dienudel32/bubatzcraft/wiki/Recipes-and-important-information).
