@@ -4,6 +4,9 @@ package net.mcreator.bubatzcraftforge.block;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.Fluids;
@@ -55,6 +58,22 @@ public class BongBlock extends Block implements SimpleWaterloggedBlock
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		Vec3 offset = state.getOffset(world, pos);
+		switch ((Direction) state.getValue(FACING)) {
+			case SOUTH :
+			default :
+				return box(3, 0, 6, 7, 9, 9).move(offset.x, offset.y, offset.z);
+			case NORTH :
+				return box(9, 0, 7, 13, 9, 10).move(offset.x, offset.y, offset.z);
+			case EAST :
+				return box(6, 0, 9, 9, 9, 13).move(offset.x, offset.y, offset.z);
+			case WEST :
+				return box(7, 0, 3, 10, 9, 7).move(offset.x, offset.y, offset.z);
+		}
 	}
 
 	@Override

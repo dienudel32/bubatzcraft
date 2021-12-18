@@ -1,5 +1,5 @@
 {
-  "parent": "bubatzcraftforge:custom/bong",
+  "parent": "bubatzcraftforge:custom/bong.1",
   "textures": {
     "all": "bubatzcraftforge:blocks/green_stained_glass",
     "particle": "bubatzcraftforge:blocks/green_stained_glass",
