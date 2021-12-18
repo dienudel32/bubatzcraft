@@ -26,6 +26,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class FluidExtractorGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
 	public int x, y, z;
