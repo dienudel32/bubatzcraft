@@ -2,35 +2,35 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "bubatzcraftforge:cocaleafs"
+      "item": "bubatzcraftforge:deleted_mod_element"
     },
     {
-      "item": "bubatzcraftforge:cocaleafs"
+      "item": "bubatzcraftforge:deleted_mod_element"
     },
     {
-      "item": "bubatzcraftforge:cocaleafs"
+      "item": "bubatzcraftforge:deleted_mod_element"
     },
     {
-      "item": "bubatzcraftforge:cocaleafs"
+      "item": "bubatzcraftforge:deleted_mod_element"
     },
     {
-      "item": "bubatzcraftforge:cocaleafs"
+      "item": "bubatzcraftforge:deleted_mod_element"
     },
     {
-      "item": "bubatzcraftforge:cocaleafs"
+      "item": "bubatzcraftforge:deleted_mod_element"
     },
     {
-      "item": "bubatzcraftforge:cocaleafs"
+      "item": "bubatzcraftforge:deleted_mod_element"
     },
     {
-      "item": "bubatzcraftforge:cocaleafs"
+      "item": "bubatzcraftforge:deleted_mod_element"
     },
     {
-      "item": "bubatzcraftforge:cocaleafs"
+      "item": "bubatzcraftforge:deleted_mod_element"
     }
   ],
   "result": {
-    "item": "bubatzcraftforge:bundled_coca_leafs",
+    "item": "bubatzcraftforge:deleted_mod_element",
     "count": 1
   }
 }

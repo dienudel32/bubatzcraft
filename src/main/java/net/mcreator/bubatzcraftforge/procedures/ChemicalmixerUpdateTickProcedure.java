@@ -1,21 +1,6 @@
 package net.mcreator.bubatzcraftforge.procedures;
 
-import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.items.CapabilityItemHandler;
-
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModItems;
-import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModBlocks;
-
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.atomic.AtomicInteger;
+import net.minecraftforge.eventbus.api.Event;
 
 public class ChemicalmixerUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -126,74 +111,78 @@ public class ChemicalmixerUpdateTickProcedure {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 1)).getItem() == BubatzcraftforgeModItems.COCAEXTRACT && (new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null) {
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-				}
-				return _retval.get();
-			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 2)).getItem() == BubatzcraftforgeModItems.ACETANHYDRIDE || (new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null) {
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-				}
-				return _retval.get();
-			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 1)).getItem() == BubatzcraftforgeModItems.ACETANHYDRIDE && (new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null) {
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-				}
-				return _retval.get();
-			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 2)).getItem() == BubatzcraftforgeModItems.COCAEXTRACT) && ((new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null) {
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-				}
-				return _retval.get();
-			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 3)).getItem() == BubatzcraftforgeModBlocks.COCAINEHAUFEN.asItem()
-				&& new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int sltid) {
-						AtomicInteger _retval = new AtomicInteger(0);
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 1)).getItem() == BubatzcraftforgeModItems.DELETED_MOD_ELEMENT
+				&& (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
 						if (_ent != null) {
 							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-								_retval.set(capability.getStackInSlot(sltid).getCount());
+								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 						}
 						return _retval.get();
 					}
-				}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 3) <= 63 || new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int sltid) {
-						AtomicInteger _retval = new AtomicInteger(0);
+				}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 2)).getItem() == BubatzcraftforgeModItems.ACETANHYDRIDE
+				|| (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
 						if (_ent != null) {
 							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-								_retval.set(capability.getStackInSlot(sltid).getCount());
+								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 						}
 						return _retval.get();
 					}
-				}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 3) == 0)) {
+				}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 1)).getItem() == BubatzcraftforgeModItems.ACETANHYDRIDE
+						&& (new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								BlockEntity _ent = world.getBlockEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 2)).getItem() == BubatzcraftforgeModItems.DELETED_MOD_ELEMENT)
+				&& ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int sltid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+						BlockEntity _ent = world.getBlockEntity(pos);
+						if (_ent != null) {
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_retval.set(capability.getStackInSlot(sltid).copy());
+							});
+						}
+						return _retval.get();
+					}
+				}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 3)).getItem() == BubatzcraftforgeModItems.DELETED_MOD_ELEMENT
+						&& new Object() {
+							public int getAmount(LevelAccessor world, BlockPos pos, int sltid) {
+								AtomicInteger _retval = new AtomicInteger(0);
+								BlockEntity _ent = world.getBlockEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).getCount());
+									});
+								}
+								return _retval.get();
+							}
+						}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 3) <= 63 || new Object() {
+							public int getAmount(LevelAccessor world, BlockPos pos, int sltid) {
+								AtomicInteger _retval = new AtomicInteger(0);
+								BlockEntity _ent = world.getBlockEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).getCount());
+									});
+								}
+								return _retval.get();
+							}
+						}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 3) == 0)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -348,7 +337,7 @@ public class ChemicalmixerUpdateTickProcedure {
 						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
 						if (_ent != null) {
 							final int _sltid = 3;
-							final ItemStack _setstack = new ItemStack(BubatzcraftforgeModBlocks.COCAINEHAUFEN);
+							final ItemStack _setstack = new ItemStack(BubatzcraftforgeModItems.DELETED_MOD_ELEMENT);
 							_setstack.setCount((int) (new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int sltid) {
 									AtomicInteger _retval = new AtomicInteger(0);

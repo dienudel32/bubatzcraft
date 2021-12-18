@@ -1,24 +1,7 @@
 
 package net.mcreator.bubatzcraftforge.world.features.plants;
 
-import net.minecraft.world.level.levelgen.placement.FeatureDecorator;
-import net.minecraft.world.level.levelgen.feature.stateproviders.SimpleStateProvider;
-import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.HeightmapConfiguration;
-import net.minecraft.world.level.levelgen.feature.blockplacers.ColumnPlacer;
-import net.minecraft.world.level.levelgen.feature.RandomPatchFeature;
-import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.WorldGenLevel;
-import net.minecraft.world.level.Level;
-import net.minecraft.util.valueproviders.BiasedToBottomInt;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.resources.ResourceKey;
-
-import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModBlocks;
-
-import java.util.Set;
+import com.mojang.serialization.Codec;
 
 public class CocaFeature extends RandomPatchFeature {
 	public static final CocaFeature FEATURE = (CocaFeature) new CocaFeature().setRegistryName("bubatzcraftforge:coca");
@@ -31,6 +14,7 @@ public class CocaFeature extends RandomPatchFeature {
 			.decorated(FeatureDecorator.HEIGHTMAP_SPREAD_DOUBLE.configured(new HeightmapConfiguration(Heightmap.Types.MOTION_BLOCKING))).squared()
 
 			.count(1);
+
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("jungle_edge"), new ResourceLocation("jungle_hills"),
 			new ResourceLocation("jungle"));
 
@@ -42,10 +26,13 @@ public class CocaFeature extends RandomPatchFeature {
 		WorldGenLevel world = context.level();
 		ResourceKey<Level> dimensionType = world.getLevel().dimension();
 		boolean dimensionCriteria = false;
+
 		if (dimensionType == Level.OVERWORLD)
 			dimensionCriteria = true;
+
 		if (!dimensionCriteria)
 			return false;
+
 		return super.place(context);
 	}
 }

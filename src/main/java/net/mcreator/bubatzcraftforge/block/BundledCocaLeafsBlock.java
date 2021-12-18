@@ -1,34 +1,19 @@
 
 package net.mcreator.bubatzcraftforge.block;
 
-import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
-
-import java.util.List;
-import java.util.Collections;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class BundledCocaLeafsBlock extends Block {
+
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
 	public BundledCocaLeafsBlock() {
 		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(1f, 10f));
+
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
+
 		setRegistryName("bundled_coca_leafs");
 	}
 
@@ -68,9 +53,11 @@ public class BundledCocaLeafsBlock extends Block {
 
 	@Override
 	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
 	}
+
 }
