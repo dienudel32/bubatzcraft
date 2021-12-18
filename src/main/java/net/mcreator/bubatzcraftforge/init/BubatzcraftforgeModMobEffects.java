@@ -11,6 +11,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.effect.MobEffect;
 
 import net.mcreator.bubatzcraftforge.potion.WeedtripMobEffect;
+import net.mcreator.bubatzcraftforge.potion.MagicmushroomtrioMobEffect;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ import java.util.ArrayList;
 public class BubatzcraftforgeModMobEffects {
 	private static final List<MobEffect> REGISTRY = new ArrayList<>();
 	public static final MobEffect WEEDTRIP = register(new WeedtripMobEffect());
+	public static final MobEffect MAGICMUSHROOMTRIP = register(new MagicmushroomtrioMobEffect());
 
 	private static MobEffect register(MobEffect effect) {
 		REGISTRY.add(effect);

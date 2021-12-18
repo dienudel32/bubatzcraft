@@ -15,7 +15,7 @@
         "data": {
           "text": "Fluid Extractor",
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
           "name": "Fluid Extractor",
@@ -61,13 +61,13 @@
       {
         "type": "label",
         "data": {
-          "text": "<BNBT:number:timer>",
+          "text": "<BNBT:number:Progress> %",
           "color": {
-            "value": -12829636,
+            "value": -13369549,
             "falpha": 0.0
           },
-          "name": "<BNBT:number:timer>",
-          "x": 177,
+          "name": "<BNBT:number:Progress> %",
+          "x": 168,
           "y": 80
         }
       },
@@ -76,7 +76,7 @@
         "data": {
           "text": "Fuel: <BNBT:number:FuelRem> %",
           "color": {
-            "value": -12829636,
+            "value": -13369549,
             "falpha": 0.0
           },
           "name": "Fuel: <BNBT:number:FuelRem> %",

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "bubatzcraftforge:deleted_mod_element"
+    },
+    "title": {
+      "translate": "advancements.magicmushrooomadv.title"
+    },
+    "description": {
+      "translate": "advancements.magicmushrooomadv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "magicmushrooomadv": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "bubatzcraftforge:magic_mushroomfood"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2
+  },
+  "parent": "bubatzcraftforge:joint"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "bubatzcraftforge:blocks/coca",
+    "particle": "bubatzcraftforge:blocks/coca"
+  }
+}

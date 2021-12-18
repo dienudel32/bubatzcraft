@@ -15,10 +15,16 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.bubatzcraftforge.item.WeedbudsItem;
 import net.mcreator.bubatzcraftforge.item.SyringeItem;
+import net.mcreator.bubatzcraftforge.item.RazorbladeItem;
 import net.mcreator.bubatzcraftforge.item.OpiumItem;
+import net.mcreator.bubatzcraftforge.item.MagicMushroomfoodItem;
 import net.mcreator.bubatzcraftforge.item.HeroineinjectionItem;
 import net.mcreator.bubatzcraftforge.item.HeroinItem;
 import net.mcreator.bubatzcraftforge.item.FilterItem;
+import net.mcreator.bubatzcraftforge.item.CocaleafsItem;
+import net.mcreator.bubatzcraftforge.item.CocaextractItem;
+import net.mcreator.bubatzcraftforge.item.CocaSeedsItem;
+import net.mcreator.bubatzcraftforge.item.CannabisSeedsItem;
 import net.mcreator.bubatzcraftforge.item.BubatzItem;
 import net.mcreator.bubatzcraftforge.item.AcetanhydridepowderItem;
 import net.mcreator.bubatzcraftforge.item.AcetanhydrideItem;
@@ -44,7 +50,18 @@ public class BubatzcraftforgeModItems {
 	public static final Item HEROINEINJECTION = register(new HeroineinjectionItem());
 	public static final Item HEROIN = register(new HeroinItem());
 	public static final Item SYRINGE = register(new SyringeItem());
-	public static final Item MAGICMUSHROOM = register(BubatzcraftforgeModBlocks.MAGICMUSHROOM, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final Item MAGICMUSHROOM = register(BubatzcraftforgeModBlocks.MAGICMUSHROOM, null);
+	public static final Item MAGIC_MUSHROOMFOOD = register(new MagicMushroomfoodItem());
+	public static final Item COCA = register(BubatzcraftforgeModBlocks.COCA, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final Item COCAINELINE = register(BubatzcraftforgeModBlocks.COCAINELINE, null);
+	public static final Item RAZORBLADE = register(new RazorbladeItem());
+	public static final Item COCAINEHAUFEN = register(BubatzcraftforgeModBlocks.COCAINEHAUFEN, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final Item COCALEAFS = register(new CocaleafsItem());
+	public static final Item BUNDLED_COCA_LEAFS = register(BubatzcraftforgeModBlocks.BUNDLED_COCA_LEAFS, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final Item COCA_SEEDS = register(new CocaSeedsItem());
+	public static final Item COCAEXTRACT = register(new CocaextractItem());
+	public static final Item CANNABIS_SEEDS = register(new CannabisSeedsItem());
+	public static final Item BONG = register(BubatzcraftforgeModBlocks.BONG, BubatzcraftforgeModTabs.TAB_DRUGS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

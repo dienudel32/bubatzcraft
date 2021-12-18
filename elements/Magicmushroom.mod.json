@@ -30,10 +30,10 @@
         "subtract": false
       }
     ],
-    "name": "Magic mushroom",
+    "name": "Magic mushroom (placable)",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:Drugs"
+      "value": "No creative tab entry"
     },
     "hardness": 0.0,
     "resistance": 0.0,
@@ -60,7 +60,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:MagicMushroomfood"
     },
     "dropAmount": 1,
     "forceTicking": false,

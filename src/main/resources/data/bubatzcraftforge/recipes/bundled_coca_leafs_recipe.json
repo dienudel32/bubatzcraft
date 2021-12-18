@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bubatzcraftforge:deleted_mod_element"
+    },
+    {
+      "item": "bubatzcraftforge:deleted_mod_element"
+    },
+    {
+      "item": "bubatzcraftforge:deleted_mod_element"
+    },
+    {
+      "item": "bubatzcraftforge:deleted_mod_element"
+    },
+    {
+      "item": "bubatzcraftforge:deleted_mod_element"
+    },
+    {
+      "item": "bubatzcraftforge:deleted_mod_element"
+    },
+    {
+      "item": "bubatzcraftforge:deleted_mod_element"
+    },
+    {
+      "item": "bubatzcraftforge:deleted_mod_element"
+    },
+    {
+      "item": "bubatzcraftforge:deleted_mod_element"
+    }
+  ],
+  "result": {
+    "item": "bubatzcraftforge:deleted_mod_element",
+    "count": 1
+  }
+}
