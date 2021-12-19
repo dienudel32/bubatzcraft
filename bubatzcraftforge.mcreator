@@ -1077,6 +1077,16 @@
       "ids": {},
       "registry_name": "bong",
       "path": "~/Weed"
+    },
+    {
+      "name": "DrugStore",
+      "type": "structure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drug_store",
+      "path": "~/DrugStore"
     }
   ],
   "variable_elements": [],
