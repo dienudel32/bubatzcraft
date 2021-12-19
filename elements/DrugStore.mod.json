@@ -3,15 +3,15 @@
   "_type": "structure",
   "definition": {
     "structure": "drug_shop",
-    "randomlyRotateStructure": true,
+    "randomlyRotateStructure": false,
     "surfaceDetectionType": "First block",
     "spawnProbability": 1000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
     "spawnHeightOffset": 0,
-    "spawnXOffset": 0,
-    "spawnZOffset": 0,
+    "spawnXOffset": 7,
+    "spawnZOffset": 4,
     "spawnWorldTypes": [
       "Surface"
     ],
@@ -46,6 +46,12 @@
       },
       {
         "value": "mutated_birch_forest"
+      },
+      {
+        "value": "plains"
+      },
+      {
+        "value": "mutated_plains"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"
