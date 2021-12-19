@@ -1,6 +1,6 @@
 package net.mcreator.bubatzcraftforge.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.Entity;
 
 public class SpawnDrugdealerCommandExecutedProcedure {
 	public static void execute(Entity entity) {
