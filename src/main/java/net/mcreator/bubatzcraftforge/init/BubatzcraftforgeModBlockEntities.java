@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.bubatzcraftforge.block.entity.FluidExtractorBlockEntity;
 import net.mcreator.bubatzcraftforge.block.entity.ChemicalmixerBlockEntity;
+import net.mcreator.bubatzcraftforge.block.entity.BongBlockEntity;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ public class BubatzcraftforgeModBlockEntities {
 			ChemicalmixerBlockEntity::new);
 	public static final BlockEntityType<?> FLUID_EXTRACTOR = register("bubatzcraftforge:fluid_extractor", BubatzcraftforgeModBlocks.FLUID_EXTRACTOR,
 			FluidExtractorBlockEntity::new);
+	public static final BlockEntityType<?> BONG = register("bubatzcraftforge:bong", BubatzcraftforgeModBlocks.BONG, BongBlockEntity::new);
 
 	private static BlockEntityType<?> register(String registryname, Block block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		BlockEntityType<?> blockEntityType = BlockEntityType.Builder.of(supplier, block).build(null).setRegistryName(registryname);

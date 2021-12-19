@@ -1087,6 +1087,70 @@
       "ids": {},
       "registry_name": "drug_store",
       "path": "~/DrugStore"
+    },
+    {
+      "name": "BongOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bong_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weed"
+    },
+    {
+      "name": "BongClientDisplayRandomTick",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bong_client_display_random_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weed"
     }
   ],
   "variable_elements": [],
@@ -1109,6 +1173,14 @@
       ],
       "category": "player",
       "subtitle": "Player coughing"
+    },
+    {
+      "name": "bong",
+      "files": [
+        "bong"
+      ],
+      "category": "block",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -1154,6 +1226,7 @@
       "advancements.seriousdrugaddiction.descr": "Be on all drugs at the same time",
       "item.bubatzcraftforge.syringe": "Syringe",
       "item.bubatzcraftforge.acetanhydride": "Acid",
+      "subtitles.bong": "",
       "advancements.addict.descr": "Smoke 100 Joints. Damn bro",
       "item.bubatzcraftforge.filter": "Filter",
       "block.bubatzcraftforge.bundled_coca_leafs": "Bundled Coca Leafs",
@@ -1204,6 +1277,7 @@
       "advancements.seriousdrugaddiction.descr": "Mische alle Drogen gleichzeitig.",
       "item.bubatzcraftforge.syringe": "Spritze",
       "item.bubatzcraftforge.acetanhydride": "Säure",
+      "subtitles.bong": "",
       "advancements.addict.descr": "Rauche 100 Joints.",
       "item.bubatzcraftforge.filter": "Filter",
       "block.bubatzcraftforge.bundled_coca_leafs": "Gepackte Cocablätter",

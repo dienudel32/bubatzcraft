@@ -29,5 +29,14 @@
         "stream": false
       }
     ]
+  },
+  "bong": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "bubatzcraftforge:bong",
+        "stream": false
+      }
+    ]
   }
 }

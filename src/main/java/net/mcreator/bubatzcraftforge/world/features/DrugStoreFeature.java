@@ -52,7 +52,7 @@ public class DrugStoreFeature extends Feature<NoneFeatureConfiguration> {
 				int k = context.origin().getZ() + context.random().nextInt(16);
 				int j = context.level().getHeight(Heightmap.Types.WORLD_SURFACE_WG, i, k);
 				j -= 1;
-				BlockPos spawnTo = new BlockPos(i + 7, j + 0, k + 4);
+				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 4);
 				if (template.placeInWorld(
 						context.level(), spawnTo, spawnTo, new StructurePlaceSettings().setMirror(Mirror.NONE).setRotation(Rotation.NONE)
 								.setRandom(context.random()).addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false),
