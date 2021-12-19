@@ -20,6 +20,7 @@ import net.mcreator.bubatzcraftforge.world.features.plants.MagicmushroomFeature;
 import net.mcreator.bubatzcraftforge.world.features.plants.CocaFeature;
 import net.mcreator.bubatzcraftforge.world.features.plants.CannabisFeature;
 import net.mcreator.bubatzcraftforge.world.features.ores.AcetanhydrideoreFeature;
+import net.mcreator.bubatzcraftforge.world.features.DrugStoreFeature;
 
 import java.util.Set;
 import java.util.Map;
@@ -37,6 +38,8 @@ public class BubatzcraftforgeModFeatures {
 				MagicmushroomFeature.GENERATE_BIOMES, MagicmushroomFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(CocaFeature.FEATURE,
 				new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, CocaFeature.GENERATE_BIOMES, CocaFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(DrugStoreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, DrugStoreFeature.GENERATE_BIOMES,
+				DrugStoreFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent
