@@ -66,13 +66,13 @@ public class BongBlock extends Block implements SimpleWaterloggedBlock
 		switch ((Direction) state.getValue(FACING)) {
 			case SOUTH :
 			default :
-				return box(7, 0, 6, 10, 9, 9).move(offset.x, offset.y, offset.z);
+				return box(6, 0, 6, 10, 9, 9).move(offset.x, offset.y, offset.z);
 			case NORTH :
-				return box(6, 0, 7, 9, 9, 10).move(offset.x, offset.y, offset.z);
+				return box(6, 0, 7, 10, 9, 10).move(offset.x, offset.y, offset.z);
 			case EAST :
-				return box(6, 0, 6, 9, 9, 9).move(offset.x, offset.y, offset.z);
+				return box(6, 0, 6, 9, 9, 10).move(offset.x, offset.y, offset.z);
 			case WEST :
-				return box(7, 0, 7, 10, 9, 10).move(offset.x, offset.y, offset.z);
+				return box(7, 0, 6, 10, 9, 10).move(offset.x, offset.y, offset.z);
 		}
 	}
 

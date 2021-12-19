@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "bong.1:default",
+    "customModelName": "bong:default",
     "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -26,7 +26,7 @@
         "mx": 6.0,
         "my": 0.0,
         "mz": 7.0,
-        "Mx": 9.0,
+        "Mx": 10.0,
         "My": 9.0,
         "Mz": 10.0,
         "subtract": false

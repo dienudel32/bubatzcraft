@@ -4,8 +4,7 @@
       "map": {
         "0": "weedbong",
         "1": "ringe",
-        "2": "green_stained_glass",
-        "missing": ""
+        "2": "green_stained_glass"
       },
       "name": "default"
     }
