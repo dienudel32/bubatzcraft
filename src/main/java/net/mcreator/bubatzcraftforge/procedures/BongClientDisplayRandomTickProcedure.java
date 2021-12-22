@@ -45,7 +45,7 @@ public class BongClientDisplayRandomTickProcedure {
 					return Direction.NORTH;
 				}
 			}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.NORTH) {
-				world.addParticle(BubatzcraftforgeModParticles.WEED, (x + 0.5), (y + 0.2), (z + 0.49), 0, (Math.random() / 100),
+				world.addParticle(BubatzcraftforgeModParticles.WEED, (x + 0.5), (y + 0.2), (z + 0.39), 0, (Math.random() / 100),
 						(Math.random() / (-100)));
 			} else if ((new Object() {
 				public Direction getDirection(BlockPos pos) {
@@ -59,8 +59,22 @@ public class BongClientDisplayRandomTickProcedure {
 					return Direction.NORTH;
 				}
 			}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.WEST) {
-				world.addParticle(BubatzcraftforgeModParticles.WEED, (x - 0.5), (y + 0.2), (z - 0.69), 0, (Math.random() / 100),
-						(Math.random() / (-100)));
+				world.addParticle(BubatzcraftforgeModParticles.WEED, (x + 0.39), (y + 0.2), (z + 0.5), (Math.random() / (-100)),
+						(Math.random() / 100), 0);
+			} else if ((new Object() {
+				public Direction getDirection(BlockPos pos) {
+					BlockState _bs = world.getBlockState(pos);
+					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
+					if (property != null && _bs.getValue(property)instanceof Direction _dir)
+						return _dir;
+					property = _bs.getBlock().getStateDefinition().getProperty("axis");
+					if (property != null && _bs.getValue(property)instanceof Direction.Axis _axis)
+						return Direction.fromAxisAndDirection(_axis, Direction.AxisDirection.POSITIVE);
+					return Direction.NORTH;
+				}
+			}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.EAST) {
+				world.addParticle(BubatzcraftforgeModParticles.WEED, (x + 0.69), (y + 0.2), (z + 0.5), (Math.random() / 100), (Math.random() / 100),
+						0);
 			}
 		}
 	}
