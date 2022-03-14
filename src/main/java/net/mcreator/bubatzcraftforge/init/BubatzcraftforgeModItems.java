@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.bubatzcraftforge.item.WeedbudsItem;
 import net.mcreator.bubatzcraftforge.item.SyringeItem;
+import net.mcreator.bubatzcraftforge.item.SnusItem;
 import net.mcreator.bubatzcraftforge.item.RazorbladeItem;
 import net.mcreator.bubatzcraftforge.item.OpiumItem;
 import net.mcreator.bubatzcraftforge.item.MagicMushroomfoodItem;
@@ -62,6 +63,7 @@ public class BubatzcraftforgeModItems {
 	public static final Item COCAEXTRACT = register(new CocaextractItem());
 	public static final Item CANNABIS_SEEDS = register(new CannabisSeedsItem());
 	public static final Item BONG = register(BubatzcraftforgeModBlocks.BONG, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final Item SNUS_HELMET = register(new SnusItem.Helmet());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

@@ -29,8 +29,7 @@ public class CannabisFeature extends RandomPatchFeature {
 
 							.build())
 			.decorated(FeatureDecorator.HEIGHTMAP_SPREAD_DOUBLE.configured(new HeightmapConfiguration(Heightmap.Types.MOTION_BLOCKING))).squared()
-
-			.count(5);
+			.rarity(32).count(5);
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("shattered_savanna"), new ResourceLocation("jungle_edge"),
 			new ResourceLocation("savanna"), new ResourceLocation("jungle"));
 

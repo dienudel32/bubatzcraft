@@ -1,5 +1,4 @@
 {
-  "id_map": {},
   "mod_elements": [
     {
       "name": "Weedtrip",
@@ -7,7 +6,6 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "weedtrip",
       "path": "~/Weed"
     },
@@ -17,7 +15,6 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "joint",
       "path": "~/Weed"
     },
@@ -27,7 +24,6 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bubatz_food_eaten",
       "metadata": {
         "dependencies": [
@@ -61,7 +57,6 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "weed_trip_overlay_display_overlay_ingame",
       "metadata": {
         "return_type": "logic",
@@ -80,7 +75,6 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "weed_trip_overlay",
       "path": "~/Weed"
     },
@@ -90,7 +84,6 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "joint",
       "path": "~/Weed"
     },
@@ -100,7 +93,6 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "jointrecipe",
       "path": "~/Weed"
     },
@@ -110,7 +102,6 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "drugs"
     },
     {
@@ -119,7 +110,6 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "filter",
       "path": "~/Weed"
     },
@@ -129,7 +119,6 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "weedbuds",
       "path": "~/Weed"
     },
@@ -139,7 +128,6 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cannabis",
       "path": "~/Weed"
     },
@@ -149,7 +137,6 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chemicalmixer_gui",
       "path": "~/Maschienen"
     },
@@ -159,7 +146,6 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chemicalmixer",
       "path": "~/Maschienen"
     },
@@ -169,7 +155,6 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "addict",
       "path": "~/Weed"
     },
@@ -179,7 +164,6 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fresh_weed_bud",
       "path": "~/Weed"
     },
@@ -189,7 +173,6 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dried_weed_bud",
       "path": "~/Weed"
     },
@@ -199,7 +182,6 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dryed_weed_bud_block_valid_placement_condition",
       "metadata": {
         "return_type": "logic",
@@ -230,7 +212,6 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fresh_weed_bud_update_tick",
       "metadata": {
         "dependencies": [
@@ -260,7 +241,6 @@
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "weed",
       "path": "~/Weed"
     },
@@ -270,7 +250,6 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fluid_extractor",
       "path": "~/Maschienen"
     },
@@ -280,7 +259,6 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "opium",
       "path": "~/Heroin/Opium"
     },
@@ -290,7 +268,6 @@
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "opiumrecipe",
       "path": "~/Heroin/Opium"
     },
@@ -300,7 +277,6 @@
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "acetanhydridepowder",
       "path": "~/Heroin/acetanhydride"
     },
@@ -310,7 +286,6 @@
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "acetanhydrideore",
       "path": "~/Heroin/acetanhydride"
     },
@@ -320,7 +295,6 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dryed_weed_bud_block_destroyed_by_player",
       "metadata": {
         "dependencies": [
@@ -354,7 +328,6 @@
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fluid_extractor_gui",
       "path": "~/Maschienen"
     },
@@ -364,7 +337,6 @@
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "acetanhydride",
       "path": "~/Heroin/acetanhydride"
     },
@@ -374,7 +346,6 @@
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fluid_extractor_gui_slot_change",
       "metadata": {
         "dependencies": [
@@ -404,7 +375,6 @@
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "heroineinjection",
       "path": "~/Heroin"
     },
@@ -414,7 +384,6 @@
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "heroin",
       "path": "~/Heroin"
     },
@@ -424,7 +393,6 @@
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "syringe"
     },
     {
@@ -433,7 +401,6 @@
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "syringerecipe"
     },
     {
@@ -442,7 +409,6 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magicmushroom_client_display_random_tick",
       "metadata": {
         "dependencies": [
@@ -472,7 +438,6 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magicmushroom",
       "path": "~/mushroom"
     },
@@ -482,7 +447,6 @@
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magicmushroomparticle",
       "path": "~/mushroom"
     },
@@ -492,7 +456,6 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "heroinsyringerecipe",
       "path": "~/Heroin"
     },
@@ -502,7 +465,6 @@
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "heroineinjection_right_clicked_on_block",
       "metadata": {
         "dependencies": [
@@ -524,7 +486,6 @@
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chemicalmixer_update_tick",
       "metadata": {
         "dependencies": [
@@ -554,7 +515,6 @@
       "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magicmushroomfood_food_eaten",
       "metadata": {
         "dependencies": [
@@ -576,7 +536,6 @@
       "sortid": 29,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magic_mushroomfood",
       "path": "~/mushroom"
     },
@@ -586,7 +545,6 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "coca",
       "path": "~/Cocaine"
     },
@@ -596,7 +554,6 @@
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "heroinadv",
       "path": "~/Heroin"
     },
@@ -606,7 +563,6 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magicmushrooomadv",
       "path": "~/mushroom"
     },
@@ -616,7 +572,6 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "heroindeath",
       "path": "~/Heroin"
     },
@@ -626,7 +581,6 @@
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magicmushroomdeath",
       "path": "~/mushroom"
     },
@@ -636,7 +590,6 @@
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cocaineline_block_valid_placement_condition",
       "metadata": {
         "return_type": "logic",
@@ -667,7 +620,6 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cocaineline_on_block_right_clicked",
       "metadata": {
         "dependencies": [
@@ -701,7 +653,6 @@
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cocaineline",
       "path": "~/Cocaine"
     },
@@ -711,7 +662,6 @@
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cocainehaufen",
       "path": "~/Cocaine"
     },
@@ -721,7 +671,6 @@
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "razorblade",
       "path": "~/Cocaine"
     },
@@ -731,7 +680,6 @@
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "razorrecipe",
       "path": "~/Cocaine"
     },
@@ -741,7 +689,6 @@
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cocaleafs",
       "path": "~/Cocaine"
     },
@@ -751,7 +698,6 @@
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "filterrecipe",
       "path": "~/Weed"
     },
@@ -761,7 +707,6 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chemicalmixerrecipe",
       "path": "~/Maschienen"
     },
@@ -771,7 +716,6 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fluidextracrorresicpe",
       "path": "~/Maschienen"
     },
@@ -781,7 +725,6 @@
       "sortid": 45,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cocainehaufen_on_block_right_clicked",
       "metadata": {
         "dependencies": [
@@ -815,7 +758,6 @@
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bundled_coca_leafs",
       "path": "~/Cocaine"
     },
@@ -825,7 +767,6 @@
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bundled_coca_leafs_recipe",
       "path": "~/Cocaine"
     },
@@ -835,7 +776,6 @@
       "sortid": 48,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "coca_seeds_right_clicked_on_block",
       "metadata": {
         "dependencies": [
@@ -869,7 +809,6 @@
       "sortid": 48,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "coca_seeds",
       "path": "~/Cocaine"
     },
@@ -879,7 +818,6 @@
       "sortid": 49,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cocaextract",
       "path": "~/Cocaine"
     },
@@ -889,7 +827,6 @@
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "jointcount_command_executed",
       "metadata": {
         "dependencies": [
@@ -927,7 +864,6 @@
       "sortid": 51,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cocaseedsrecipe",
       "path": "~/Cocaine"
     },
@@ -937,7 +873,6 @@
       "sortid": 53,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magicmushroomoverlay",
       "path": "~/mushroom"
     },
@@ -947,7 +882,6 @@
       "sortid": 54,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magicmushroomoverlay_display_overlay_ingame",
       "metadata": {
         "return_type": "logic",
@@ -966,7 +900,6 @@
       "sortid": 55,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magicmushroomtrip",
       "path": "~/mushroom"
     },
@@ -976,7 +909,6 @@
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cannabis_seeds",
       "path": "~/Weed"
     },
@@ -986,7 +918,6 @@
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cannabis_seeds_right_clicked_on_block",
       "metadata": {
         "dependencies": [
@@ -1020,7 +951,6 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "spawn_drugdealer_command_executed",
       "metadata": {
         "dependencies": [
@@ -1038,7 +968,6 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "spawn_drugdealer",
       "path": "~/Debug"
     },
@@ -1048,7 +977,6 @@
       "sortid": 58,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "seriousdrugaddiction"
     },
     {
@@ -1057,7 +985,6 @@
       "sortid": 59,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "seriousaddictioncheck",
       "metadata": {
         "dependencies": [
@@ -1074,7 +1001,6 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bong",
       "path": "~/Weed"
     },
@@ -1084,7 +1010,6 @@
       "sortid": 60,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "drug_store",
       "path": "~/DrugStore"
     },
@@ -1094,7 +1019,6 @@
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bong_on_block_right_clicked",
       "metadata": {
         "dependencies": [
@@ -1128,7 +1052,6 @@
       "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bong_client_display_random_tick",
       "metadata": {
         "dependencies": [
@@ -1151,6 +1074,20 @@
         ]
       },
       "path": "~/Weed"
+    },
+    {
+      "name": "Snus",
+      "type": "armor",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snus",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
     }
   ],
   "variable_elements": [],
@@ -1194,11 +1131,12 @@
       "block.bubatzcraftforge.bong": "Bong",
       "item.bubatzcraftforge.razorblade": "Razorblade",
       "block.bubatzcraftforge.fluid_extractor": "Fluid Extractor",
-      "advancements.joint.descr": "Smoke jour first Joint",
       "block.bubatzcraftforge.cocaineline": "Cocaine Line",
+      "advancements.joint.descr": "Smoke jour first Joint",
       "item.bubatzcraftforge.heroin": "Heroin",
       "item.bubatzcraftforge.heroineinjection": "Heroin injection",
       "advancements.joint.title": "Joint",
+      "item.bubatzcraftforge.snus_helmet": "Snus",
       "subtitles.cough": "Player coughing",
       "block.bubatzcraftforge.dried_weed_bud": "Dried Weed Bud",
       "item.bubatzcraftforge.coca_seeds": "Coca Seeds",
@@ -1217,13 +1155,16 @@
       "item.bubatzcraftforge.cannabis_seeds": "Cannabis Seeds",
       "advancements.magicmushroomdeath.title": "Don\u0027t eat mushrooms you don\u0027t know!",
       "death.attack.heroin": "%s died from Heroin",
+      "item.bubatzcraftforge.snus_boots": "Snus Boots",
       "block.bubatzcraftforge.magicmushroom": "Magic mushroom (placable)",
       "item.bubatzcraftforge.weedbuds": "Weed Buds",
       "advancements.magicmushroomdeath.descr": "RIP",
+      "item.bubatzcraftforge.snus_chestplate": "Snus Body",
       "item.bubatzcraftforge.cocaleafs": "Cocaleafs",
       "block.bubatzcraftforge.cocainehaufen": "Cocaine",
       "advancements.heroindeath.descr": "Die from Heroin",
       "advancements.seriousdrugaddiction.descr": "Be on all drugs at the same time",
+      "item.bubatzcraftforge.snus_leggings": "Snus Leggings",
       "item.bubatzcraftforge.syringe": "Syringe",
       "item.bubatzcraftforge.acetanhydride": "Acid",
       "subtitles.bong": "",
@@ -1236,20 +1177,21 @@
       "item.bubatzcraftforge.joint": "Joint"
     },
     "de_de": {
-      "item.bubatzcraftforge.acetanhydridepowder": "Säure Puder",
+      "item.bubatzcraftforge.acetanhydridepowder": "SÃ¤ure Puder",
       "block.bubatzcraftforge.coca": "Coca",
       "effect.bubatzcraftforge.weedtrip": "Weed Trip",
-      "block.bubatzcraftforge.acetanhydrideore": "Säure Erz",
+      "block.bubatzcraftforge.acetanhydrideore": "SÃ¤ure Erz",
       "block.bubatzcraftforge.fresh_weed_bud": "Frischer Weed Bud",
       "item.bubatzcraftforge.magic_mushroomfood": "Magic Mushroom",
       "block.bubatzcraftforge.bong": "Bong",
       "item.bubatzcraftforge.razorblade": "Rasierklinge",
-      "block.bubatzcraftforge.fluid_extractor": "Flüssigkeits Extraktor",
-      "block.bubatzcraftforge.cocaineline": "Cocaine Line",
+      "block.bubatzcraftforge.fluid_extractor": "FlÃ¼ssigkeits Extraktor",
       "advancements.joint.descr": "Rauch deinen ersten Joint",
+      "block.bubatzcraftforge.cocaineline": "Cocaine Line",
       "item.bubatzcraftforge.heroin": "Heroin",
       "item.bubatzcraftforge.heroineinjection": "Heroinspritze",
       "advancements.joint.title": "Joint",
+      "item.bubatzcraftforge.snus_helmet": "Snus",
       "subtitles.cough": "Spieler hustet",
       "block.bubatzcraftforge.dried_weed_bud": "Getrockneter Weed Bud",
       "item.bubatzcraftforge.coca_seeds": "Cocasamen",
@@ -1261,26 +1203,29 @@
       "advancements.heroindeath.title": "Schade",
       "block.bubatzcraftforge.cannabis": "Cannabis",
       "advancements.heroinadv.descr": "Es lindert die Schmerzen.",
-      "advancements.addict.title": "Drogenabhängig",
+      "advancements.addict.title": "DrogenabhÃ¤ngig",
       "block.bubatzcraftforge.chemicalmixer": "Chemikalien Mixer",
-      "advancements.magicmushrooomadv.descr": "HÄÄ?",
+      "advancements.magicmushrooomadv.descr": "HÃ„Ã„?",
       "death.attack.mushroom": "%s hat den lustigen Pilz gegessen und ist gestorben",
       "item.bubatzcraftforge.cannabis_seeds": "Cannabis Seeds",
       "advancements.magicmushroomdeath.title": "Ess keine PIlze die du nicht kennst!",
       "death.attack.heroin": "%s ist an Heroin gestorben",
+      "item.bubatzcraftforge.snus_boots": "Snus Boots",
       "block.bubatzcraftforge.magicmushroom": "Magic mushroom",
       "item.bubatzcraftforge.weedbuds": "Weed Buds",
       "advancements.magicmushroomdeath.descr": "RIP",
-      "item.bubatzcraftforge.cocaleafs": "Cocablätter",
+      "item.bubatzcraftforge.snus_chestplate": "Snus Body",
+      "item.bubatzcraftforge.cocaleafs": "CocablÃ¤tter",
       "block.bubatzcraftforge.cocainehaufen": "Kokain",
       "advancements.heroindeath.descr": "Sterb an Heroin",
       "advancements.seriousdrugaddiction.descr": "Mische alle Drogen gleichzeitig.",
+      "item.bubatzcraftforge.snus_leggings": "Snus Leggings",
       "item.bubatzcraftforge.syringe": "Spritze",
-      "item.bubatzcraftforge.acetanhydride": "Säure",
+      "item.bubatzcraftforge.acetanhydride": "SÃ¤ure",
       "subtitles.bong": "",
       "advancements.addict.descr": "Rauche 100 Joints.",
       "item.bubatzcraftforge.filter": "Filter",
-      "block.bubatzcraftforge.bundled_coca_leafs": "Gepackte Cocablätter",
+      "block.bubatzcraftforge.bundled_coca_leafs": "Gepackte CocablÃ¤tter",
       "advancements.heroinadv.title": "Heroin",
       "item.bubatzcraftforge.opium": "Opium",
       "item.bubatzcraftforge.cocaextract": "Cocaextrakt",
@@ -1353,5 +1298,5 @@
     "modElementsPackage": "net.mcreator.bubatzcraftforge",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100351610
+  "mcreatorVersion": 202200112711
 }

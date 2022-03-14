@@ -29,8 +29,7 @@ public class CocaFeature extends RandomPatchFeature {
 
 							.build())
 			.decorated(FeatureDecorator.HEIGHTMAP_SPREAD_DOUBLE.configured(new HeightmapConfiguration(Heightmap.Types.MOTION_BLOCKING))).squared()
-
-			.count(1);
+			.rarity(32).count(1);
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("jungle_edge"), new ResourceLocation("jungle_hills"),
 			new ResourceLocation("jungle"));
 
