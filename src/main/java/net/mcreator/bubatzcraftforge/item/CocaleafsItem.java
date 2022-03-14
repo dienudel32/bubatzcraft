@@ -15,7 +15,6 @@ import java.util.List;
 public class CocaleafsItem extends Item {
 	public CocaleafsItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("cocaleafs");
 	}
 
 	@Override

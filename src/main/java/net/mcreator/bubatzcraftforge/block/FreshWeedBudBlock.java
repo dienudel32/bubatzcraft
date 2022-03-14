@@ -41,7 +41,6 @@ public class FreshWeedBudBlock extends Block {
 	public FreshWeedBudBlock() {
 		super(BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).sound(SoundType.LILY_PAD).strength(1f, 10f).noOcclusion().randomTicks()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("fresh_weed_bud");
 	}
 
 	@Override
@@ -91,7 +90,7 @@ public class FreshWeedBudBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(BubatzcraftforgeModItems.CANNABIS_SEEDS, (int) (2)));
+		return Collections.singletonList(new ItemStack(BubatzcraftforgeModItems.CANNABIS_SEEDS.get(), (int) (2)));
 	}
 
 	@Override
@@ -112,7 +111,7 @@ public class FreshWeedBudBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.FRESH_WEED_BUD, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.FRESH_WEED_BUD.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }

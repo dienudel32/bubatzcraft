@@ -22,7 +22,6 @@ public class MagicMushroomfoodItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat()
 
 						.build()));
-		setRegistryName("magic_mushroomfood");
 	}
 
 	@Override

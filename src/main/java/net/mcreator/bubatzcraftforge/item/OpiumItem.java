@@ -16,7 +16,6 @@ import java.util.List;
 public class OpiumItem extends Item {
 	public OpiumItem() {
 		super(new Item.Properties().tab(BubatzcraftforgeModTabs.TAB_DRUGS).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("opium");
 	}
 
 	@Override

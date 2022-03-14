@@ -16,7 +16,6 @@ import java.util.List;
 public class AcetanhydrideItem extends Item {
 	public AcetanhydrideItem() {
 		super(new Item.Properties().tab(BubatzcraftforgeModTabs.TAB_DRUGS).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("acetanhydride");
 	}
 
 	@Override

@@ -44,7 +44,6 @@ public class CocainehaufenBlock extends Block {
 		super(BlockBehaviour.Properties.of(Material.TOP_SNOW).sound(SoundType.SNOW).strength(0f, 10f).noCollission().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-		setRegistryName("cocainehaufen");
 	}
 
 	@Override
@@ -117,7 +116,7 @@ public class CocainehaufenBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.COCAINEHAUFEN, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.COCAINEHAUFEN.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }

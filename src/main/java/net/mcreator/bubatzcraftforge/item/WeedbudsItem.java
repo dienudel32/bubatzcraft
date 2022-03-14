@@ -10,7 +10,6 @@ import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModTabs;
 public class WeedbudsItem extends Item {
 	public WeedbudsItem() {
 		super(new Item.Properties().tab(BubatzcraftforgeModTabs.TAB_DRUGS).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("weedbuds");
 	}
 
 	@Override

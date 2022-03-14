@@ -27,7 +27,7 @@ public class BongOnBlockRightClickedProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BubatzcraftforgeModItems.WEEDBUDS
-				&& (new Object() {
+				.get() && (new Object() {
 					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
@@ -93,7 +93,7 @@ public class BongOnBlockRightClickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _entity)
-						_entity.addEffect(new MobEffectInstance(BubatzcraftforgeModMobEffects.WEEDTRIP, 5200, 1, (false), (false)));
+						_entity.addEffect(new MobEffectInstance(BubatzcraftforgeModMobEffects.WEEDTRIP.get(), 5200, 1, (false), (false)));
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, 290);
