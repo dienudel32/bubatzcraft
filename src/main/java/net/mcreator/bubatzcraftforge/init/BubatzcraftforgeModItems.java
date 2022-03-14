@@ -4,9 +4,9 @@
  */
 package net.mcreator.bubatzcraftforge.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -28,52 +28,40 @@ import net.mcreator.bubatzcraftforge.item.CannabisSeedsItem;
 import net.mcreator.bubatzcraftforge.item.BubatzItem;
 import net.mcreator.bubatzcraftforge.item.AcetanhydridepowderItem;
 import net.mcreator.bubatzcraftforge.item.AcetanhydrideItem;
+import net.mcreator.bubatzcraftforge.BubatzcraftforgeMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BubatzcraftforgeModItems {
-	private static final List<Item> REGISTRY = new ArrayList<>();
-	public static final Item JOINT = register(new BubatzItem());
-	public static final Item CANNABIS = register(BubatzcraftforgeModBlocks.CANNABIS, BubatzcraftforgeModTabs.TAB_DRUGS);
-	public static final Item FILTER = register(new FilterItem());
-	public static final Item WEEDBUDS = register(new WeedbudsItem());
-	public static final Item CHEMICALMIXER = register(BubatzcraftforgeModBlocks.CHEMICALMIXER, BubatzcraftforgeModTabs.TAB_DRUGS);
-	public static final Item FRESH_WEED_BUD = register(BubatzcraftforgeModBlocks.FRESH_WEED_BUD, BubatzcraftforgeModTabs.TAB_DRUGS);
-	public static final Item DRIED_WEED_BUD = register(BubatzcraftforgeModBlocks.DRIED_WEED_BUD, BubatzcraftforgeModTabs.TAB_DRUGS);
-	public static final Item FLUID_EXTRACTOR = register(BubatzcraftforgeModBlocks.FLUID_EXTRACTOR, BubatzcraftforgeModTabs.TAB_DRUGS);
-	public static final Item OPIUM = register(new OpiumItem());
-	public static final Item ACETANHYDRIDE = register(new AcetanhydrideItem());
-	public static final Item ACETANHYDRIDEPOWDER = register(new AcetanhydridepowderItem());
-	public static final Item ACETANHYDRIDEORE = register(BubatzcraftforgeModBlocks.ACETANHYDRIDEORE, BubatzcraftforgeModTabs.TAB_DRUGS);
-	public static final Item HEROINEINJECTION = register(new HeroineinjectionItem());
-	public static final Item HEROIN = register(new HeroinItem());
-	public static final Item SYRINGE = register(new SyringeItem());
-	public static final Item MAGICMUSHROOM = register(BubatzcraftforgeModBlocks.MAGICMUSHROOM, null);
-	public static final Item MAGIC_MUSHROOMFOOD = register(new MagicMushroomfoodItem());
-	public static final Item COCA = register(BubatzcraftforgeModBlocks.COCA, BubatzcraftforgeModTabs.TAB_DRUGS);
-	public static final Item COCAINELINE = register(BubatzcraftforgeModBlocks.COCAINELINE, null);
-	public static final Item COCAINEHAUFEN = register(BubatzcraftforgeModBlocks.COCAINEHAUFEN, BubatzcraftforgeModTabs.TAB_DRUGS);
-	public static final Item RAZORBLADE = register(new RazorbladeItem());
-	public static final Item COCALEAFS = register(new CocaleafsItem());
-	public static final Item BUNDLED_COCA_LEAFS = register(BubatzcraftforgeModBlocks.BUNDLED_COCA_LEAFS, BubatzcraftforgeModTabs.TAB_DRUGS);
-	public static final Item COCA_SEEDS = register(new CocaSeedsItem());
-	public static final Item COCAEXTRACT = register(new CocaextractItem());
-	public static final Item CANNABIS_SEEDS = register(new CannabisSeedsItem());
-	public static final Item BONG = register(BubatzcraftforgeModBlocks.BONG, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, BubatzcraftforgeMod.MODID);
+	public static final RegistryObject<Item> JOINT = REGISTRY.register("joint", () -> new BubatzItem());
+	public static final RegistryObject<Item> CANNABIS = block(BubatzcraftforgeModBlocks.CANNABIS, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final RegistryObject<Item> FILTER = REGISTRY.register("filter", () -> new FilterItem());
+	public static final RegistryObject<Item> WEEDBUDS = REGISTRY.register("weedbuds", () -> new WeedbudsItem());
+	public static final RegistryObject<Item> CHEMICALMIXER = block(BubatzcraftforgeModBlocks.CHEMICALMIXER, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final RegistryObject<Item> FRESH_WEED_BUD = block(BubatzcraftforgeModBlocks.FRESH_WEED_BUD, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final RegistryObject<Item> DRIED_WEED_BUD = block(BubatzcraftforgeModBlocks.DRIED_WEED_BUD, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final RegistryObject<Item> FLUID_EXTRACTOR = block(BubatzcraftforgeModBlocks.FLUID_EXTRACTOR, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final RegistryObject<Item> OPIUM = REGISTRY.register("opium", () -> new OpiumItem());
+	public static final RegistryObject<Item> ACETANHYDRIDE = REGISTRY.register("acetanhydride", () -> new AcetanhydrideItem());
+	public static final RegistryObject<Item> ACETANHYDRIDEPOWDER = REGISTRY.register("acetanhydridepowder", () -> new AcetanhydridepowderItem());
+	public static final RegistryObject<Item> ACETANHYDRIDEORE = block(BubatzcraftforgeModBlocks.ACETANHYDRIDEORE, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final RegistryObject<Item> HEROINEINJECTION = REGISTRY.register("heroineinjection", () -> new HeroineinjectionItem());
+	public static final RegistryObject<Item> HEROIN = REGISTRY.register("heroin", () -> new HeroinItem());
+	public static final RegistryObject<Item> SYRINGE = REGISTRY.register("syringe", () -> new SyringeItem());
+	public static final RegistryObject<Item> MAGICMUSHROOM = block(BubatzcraftforgeModBlocks.MAGICMUSHROOM, null);
+	public static final RegistryObject<Item> MAGIC_MUSHROOMFOOD = REGISTRY.register("magic_mushroomfood", () -> new MagicMushroomfoodItem());
+	public static final RegistryObject<Item> COCA = block(BubatzcraftforgeModBlocks.COCA, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final RegistryObject<Item> COCAINELINE = block(BubatzcraftforgeModBlocks.COCAINELINE, null);
+	public static final RegistryObject<Item> COCAINEHAUFEN = block(BubatzcraftforgeModBlocks.COCAINEHAUFEN, BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final RegistryObject<Item> RAZORBLADE = REGISTRY.register("razorblade", () -> new RazorbladeItem());
+	public static final RegistryObject<Item> COCALEAFS = REGISTRY.register("cocaleafs", () -> new CocaleafsItem());
+	public static final RegistryObject<Item> BUNDLED_COCA_LEAFS = block(BubatzcraftforgeModBlocks.BUNDLED_COCA_LEAFS,
+			BubatzcraftforgeModTabs.TAB_DRUGS);
+	public static final RegistryObject<Item> COCA_SEEDS = REGISTRY.register("coca_seeds", () -> new CocaSeedsItem());
+	public static final RegistryObject<Item> COCAEXTRACT = REGISTRY.register("cocaextract", () -> new CocaextractItem());
+	public static final RegistryObject<Item> CANNABIS_SEEDS = REGISTRY.register("cannabis_seeds", () -> new CannabisSeedsItem());
+	public static final RegistryObject<Item> BONG = block(BubatzcraftforgeModBlocks.BONG, BubatzcraftforgeModTabs.TAB_DRUGS);
 
-	private static Item register(Item item) {
-		REGISTRY.add(item);
-		return item;
-	}
-
-	private static Item register(Block block, CreativeModeTab tab) {
-		return register(new BlockItem(block, new Item.Properties().tab(tab)).setRegistryName(block.getRegistryName()));
-	}
-
-	@SubscribeEvent
-	public static void registerItems(RegistryEvent.Register<Item> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new Item[0]));
+	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
 	}
 }

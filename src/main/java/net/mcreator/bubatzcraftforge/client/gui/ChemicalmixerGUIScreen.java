@@ -74,8 +74,8 @@ public class ChemicalmixerGUIScreen extends AbstractContainerScreen<Chemicalmixe
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		drawString(poseStack, this.font, "Chemical Mixer", 56, 4, -1);
-		drawString(poseStack, this.font, "" + (new Object() {
+		this.font.draw(poseStack, "Chemical Mixer", 56, 4, -1);
+		this.font.draw(poseStack, "" + (new Object() {
 			public double getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
 				if (BlockEntity != null)
@@ -83,7 +83,7 @@ public class ChemicalmixerGUIScreen extends AbstractContainerScreen<Chemicalmixe
 				return 0;
 			}
 		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Progress")) + " %", 156, 68, -13369549);
-		drawString(poseStack, this.font, "Fuel Left: " + (new Object() {
+		this.font.draw(poseStack, "Fuel Left: " + (new Object() {
 			public double getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
 				if (BlockEntity != null)

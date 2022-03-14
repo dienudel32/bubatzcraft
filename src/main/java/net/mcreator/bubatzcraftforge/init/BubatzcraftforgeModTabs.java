@@ -17,7 +17,7 @@ public class BubatzcraftforgeModTabs {
 		TAB_DRUGS = new CreativeModeTab("tabdrugs") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(BubatzcraftforgeModItems.JOINT);
+				return new ItemStack(BubatzcraftforgeModItems.JOINT.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

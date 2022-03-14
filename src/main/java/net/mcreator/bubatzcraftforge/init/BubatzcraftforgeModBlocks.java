@@ -4,10 +4,12 @@
  */
 package net.mcreator.bubatzcraftforge.init;
 
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
@@ -24,35 +26,22 @@ import net.mcreator.bubatzcraftforge.block.CannabisBlock;
 import net.mcreator.bubatzcraftforge.block.BundledCocaLeafsBlock;
 import net.mcreator.bubatzcraftforge.block.BongBlock;
 import net.mcreator.bubatzcraftforge.block.AcetanhydrideoreBlock;
+import net.mcreator.bubatzcraftforge.BubatzcraftforgeMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BubatzcraftforgeModBlocks {
-	private static final List<Block> REGISTRY = new ArrayList<>();
-	public static final Block CANNABIS = register(new CannabisBlock());
-	public static final Block CHEMICALMIXER = register(new ChemicalmixerBlock());
-	public static final Block FRESH_WEED_BUD = register(new FreshWeedBudBlock());
-	public static final Block DRIED_WEED_BUD = register(new DryedWeedBudBlock());
-	public static final Block FLUID_EXTRACTOR = register(new FluidExtractorBlock());
-	public static final Block ACETANHYDRIDEORE = register(new AcetanhydrideoreBlock());
-	public static final Block MAGICMUSHROOM = register(new MagicmushroomBlock());
-	public static final Block COCA = register(new CocaBlock());
-	public static final Block COCAINELINE = register(new CocainelineBlock());
-	public static final Block COCAINEHAUFEN = register(new CocainehaufenBlock());
-	public static final Block BUNDLED_COCA_LEAFS = register(new BundledCocaLeafsBlock());
-	public static final Block BONG = register(new BongBlock());
-
-	private static Block register(Block block) {
-		REGISTRY.add(block);
-		return block;
-	}
-
-	@SubscribeEvent
-	public static void registerBlocks(RegistryEvent.Register<Block> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new Block[0]));
-	}
+	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, BubatzcraftforgeMod.MODID);
+	public static final RegistryObject<Block> CANNABIS = REGISTRY.register("cannabis", () -> new CannabisBlock());
+	public static final RegistryObject<Block> CHEMICALMIXER = REGISTRY.register("chemicalmixer", () -> new ChemicalmixerBlock());
+	public static final RegistryObject<Block> FRESH_WEED_BUD = REGISTRY.register("fresh_weed_bud", () -> new FreshWeedBudBlock());
+	public static final RegistryObject<Block> DRIED_WEED_BUD = REGISTRY.register("dried_weed_bud", () -> new DryedWeedBudBlock());
+	public static final RegistryObject<Block> FLUID_EXTRACTOR = REGISTRY.register("fluid_extractor", () -> new FluidExtractorBlock());
+	public static final RegistryObject<Block> ACETANHYDRIDEORE = REGISTRY.register("acetanhydrideore", () -> new AcetanhydrideoreBlock());
+	public static final RegistryObject<Block> MAGICMUSHROOM = REGISTRY.register("magicmushroom", () -> new MagicmushroomBlock());
+	public static final RegistryObject<Block> COCA = REGISTRY.register("coca", () -> new CocaBlock());
+	public static final RegistryObject<Block> COCAINELINE = REGISTRY.register("cocaineline", () -> new CocainelineBlock());
+	public static final RegistryObject<Block> COCAINEHAUFEN = REGISTRY.register("cocainehaufen", () -> new CocainehaufenBlock());
+	public static final RegistryObject<Block> BUNDLED_COCA_LEAFS = REGISTRY.register("bundled_coca_leafs", () -> new BundledCocaLeafsBlock());
+	public static final RegistryObject<Block> BONG = REGISTRY.register("bong", () -> new BongBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

@@ -61,7 +61,7 @@ public class HeroineinjectionRightClickedOnBlockProcedure {
 		}
 		((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)).shrink(1);
 		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(BubatzcraftforgeModItems.SYRINGE);
+			ItemStack _setstack = new ItemStack(BubatzcraftforgeModItems.SYRINGE.get());
 			_setstack.setCount(1);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}

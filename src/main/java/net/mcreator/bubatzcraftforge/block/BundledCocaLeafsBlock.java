@@ -29,7 +29,6 @@ public class BundledCocaLeafsBlock extends Block {
 	public BundledCocaLeafsBlock() {
 		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(1f, 10f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
-		setRegistryName("bundled_coca_leafs");
 	}
 
 	@Override

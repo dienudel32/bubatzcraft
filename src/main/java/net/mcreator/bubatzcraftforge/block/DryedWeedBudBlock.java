@@ -40,7 +40,6 @@ public class DryedWeedBudBlock extends Block {
 	public DryedWeedBudBlock() {
 		super(BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).sound(SoundType.LILY_PAD).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("dried_weed_bud");
 	}
 
 	@Override
@@ -109,15 +108,15 @@ public class DryedWeedBudBlock extends Block {
 	}
 
 	@Override
-	public boolean removedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
-		boolean retval = super.removedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
 		DryedWeedBudBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 		return retval;
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.DRIED_WEED_BUD, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.DRIED_WEED_BUD.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }

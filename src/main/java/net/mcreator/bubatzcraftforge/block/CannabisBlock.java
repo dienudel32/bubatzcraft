@@ -31,7 +31,6 @@ import java.util.Collections;
 public class CannabisBlock extends SugarCaneBlock {
 	public CannabisBlock() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).randomTicks().noCollission().sound(SoundType.GRASS).instabreak());
-		setRegistryName("cannabis");
 	}
 
 	@Override
@@ -49,7 +48,7 @@ public class CannabisBlock extends SugarCaneBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(BubatzcraftforgeModBlocks.FRESH_WEED_BUD, (int) (2)));
+		return Collections.singletonList(new ItemStack(BubatzcraftforgeModBlocks.FRESH_WEED_BUD.get(), (int) (2)));
 	}
 
 	@Override
@@ -86,6 +85,6 @@ public class CannabisBlock extends SugarCaneBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.CANNABIS, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.CANNABIS.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

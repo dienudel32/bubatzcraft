@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "minecraft:poppy"
   },
-  "result": {
-    "item": "bubatzcraftforge:opium"
-  }
+  "result": "bubatzcraftforge:opium"
 }

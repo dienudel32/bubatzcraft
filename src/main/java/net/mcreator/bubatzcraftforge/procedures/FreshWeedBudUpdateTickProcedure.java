@@ -37,10 +37,10 @@ public class FreshWeedBudUpdateTickProcedure {
 
 			private void run() {
 				if (Math.random() < 0.5) {
-					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BubatzcraftforgeModBlocks.FRESH_WEED_BUD) {
+					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BubatzcraftforgeModBlocks.FRESH_WEED_BUD.get()) {
 						{
 							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-							BlockState _bs = BubatzcraftforgeModBlocks.DRIED_WEED_BUD.defaultBlockState();
+							BlockState _bs = BubatzcraftforgeModBlocks.DRIED_WEED_BUD.get().defaultBlockState();
 							BlockState _bso = world.getBlockState(_bp);
 							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 								Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());

@@ -23,7 +23,6 @@ import java.util.List;
 public class HeroineinjectionItem extends Item {
 	public HeroineinjectionItem() {
 		super(new Item.Properties().tab(BubatzcraftforgeModTabs.TAB_DRUGS).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("heroineinjection");
 	}
 
 	@Override
