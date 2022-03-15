@@ -7,7 +7,6 @@ import net.minecraft.world.effect.MobEffect;
 public class MagicmushroomtrioMobEffect extends MobEffect {
 	public MagicmushroomtrioMobEffect() {
 		super(MobEffectCategory.HARMFUL, -1);
-		setRegistryName("magicmushroomtrip");
 	}
 
 	@Override

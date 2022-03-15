@@ -30,7 +30,6 @@ import java.util.Collections;
 public class CocaBlock extends SugarCaneBlock {
 	public CocaBlock() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).randomTicks().noCollission().sound(SoundType.GRASS).instabreak());
-		setRegistryName("coca");
 	}
 
 	@Override
@@ -48,7 +47,7 @@ public class CocaBlock extends SugarCaneBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(BubatzcraftforgeModItems.COCALEAFS));
+		return Collections.singletonList(new ItemStack(BubatzcraftforgeModItems.COCALEAFS.get()));
 	}
 
 	@Override
@@ -76,6 +75,6 @@ public class CocaBlock extends SugarCaneBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.COCA, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.COCA.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

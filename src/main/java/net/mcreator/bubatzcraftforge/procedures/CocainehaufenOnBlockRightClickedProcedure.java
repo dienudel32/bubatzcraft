@@ -25,7 +25,8 @@ public class CocainehaufenOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BubatzcraftforgeModItems.RAZORBLADE) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BubatzcraftforgeModItems.RAZORBLADE
+				.get()) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
@@ -60,7 +61,7 @@ public class CocainehaufenOnBlockRightClickedProcedure {
 				private void run() {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BubatzcraftforgeModBlocks.COCAINELINE.defaultBlockState();
+						BlockState _bs = BubatzcraftforgeModBlocks.COCAINELINE.get().defaultBlockState();
 						BlockState _bso = world.getBlockState(_bp);
 						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());

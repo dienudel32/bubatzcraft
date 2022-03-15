@@ -16,7 +16,6 @@ import java.util.List;
 public class SyringeItem extends Item {
 	public SyringeItem() {
 		super(new Item.Properties().tab(BubatzcraftforgeModTabs.TAB_DRUGS).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("syringe");
 	}
 
 	@Override

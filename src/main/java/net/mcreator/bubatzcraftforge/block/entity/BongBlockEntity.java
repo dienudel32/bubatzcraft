@@ -34,7 +34,7 @@ public class BongBlockEntity extends RandomizableContainerBlockEntity implements
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public BongBlockEntity(BlockPos position, BlockState state) {
-		super(BubatzcraftforgeModBlockEntities.BONG, position, state);
+		super(BubatzcraftforgeModBlockEntities.BONG.get(), position, state);
 	}
 
 	@Override
@@ -46,22 +46,21 @@ public class BongBlockEntity extends RandomizableContainerBlockEntity implements
 	}
 
 	@Override
-	public CompoundTag save(CompoundTag compound) {
-		super.save(compound);
+	public void saveAdditional(CompoundTag compound) {
+		super.saveAdditional(compound);
 		if (!this.trySaveLootTable(compound)) {
 			ContainerHelper.saveAllItems(compound, this.stacks);
 		}
-		return compound;
 	}
 
 	@Override
 	public ClientboundBlockEntityDataPacket getUpdatePacket() {
-		return new ClientboundBlockEntityDataPacket(this.worldPosition, 0, this.getUpdateTag());
+		return ClientboundBlockEntityDataPacket.create(this);
 	}
 
 	@Override
 	public CompoundTag getUpdateTag() {
-		return this.save(new CompoundTag());
+		return this.saveWithFullMetadata();
 	}
 
 	@Override

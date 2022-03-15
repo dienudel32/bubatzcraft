@@ -13,7 +13,6 @@ import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModTabs;
 public class CannabisSeedsItem extends Item {
 	public CannabisSeedsItem() {
 		super(new Item.Properties().tab(BubatzcraftforgeModTabs.TAB_DRUGS).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("cannabis_seeds");
 	}
 
 	@Override

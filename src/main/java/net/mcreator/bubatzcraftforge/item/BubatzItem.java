@@ -23,7 +23,6 @@ public class BubatzItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(-6).saturationMod(0f).alwaysEat()
 
 						.build()));
-		setRegistryName("joint");
 	}
 
 	@Override

@@ -60,7 +60,6 @@ public class BongBlock extends Block implements SimpleWaterloggedBlock, EntityBl
 		super(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.LADDER).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
-		setRegistryName("bong");
 	}
 
 	@Override
@@ -117,7 +116,7 @@ public class BongBlock extends Block implements SimpleWaterloggedBlock, EntityBl
 	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
 			BlockPos facingPos) {
 		if (state.getValue(WATERLOGGED)) {
-			world.getLiquidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
+			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
 	}
@@ -203,7 +202,7 @@ public class BongBlock extends Block implements SimpleWaterloggedBlock, EntityBl
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.BONG, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.BONG.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }

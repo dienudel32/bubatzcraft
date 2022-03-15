@@ -16,7 +16,6 @@ import java.util.List;
 public class CocaextractItem extends Item {
 	public CocaextractItem() {
 		super(new Item.Properties().tab(BubatzcraftforgeModTabs.TAB_DRUGS).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("cocaextract");
 	}
 
 	@Override

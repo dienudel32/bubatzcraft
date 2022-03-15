@@ -44,7 +44,6 @@ public class CocainelineBlock extends Block {
 		super(BlockBehaviour.Properties.of(Material.TOP_SNOW).sound(SoundType.SNOW).strength(0f, 10f).noCollission().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-		setRegistryName("cocaineline");
 	}
 
 	@Override
@@ -97,7 +96,7 @@ public class CocainelineBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(BubatzcraftforgeModBlocks.COCAINEHAUFEN));
+		return Collections.singletonList(new ItemStack(BubatzcraftforgeModBlocks.COCAINEHAUFEN.get()));
 	}
 
 	@Override
@@ -117,7 +116,7 @@ public class CocainelineBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.COCAINELINE, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.COCAINELINE.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }

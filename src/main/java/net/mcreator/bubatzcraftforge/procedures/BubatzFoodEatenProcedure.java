@@ -93,7 +93,7 @@ public class BubatzFoodEatenProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _entity)
-						_entity.addEffect(new MobEffectInstance(BubatzcraftforgeModMobEffects.WEEDTRIP, 5200, 0, (false), (false)));
+						_entity.addEffect(new MobEffectInstance(BubatzcraftforgeModMobEffects.WEEDTRIP.get(), 5200, 0, (false), (false)));
 					if (entity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1200, 0, (false), (false)));
 					if (entity instanceof LivingEntity _entity)
@@ -145,7 +145,7 @@ public class BubatzFoodEatenProcedure {
 			}.start(world, 110);
 		} else {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(BubatzcraftforgeModMobEffects.WEEDTRIP, 5200, 0, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(BubatzcraftforgeModMobEffects.WEEDTRIP.get(), 5200, 0, (false), (false)));
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1200, 0, (false), (false)));
 			if (entity instanceof LivingEntity _entity)

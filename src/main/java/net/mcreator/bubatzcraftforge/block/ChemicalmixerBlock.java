@@ -1,7 +1,9 @@
 
 package net.mcreator.bubatzcraftforge.block;
 
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
+import org.checkerframework.checker.units.qual.s;
+
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -64,7 +66,6 @@ public class ChemicalmixerBlock extends Block
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f).lightLevel(s -> 4).requiresCorrectToolForDrops()
 				.noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-		setRegistryName("chemicalmixer");
 	}
 
 	@Override
@@ -114,7 +115,7 @@ public class ChemicalmixerBlock extends Block
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.getBlockTicks().scheduleTick(pos, this, 10);
+		world.scheduleTick(pos, this, 10);
 	}
 
 	@Override
@@ -125,7 +126,7 @@ public class ChemicalmixerBlock extends Block
 		int z = pos.getZ();
 
 		ChemicalmixerUpdateTickProcedure.execute(world, x, y, z);
-		world.getBlockTicks().scheduleTick(pos, this, 10);
+		world.scheduleTick(pos, this, 10);
 	}
 
 	@OnlyIn(Dist.CLIENT)
@@ -212,7 +213,7 @@ public class ChemicalmixerBlock extends Block
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.CHEMICALMIXER, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.CHEMICALMIXER.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }

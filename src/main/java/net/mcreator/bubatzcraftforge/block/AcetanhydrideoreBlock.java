@@ -21,7 +21,6 @@ import java.util.Collections;
 public class AcetanhydrideoreBlock extends Block {
 	public AcetanhydrideoreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3.25f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("acetanhydrideore");
 	}
 
 	@Override
@@ -41,6 +40,6 @@ public class AcetanhydrideoreBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(BubatzcraftforgeModItems.ACETANHYDRIDEPOWDER, (int) (2)));
+		return Collections.singletonList(new ItemStack(BubatzcraftforgeModItems.ACETANHYDRIDEPOWDER.get(), (int) (2)));
 	}
 }

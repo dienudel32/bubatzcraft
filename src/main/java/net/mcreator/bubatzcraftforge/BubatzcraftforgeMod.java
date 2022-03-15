@@ -16,15 +16,22 @@ package net.mcreator.bubatzcraftforge;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraftforge.fmllegacy.network.simple.SimpleChannel;
-import net.minecraftforge.fmllegacy.network.NetworkRegistry;
-import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.network.simple.SimpleChannel;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.IEventBus;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModTabs;
+import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModMobEffects;
+import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModItems;
+import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModFeatures;
+import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModBlocks;
+import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -41,6 +48,15 @@ public class BubatzcraftforgeMod {
 
 	public BubatzcraftforgeMod() {
 		BubatzcraftforgeModTabs.load();
+		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		BubatzcraftforgeModBlocks.REGISTRY.register(bus);
+		BubatzcraftforgeModItems.REGISTRY.register(bus);
+
+		BubatzcraftforgeModBlockEntities.REGISTRY.register(bus);
+		BubatzcraftforgeModFeatures.REGISTRY.register(bus);
+
+		BubatzcraftforgeModMobEffects.REGISTRY.register(bus);
+
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,

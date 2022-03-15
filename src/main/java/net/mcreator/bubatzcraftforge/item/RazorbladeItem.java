@@ -16,7 +16,6 @@ import java.util.List;
 public class RazorbladeItem extends Item {
 	public RazorbladeItem() {
 		super(new Item.Properties().tab(BubatzcraftforgeModTabs.TAB_DRUGS).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("razorblade");
 	}
 
 	@Override

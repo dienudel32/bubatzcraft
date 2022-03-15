@@ -38,7 +38,7 @@ public class MagicmushroomfoodFoodEatenProcedure {
 			}
 		} else {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(BubatzcraftforgeModMobEffects.MAGICMUSHROOMTRIP, 1200, 0, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(BubatzcraftforgeModMobEffects.MAGICMUSHROOMTRIP.get(), 1200, 0, (false), (false)));
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 40, 0, (false), (false)));
 			if (entity instanceof LivingEntity _entity)

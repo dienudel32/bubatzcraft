@@ -1,6 +1,8 @@
 
 package net.mcreator.bubatzcraftforge.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -32,7 +34,6 @@ public class MagicmushroomBlock extends FlowerBlock {
 	public MagicmushroomBlock() {
 		super(MobEffects.CONFUSION, 100, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.GRASS).instabreak()
 				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).lightLevel(s -> 2));
-		setRegistryName("magicmushroom");
 	}
 
 	@Override
@@ -60,7 +61,7 @@ public class MagicmushroomBlock extends FlowerBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(BubatzcraftforgeModItems.MAGIC_MUSHROOMFOOD));
+		return Collections.singletonList(new ItemStack(BubatzcraftforgeModItems.MAGIC_MUSHROOMFOOD.get()));
 	}
 
 	@Override
@@ -71,6 +72,6 @@ public class MagicmushroomBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.MAGICMUSHROOM, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(BubatzcraftforgeModBlocks.MAGICMUSHROOM.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

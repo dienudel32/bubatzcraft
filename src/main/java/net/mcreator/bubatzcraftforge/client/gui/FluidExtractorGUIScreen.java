@@ -74,8 +74,8 @@ public class FluidExtractorGUIScreen extends AbstractContainerScreen<FluidExtrac
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		drawString(poseStack, this.font, "Fluid Extractor", 51, 7, -1);
-		drawString(poseStack, this.font, "" + (new Object() {
+		this.font.draw(poseStack, "Fluid Extractor", 51, 7, -1);
+		this.font.draw(poseStack, "" + (new Object() {
 			public double getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
 				if (BlockEntity != null)
@@ -83,7 +83,7 @@ public class FluidExtractorGUIScreen extends AbstractContainerScreen<FluidExtrac
 				return 0;
 			}
 		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Progress")) + " %", 42, 43, -13369549);
-		drawString(poseStack, this.font, "Fuel: " + (new Object() {
+		this.font.draw(poseStack, "Fuel: " + (new Object() {
 			public double getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
 				if (BlockEntity != null)
