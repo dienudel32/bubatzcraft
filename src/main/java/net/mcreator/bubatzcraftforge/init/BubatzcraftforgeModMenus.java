@@ -4,7 +4,7 @@
  */
 package net.mcreator.bubatzcraftforge.init;
 
-import net.minecraftforge.network.IContainerFactory;
+import net.minecraftforge.fmllegacy.network.IContainerFactory;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;

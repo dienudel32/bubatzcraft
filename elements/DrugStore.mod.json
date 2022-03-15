@@ -5,7 +5,7 @@
     "structure": "drug_shop",
     "randomlyRotateStructure": false,
     "surfaceDetectionType": "First block",
-    "spawnProbability": 1000,
+    "spawnProbability": 250,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",

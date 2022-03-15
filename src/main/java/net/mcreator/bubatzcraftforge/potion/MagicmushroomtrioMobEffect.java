@@ -1,12 +1,11 @@
 
 package net.mcreator.bubatzcraftforge.potion;
 
-import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.effect.MobEffect;
-
 public class MagicmushroomtrioMobEffect extends MobEffect {
+
 	public MagicmushroomtrioMobEffect() {
 		super(MobEffectCategory.HARMFUL, -1);
+		setRegistryName("magicmushroomtrip");
 	}
 
 	@Override
@@ -18,4 +17,5 @@ public class MagicmushroomtrioMobEffect extends MobEffect {
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}
+
 }

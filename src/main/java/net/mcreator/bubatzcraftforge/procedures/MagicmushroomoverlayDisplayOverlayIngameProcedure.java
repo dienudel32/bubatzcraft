@@ -1,9 +1,6 @@
 package net.mcreator.bubatzcraftforge.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModMobEffects;
+import net.minecraftforge.eventbus.api.Event;
 
 public class MagicmushroomoverlayDisplayOverlayIngameProcedure {
 	public static boolean execute(Entity entity) {

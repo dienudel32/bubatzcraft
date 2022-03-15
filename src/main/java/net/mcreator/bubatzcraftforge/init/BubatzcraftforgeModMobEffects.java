@@ -4,18 +4,31 @@
  */
 package net.mcreator.bubatzcraftforge.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.effect.MobEffect;
 
 import net.mcreator.bubatzcraftforge.potion.WeedtripMobEffect;
 import net.mcreator.bubatzcraftforge.potion.MagicmushroomtrioMobEffect;
-import net.mcreator.bubatzcraftforge.BubatzcraftforgeMod;
 
+import java.util.List;
+import java.util.ArrayList;
+
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BubatzcraftforgeModMobEffects {
-	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, BubatzcraftforgeMod.MODID);
-	public static final RegistryObject<MobEffect> WEEDTRIP = REGISTRY.register("weedtrip", () -> new WeedtripMobEffect());
-	public static final RegistryObject<MobEffect> MAGICMUSHROOMTRIP = REGISTRY.register("magicmushroomtrip", () -> new MagicmushroomtrioMobEffect());
+	private static final List<MobEffect> REGISTRY = new ArrayList<>();
+	public static final MobEffect WEEDTRIP = register(new WeedtripMobEffect());
+	public static final MobEffect MAGICMUSHROOMTRIP = register(new MagicmushroomtrioMobEffect());
+
+	private static MobEffect register(MobEffect effect) {
+		REGISTRY.add(effect);
+		return effect;
+	}
+
+	@SubscribeEvent
+	public static void registerMobEffects(RegistryEvent.Register<MobEffect> event) {
+		event.getRegistry().registerAll(REGISTRY.toArray(new MobEffect[0]));
+	}
 }
