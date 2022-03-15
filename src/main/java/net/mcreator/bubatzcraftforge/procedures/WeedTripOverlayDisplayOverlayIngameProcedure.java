@@ -1,6 +1,9 @@
 package net.mcreator.bubatzcraftforge.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModMobEffects;
 
 public class WeedTripOverlayDisplayOverlayIngameProcedure {
 	public static boolean execute(Entity entity) {

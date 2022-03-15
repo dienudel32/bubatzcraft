@@ -1,13 +1,18 @@
 
 package net.mcreator.bubatzcraftforge.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.InteractionResult;
+
+import net.mcreator.bubatzcraftforge.procedures.CannabisSeedsRightClickedOnBlockProcedure;
+import net.mcreator.bubatzcraftforge.init.BubatzcraftforgeModTabs;
 
 public class CannabisSeedsItem extends Item {
-
 	public CannabisSeedsItem() {
 		super(new Item.Properties().tab(BubatzcraftforgeModTabs.TAB_DRUGS).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("cannabis_seeds");
 	}
 
 	@Override
@@ -22,5 +27,4 @@ public class CannabisSeedsItem extends Item {
 				context.getClickedPos().getZ(), context.getPlayer());
 		return retval;
 	}
-
 }

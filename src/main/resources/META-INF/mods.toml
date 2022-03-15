@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[37,)"
+loaderVersion="[40,)"
 license="GNU Lesser General Public License version 3 (LGPLv3)"
 
 [[mods]]
@@ -17,7 +17,7 @@ Minecraft Drug Mod
 [[dependencies.bubatzcraftforge]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.17.1]"
+    versionRange="[1.18.2]"
     ordering="NONE"
     side="BOTH"
 
